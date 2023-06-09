@@ -22,4 +22,4 @@ node yourProject.js
 
 ## Links
 
-- [Github](https://github.com/a6b8/easymina) <br>
+- [Github](https://github.com/EasyMina/easyMina) <br>
