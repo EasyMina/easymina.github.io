@@ -1,0 +1,39 @@
+---
+sort: {{sort}}
+title: {{title_with_number}}
+---
+# {{title}}
+
+{{description}}
+
+
+## Preview
+
+<div >
+    <canvas id='canvas' search='{{key}}' palette='option_detail'></canvas>
+</div>
+<script src="../assets/js/marker.js"></script>  
+
+ 
+## Default
+
+### Hash
+
+```ruby
+{{option}} 
+```
+
+### Key
+
+| **Name** | **Category** | **Section** |
+| :--- | :--- | :--- |
+| ```{{key}}``` |  [{{category}}]({{category_url}}) | [{{section}}]({{section_url}}) |
+
+### Value
+
+{{value_regex_description}}
+
+| **Default**| **Validation**| **Type** |
+| :--- | :--- | :--- |
+| ```{{value_default}}``` | ```{{value_regex}}``` | {{value_class}} |
+

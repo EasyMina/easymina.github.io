@@ -1,0 +1,2595 @@
+{
+  "sections": {
+    "header": 0,
+    "two": 128,
+    "three": 212,
+    "four": 295,
+    "five": 350,
+    "six": 447,
+    "seven": 568,
+    "eight": 604,
+    "footer": 745
+  },
+  "options": [
+    {
+      "name": "show__qr_code",
+      "type": "option",
+      "nr": "A.1",
+      "value": true,
+      "position": [
+        525,
+        265
+      ],
+      "section": "three",
+      "selector": "qr_code"
+    },
+    {
+      "name": "show__sub_total",
+      "type": "option",
+      "nr": "A.2",
+      "value": true,
+      "position": [
+        355,
+        463
+      ],
+      "section": "six",
+      "selector": "sub_total"
+    },
+    {
+      "name": "show__shipping",
+      "type": "option",
+      "nr": "A.3",
+      "value": true,
+      "position": [
+        355,
+        485
+      ],
+      "section": "six",
+      "selector": "shipping"
+    },
+    {
+      "name": "show__total_net",
+      "type": "option",
+      "nr": "A.4",
+      "value": true,
+      "position": [
+        355,
+        506
+      ],
+      "section": "six",
+      "selector": "total_net"
+    },
+    {
+      "name": "show__vat",
+      "type": "option",
+      "nr": "A.5",
+      "value": true,
+      "position": [
+        355,
+        528
+      ],
+      "section": "six",
+      "selector": "_vat"
+    },
+    {
+      "name": "show__total_gross",
+      "type": "option",
+      "nr": "A.6",
+      "value": true,
+      "position": [
+        355,
+        550
+      ],
+      "section": "six",
+      "selector": "total_gross"
+    },
+    {
+      "name": "text__phone",
+      "type": "option",
+      "nr": "C.1",
+      "value": "Phone:",
+      "position": [
+        390,
+        776
+      ],
+      "section": "footer",
+      "selector": "phone"
+    },
+    {
+      "name": "text__mobile",
+      "type": "option",
+      "nr": "C.2",
+      "value": "Mobil:",
+      "position": [
+        390,
+        786
+      ],
+      "section": "footer",
+      "selector": "mobile"
+    },
+    {
+      "name": "text__email",
+      "type": "option",
+      "nr": "C.3",
+      "value": "Email:",
+      "position": [
+        390,
+        796
+      ],
+      "section": "footer",
+      "selector": "email"
+    },
+    {
+      "name": "text__website",
+      "type": "option",
+      "nr": "C.4",
+      "value": "Website:",
+      "position": [
+        390,
+        806
+      ],
+      "section": "footer",
+      "selector": "website"
+    },
+    {
+      "name": "text__tax_id",
+      "type": "option",
+      "nr": "C.5",
+      "value": "Tax ID:",
+      "position": [
+        165,
+        806
+      ],
+      "section": "footer",
+      "selector": "tax_id"
+    },
+    {
+      "name": "text__invoice",
+      "type": "option",
+      "nr": "C.6",
+      "value": "Invoice",
+      "position": [
+        20,
+        279
+      ],
+      "section": "three",
+      "selector": "invoice"
+    },
+    {
+      "name": "text__page_count",
+      "type": "option",
+      "nr": "C.7",
+      "value": "<page> / <total>",
+      "position": [
+        530,
+        19
+      ],
+      "section": "header",
+      "selector": "page_count"
+    },
+    {
+      "name": "text__articles__nr",
+      "type": "option",
+      "nr": "C.8",
+      "value": "<b>NR</b>",
+      "position": [
+        20,
+        374
+      ],
+      "section": "five",
+      "selector": "articles"
+    },
+    {
+      "name": "text__articles__id",
+      "type": "option",
+      "nr": "C.9",
+      "value": "<b>ID</b>",
+      "position": [
+        65,
+        374
+      ],
+      "section": "five",
+      "selector": "articles"
+    },
+    {
+      "name": "text__articles__article",
+      "type": "option",
+      "nr": "C.10",
+      "value": "<b>ARTICLE</b>",
+      "position": [
+        125,
+        374
+      ],
+      "section": "five",
+      "selector": "articles"
+    },
+    {
+      "name": "text__articles__piece",
+      "type": "option",
+      "nr": "C.11",
+      "value": "<b>PIECE</b>",
+      "position": [
+        385,
+        374
+      ],
+      "section": "five",
+      "selector": "articles"
+    },
+    {
+      "name": "text__articles__single",
+      "type": "option",
+      "nr": "C.12",
+      "value": "<b>SINGLE</b>",
+      "position": [
+        442,
+        374
+      ],
+      "section": "five",
+      "selector": "articles"
+    },
+    {
+      "name": "text__articles__total",
+      "type": "option",
+      "nr": "C.13",
+      "value": "<b>TOTAL</b>",
+      "position": [
+        502,
+        374
+      ],
+      "section": "five",
+      "selector": "articles"
+    },
+    {
+      "name": "text__total__sub_total",
+      "type": "option",
+      "nr": "C.14",
+      "value": "Subtotal:",
+      "position": [
+        365,
+        463
+      ],
+      "section": "six",
+      "selector": "sub_total"
+    },
+    {
+      "name": "text__total__shipping",
+      "type": "option",
+      "nr": "C.15",
+      "value": "+ Shipping",
+      "position": [
+        365,
+        485
+      ],
+      "section": "six",
+      "selector": "shipping"
+    },
+    {
+      "name": "text__total__total_net",
+      "type": "option",
+      "nr": "C.16",
+      "value": "<b>Total (net):</b>",
+      "position": [
+        365,
+        506
+      ],
+      "section": "six",
+      "selector": "total_net"
+    },
+    {
+      "name": "text__total__vat",
+      "type": "option",
+      "nr": "C.17",
+      "value": "+ VAT 19 %",
+      "position": [
+        365,
+        528
+      ],
+      "section": "six",
+      "selector": "_vat"
+    },
+    {
+      "name": "text__total__total_gross",
+      "type": "option",
+      "nr": "C.18",
+      "value": "<b>Total (gross):</b>",
+      "position": [
+        365,
+        550
+      ],
+      "section": "six",
+      "selector": "total_gross"
+    },
+    {
+      "name": "text__footer__left",
+      "type": "option",
+      "nr": "C.19",
+      "value": "Postal",
+      "position": [
+        10,
+        766
+      ],
+      "section": "footer",
+      "selector": "footer-left"
+    },
+    {
+      "name": "text__footer__center",
+      "type": "option",
+      "nr": "C.20",
+      "value": "Bank",
+      "position": [
+        165,
+        766
+      ],
+      "section": "footer",
+      "selector": "footer-center"
+    },
+    {
+      "name": "text__footer__right",
+      "type": "option",
+      "nr": "C.21",
+      "value": "Contact",
+      "position": [
+        390,
+        766
+      ],
+      "section": "footer",
+      "selector": "footer-right"
+    },
+    {
+      "name": "style__page_count__align",
+      "type": "option",
+      "nr": "D.2",
+      "value": ":right",
+      "position": [
+        520,
+        19
+      ],
+      "section": "header",
+      "selector": "page_count"
+    },
+    {
+      "name": "style__page_count__start_count_at",
+      "type": "option",
+      "nr": "D.3",
+      "value": 1,
+      "position": [
+        510,
+        19
+      ],
+      "section": "header",
+      "selector": "page_count"
+    },
+    {
+      "name": "style__page_count__offset_y",
+      "type": "option",
+      "nr": "D.4",
+      "value": 0,
+      "position": [
+        500,
+        19
+      ],
+      "section": "header",
+      "selector": "page_count"
+    },
+    {
+      "name": "style__colors__header__default",
+      "type": "option",
+      "nr": "D.10",
+      "value": "000000",
+      "position": [
+        20,
+        20
+      ],
+      "section": "header",
+      "selector": "color"
+    },
+    {
+      "name": "style__colors__rows__even",
+      "type": "option",
+      "nr": "D.11",
+      "value": "F0F0F0",
+      "position": [
+        30,
+        432
+      ],
+      "section": "five",
+      "selector": "color"
+    },
+    {
+      "name": "style__colors__rows__odd",
+      "type": "option",
+      "nr": "D.12",
+      "value": "FFFFFF",
+      "position": [
+        30,
+        402
+      ],
+      "section": "five",
+      "selector": "color"
+    },
+    {
+      "name": "style__header__height",
+      "type": "option",
+      "nr": "D.13",
+      "value": 90,
+      "position": [
+        20,
+        30
+      ],
+      "section": "header",
+      "selector": "header"
+    },
+    {
+      "name": "style__address_label__offset_x",
+      "type": "option",
+      "nr": "D.14",
+      "value": 20,
+      "position": [
+        20,
+        141
+      ],
+      "section": "two",
+      "selector": "address"
+    },
+    {
+      "name": "style__address_label__move_down_one",
+      "type": "option",
+      "nr": "D.15",
+      "value": 15,
+      "position": [
+        20,
+        156
+      ],
+      "section": "two",
+      "selector": "address"
+    },
+    {
+      "name": "style__address_label__move_down_two",
+      "type": "option",
+      "nr": "D.16",
+      "value": 100,
+      "position": [
+        20,
+        206
+      ],
+      "section": "two",
+      "selector": "address"
+    },
+    {
+      "name": "style__footer__height",
+      "type": "option",
+      "nr": "D.17",
+      "value": 60,
+      "position": [
+        20,
+        756
+      ],
+      "section": "all",
+      "selector": "footer"
+    },
+    {
+      "name": "style__footer__border_width",
+      "type": "option",
+      "nr": "D.18",
+      "value": 1,
+      "position": [
+        30,
+        756
+      ],
+      "section": "footer",
+      "selector": "footer"
+    },
+    {
+      "name": "style__footer__borders",
+      "type": "option",
+      "nr": "D.19",
+      "value": [
+        "top"
+      ],
+      "position": [
+        10,
+        756
+      ],
+      "section": "footer",
+      "selector": "footer"
+    },
+    {
+      "name": "style__articles__nr__align",
+      "type": "option",
+      "nr": "D.21",
+      "value": ":left",
+      "position": [
+        30,
+        369
+      ],
+      "section": "five",
+      "selector": "articles"
+    },
+    {
+      "name": "style__articles__nr__width",
+      "type": "option",
+      "nr": "D.22",
+      "value": 40,
+      "position": [
+        30,
+        379
+      ],
+      "section": "five",
+      "selector": "articles"
+    },
+    {
+      "name": "style__articles__id__align",
+      "type": "option",
+      "nr": "D.23",
+      "value": ":left",
+      "position": [
+        75,
+        369
+      ],
+      "section": "five",
+      "selector": "articles"
+    },
+    {
+      "name": "style__articles__id__width",
+      "type": "option",
+      "nr": "D.24",
+      "value": 60,
+      "position": [
+        75,
+        379
+      ],
+      "section": "five",
+      "selector": "articles"
+    },
+    {
+      "name": "style__articles__article__align",
+      "type": "option",
+      "nr": "D.25",
+      "value": ":left",
+      "position": [
+        135,
+        369
+      ],
+      "section": "five",
+      "selector": "articles"
+    },
+    {
+      "name": "style__articles__article__width",
+      "type": "option",
+      "nr": "D.26",
+      "value": 220,
+      "position": [
+        135,
+        379
+      ],
+      "section": "five",
+      "selector": "articles"
+    },
+    {
+      "name": "style__articles__piece__align",
+      "type": "option",
+      "nr": "D.27",
+      "value": ":right",
+      "position": [
+        395,
+        369
+      ],
+      "section": "five",
+      "selector": "piece"
+    },
+    {
+      "name": "style__articles__piece__width",
+      "type": "option",
+      "nr": "D.28",
+      "value": 80,
+      "position": [
+        395,
+        379
+      ],
+      "section": "five",
+      "selector": "piece"
+    },
+    {
+      "name": "style__articles__single__align",
+      "type": "option",
+      "nr": "D.29",
+      "value": ":right",
+      "position": [
+        452,
+        369
+      ],
+      "section": "five",
+      "selector": "single"
+    },
+    {
+      "name": "style__articles__single__width",
+      "type": "option",
+      "nr": "D.30",
+      "value": 60,
+      "position": [
+        452,
+        379
+      ],
+      "section": "five",
+      "selector": "single"
+    },
+    {
+      "name": "style__articles__single__format",
+      "type": "option",
+      "nr": "D.31",
+      "value": ":format_types__currency__short",
+      "position": [
+        452,
+        396
+      ],
+      "section": "five",
+      "selector": "single"
+    },
+    {
+      "name": "style__articles__total__align",
+      "type": "option",
+      "nr": "D.32",
+      "value": ":right",
+      "position": [
+        512,
+        369
+      ],
+      "section": "five",
+      "selector": "total"
+    },
+    {
+      "name": "style__articles__total__width",
+      "type": "option",
+      "nr": "D.33",
+      "value": 60,
+      "position": [
+        512,
+        379
+      ],
+      "section": "five",
+      "selector": "total"
+    },
+    {
+      "name": "style__articles__total__format",
+      "type": "option",
+      "nr": "D.34",
+      "value": ":format_types__currency__short",
+      "position": [
+        512,
+        396
+      ],
+      "section": "five",
+      "selector": "total"
+    },
+    {
+      "name": "style__total__sub_total__borders",
+      "type": "option",
+      "nr": "D.35",
+      "value": [
+        "top"
+      ],
+      "position": [
+        507,
+        463
+      ],
+      "section": "six",
+      "selector": "sub_total"
+    },
+    {
+      "name": "style__total__sub_total__border_width",
+      "type": "option",
+      "nr": "D.36",
+      "value": 1,
+      "position": [
+        497,
+        463
+      ],
+      "section": "six",
+      "selector": "sub_total"
+    },
+    {
+      "name": "style__total__shipping__borders",
+      "type": "option",
+      "nr": "D.37",
+      "value": [
+        "top"
+      ],
+      "position": [
+        507,
+        485
+      ],
+      "section": "six",
+      "selector": "shipping"
+    },
+    {
+      "name": "style__total__shipping__border_width",
+      "type": "option",
+      "nr": "D.38",
+      "value": 0,
+      "position": [
+        497,
+        485
+      ],
+      "section": "six",
+      "selector": "shipping"
+    },
+    {
+      "name": "style__total__total_net__borders",
+      "type": "option",
+      "nr": "D.39",
+      "value": [
+        "top"
+      ],
+      "position": [
+        507,
+        506
+      ],
+      "section": "six",
+      "selector": "total_net"
+    },
+    {
+      "name": "style__total__total_net__border_width",
+      "type": "option",
+      "nr": "D.40",
+      "value": 1,
+      "position": [
+        497,
+        506
+      ],
+      "section": "six",
+      "selector": "total_net"
+    },
+    {
+      "name": "style__total__vat__borders",
+      "type": "option",
+      "nr": "D.41",
+      "value": [
+        "top"
+      ],
+      "position": [
+        507,
+        528
+      ],
+      "section": "six",
+      "selector": "vat"
+    },
+    {
+      "name": "style__total__vat__border_width",
+      "type": "option",
+      "nr": "D.42",
+      "value": 0,
+      "position": [
+        497,
+        528
+      ],
+      "section": "six",
+      "selector": "vat"
+    },
+    {
+      "name": "style__total__total_gross__borders",
+      "type": "option",
+      "nr": "D.43",
+      "value": [
+        "top"
+      ],
+      "position": [
+        507,
+        550
+      ],
+      "section": "six",
+      "selector": "total_gross"
+    },
+    {
+      "name": "style__total__total_gross__border_width",
+      "type": "option",
+      "nr": "D.44",
+      "value": 0,
+      "position": [
+        497,
+        550
+      ],
+      "section": "six",
+      "selector": "total_gross"
+    },
+    {
+      "name": "style__qr_code__width",
+      "type": "option",
+      "nr": "D.45",
+      "value": 40,
+      "position": [
+        525,
+        255
+      ],
+      "section": "three",
+      "selector": "qr_code"
+    },
+    {
+      "name": "format_types__currency__short",
+      "type": "option",
+      "nr": "E.1",
+      "value": {
+        "delimiter": ".",
+        "separator": ",",
+        "precision": 2,
+        "unit": "",
+        "format": "%n €"
+      },
+      "position": [
+        487,
+        550
+      ],
+      "section": "all",
+      "selector": "currency"
+    },
+    {
+      "name": "format_types__currency__short",
+      "type": "option",
+      "nr": "E.1",
+      "value": {
+        "delimiter": ".",
+        "separator": ",",
+        "precision": 2,
+        "unit": "",
+        "format": "%n €"
+      },
+      "position": [
+        487,
+        528
+      ],
+      "section": "all",
+      "selector": "currency"
+    },
+    {
+      "name": "format_types__currency__short",
+      "type": "option",
+      "nr": "E.1",
+      "value": {
+        "delimiter": ".",
+        "separator": ",",
+        "precision": 2,
+        "unit": "",
+        "format": "%n €"
+      },
+      "position": [
+        487,
+        506
+      ],
+      "section": "all",
+      "selector": "currency"
+    },
+    {
+      "name": "format_types__currency__short",
+      "type": "option",
+      "nr": "E.1",
+      "value": {
+        "delimiter": ".",
+        "separator": ",",
+        "precision": 2,
+        "unit": "",
+        "format": "%n €"
+      },
+      "position": [
+        487,
+        485
+      ],
+      "section": "all",
+      "selector": "currency"
+    },
+    {
+      "name": "format_types__currency__short",
+      "type": "option",
+      "nr": "E.1",
+      "value": {
+        "delimiter": ".",
+        "separator": ",",
+        "precision": 2,
+        "unit": "",
+        "format": "%n €"
+      },
+      "position": [
+        487,
+        463
+      ],
+      "section": "all",
+      "selector": "currency"
+    },
+    {
+      "name": "format_types__currency__short",
+      "type": "option",
+      "nr": "E.1",
+      "value": {
+        "delimiter": ".",
+        "separator": ",",
+        "precision": 2,
+        "unit": "",
+        "format": "%n €"
+      },
+      "position": [
+        502,
+        430
+      ],
+      "section": "all",
+      "selector": "currency"
+    },
+    {
+      "name": "format_types__currency__short",
+      "type": "option",
+      "nr": "E.1",
+      "value": {
+        "delimiter": ".",
+        "separator": ",",
+        "precision": 2,
+        "unit": "",
+        "format": "%n €"
+      },
+      "position": [
+        502,
+        396
+      ],
+      "section": "all",
+      "selector": "currency"
+    },
+    {
+      "name": "format_types__currency__long",
+      "type": "option",
+      "nr": "E.2",
+      "value": {
+        "delimiter": ".",
+        "separator": ",",
+        "precision": 2,
+        "unit": "",
+        "format": "%n EUR"
+      },
+      "position": [
+        222,
+        575
+      ],
+      "section": "seven",
+      "selector": "currency"
+    },
+    {
+      "name": "format_types__date__eu",
+      "type": "option",
+      "nr": "E.3",
+      "value": {
+        "strf": "%d.%m.%Y"
+      },
+      "position": [
+        20,
+        267
+      ],
+      "section": "three",
+      "selector": "currency"
+    },
+    {
+      "name": "format_types__date__short",
+      "type": "option",
+      "nr": "E.4",
+      "value": {
+        "strf": "%B %d"
+      },
+      "position": [
+        -1,
+        -1
+      ],
+      "section": "all",
+      "selector": "currency"
+    },
+    {
+      "name": "format_types__date__default",
+      "type": "option",
+      "nr": "E.5",
+      "value": {
+        "strf": "%B %d, %Y"
+      },
+      "position": [
+        408,
+        325
+      ],
+      "section": "all",
+      "selector": "currency"
+    },
+    {
+      "name": "format_types__date__default",
+      "type": "option",
+      "nr": "E.5",
+      "value": {
+        "strf": "%B %d, %Y"
+      },
+      "position": [
+        482,
+        325
+      ],
+      "section": "all",
+      "selector": "currency"
+    },
+    {
+      "name": "format_types__date__long",
+      "type": "option",
+      "nr": "E.6",
+      "value": {
+        "strf": "%A %B %d %Y %I:%M%P UTC"
+      },
+      "position": [
+        332,
+        575
+      ],
+      "section": "all",
+      "selector": "currency"
+    },
+    {
+      "name": "format_types__date__year",
+      "type": "option",
+      "nr": "E.7",
+      "value": {
+        "strf": "%Y"
+      },
+      "position": [
+        -1,
+        -1
+      ],
+      "section": "all",
+      "selector": "currency"
+    },
+    {
+      "name": "sections__nine__left_headline",
+      "type": "option",
+      "nr": "F.1",
+      "value": {
+        "content": null,
+        "struct": "<b><<--a-->></b>",
+        "assigns": [
+          {
+            "value": "obj__text__footer__left",
+            "format": null
+          }
+        ]
+      },
+      "position": [
+        30,
+        766
+      ],
+      "section": "footer",
+      "selector": "footer"
+    },
+    {
+      "name": "sections__nine__left_one",
+      "type": "option",
+      "nr": "F.2",
+      "value": {
+        "content": null,
+        "struct": "<<--a-->>",
+        "assigns": [
+          {
+            "value": "payload__from__address__name",
+            "format": null
+          }
+        ]
+      },
+      "position": [
+        30,
+        776
+      ],
+      "section": "footer",
+      "selector": "footer"
+    },
+    {
+      "name": "sections__nine__left_two",
+      "type": "option",
+      "nr": "F.3",
+      "value": {
+        "content": null,
+        "struct": "<<--a-->>",
+        "assigns": [
+          {
+            "value": "payload__from__address__street",
+            "format": null
+          }
+        ]
+      },
+      "position": [
+        30,
+        786
+      ],
+      "section": "footer",
+      "selector": "footer"
+    },
+    {
+      "name": "sections__nine__left_three",
+      "type": "option",
+      "nr": "F.4",
+      "value": {
+        "content": null,
+        "struct": "<<--a-->>",
+        "assigns": [
+          {
+            "value": "payload__from__address__city",
+            "format": null
+          }
+        ]
+      },
+      "position": [
+        30,
+        796
+      ],
+      "section": "footer",
+      "selector": "footer"
+    },
+    {
+      "name": "sections__nine__left_four",
+      "type": "option",
+      "nr": "F.5",
+      "value": {
+        "content": null,
+        "struct": "<<--a-->>",
+        "assigns": [
+          {
+            "value": "payload__from__address__country",
+            "format": null
+          }
+        ]
+      },
+      "position": [
+        30,
+        806
+      ],
+      "section": "footer",
+      "selector": "footer"
+    },
+    {
+      "name": "sections__nine__center_headline",
+      "type": "option",
+      "nr": "F.6",
+      "value": {
+        "content": null,
+        "struct": "<b><<--a-->></b>",
+        "assigns": [
+          {
+            "value": "obj__text__footer__center",
+            "format": null
+          }
+        ]
+      },
+      "position": [
+        185,
+        766
+      ],
+      "section": "footer",
+      "selector": "footer-center"
+    },
+    {
+      "name": "sections__nine__center_one",
+      "type": "option",
+      "nr": "F.7",
+      "value": {
+        "content": null,
+        "struct": "<<--a-->>",
+        "assigns": [
+          {
+            "value": "payload__from__bank__name",
+            "format": null
+          }
+        ]
+      },
+      "position": [
+        185,
+        776
+      ],
+      "section": "footer",
+      "selector": "footer-center"
+    },
+    {
+      "name": "sections__nine__center_two",
+      "type": "option",
+      "nr": "F.8",
+      "value": {
+        "content": null,
+        "struct": "<<--a-->>",
+        "assigns": [
+          {
+            "value": "payload__from__bank__iban",
+            "format": null
+          }
+        ]
+      },
+      "position": [
+        185,
+        786
+      ],
+      "section": "footer",
+      "selector": "footer-center"
+    },
+    {
+      "name": "sections__nine__center_three",
+      "type": "option",
+      "nr": "F.9",
+      "value": {
+        "content": null,
+        "struct": "<<--a-->>",
+        "assigns": [
+          {
+            "value": "payload__from__bank__bic",
+            "format": null
+          }
+        ]
+      },
+      "position": [
+        185,
+        796
+      ],
+      "section": "footer",
+      "selector": "footer-center"
+    },
+    {
+      "name": "sections__nine__center_four",
+      "type": "option",
+      "nr": "F.10",
+      "value": {
+        "content": null,
+        "struct": "<b><<--a-->> <<--b-->></b>",
+        "assigns": [
+          {
+            "value": "obj__text__tax_id",
+            "format": null
+          },
+          {
+            "value": "payload__from__tax_id",
+            "format": null
+          }
+        ]
+      },
+      "position": [
+        185,
+        806
+      ],
+      "section": "footer",
+      "selector": "footer-center"
+    },
+    {
+      "name": "sections__nine__right_headline",
+      "type": "option",
+      "nr": "F.11",
+      "value": {
+        "content": null,
+        "struct": "<b><<--a-->></b>",
+        "assigns": [
+          {
+            "value": "obj__text__footer__right",
+            "format": null
+          }
+        ]
+      },
+      "position": [
+        410,
+        766
+      ],
+      "section": "footer",
+      "selector": "footer-right"
+    },
+    {
+      "name": "sections__nine__right_one",
+      "type": "option",
+      "nr": "F.12",
+      "value": {
+        "content": null,
+        "struct": "<<--a-->> <<--b-->>",
+        "assigns": [
+          {
+            "value": "obj__text__phone",
+            "format": null
+          },
+          {
+            "value": "payload__from__contact__phone",
+            "format": null
+          }
+        ]
+      },
+      "position": [
+        410,
+        776
+      ],
+      "section": "footer",
+      "selector": "footer-right"
+    },
+    {
+      "name": "sections__nine__right_two",
+      "type": "option",
+      "nr": "F.13",
+      "value": {
+        "content": null,
+        "struct": "<<--a-->> <<--b-->>",
+        "assigns": [
+          {
+            "value": "obj__text__mobile",
+            "format": null
+          },
+          {
+            "value": "payload__from__contact__mobile",
+            "format": null
+          }
+        ]
+      },
+      "position": [
+        410,
+        786
+      ],
+      "section": "footer",
+      "selector": "footer-right"
+    },
+    {
+      "name": "sections__nine__right_three",
+      "type": "option",
+      "nr": "F.14",
+      "value": {
+        "content": null,
+        "struct": "<<--a-->> <<--b-->>",
+        "assigns": [
+          {
+            "value": "obj__text__email",
+            "format": null
+          },
+          {
+            "value": "payload__from__contact__email",
+            "format": null
+          }
+        ]
+      },
+      "position": [
+        410,
+        796
+      ],
+      "section": "footer",
+      "selector": "footer-right"
+    },
+    {
+      "name": "sections__nine__right_four",
+      "type": "option",
+      "nr": "F.15",
+      "value": {
+        "content": null,
+        "struct": "<<--a-->> <<--b-->>",
+        "assigns": [
+          {
+            "value": "obj__text__website",
+            "format": null
+          },
+          {
+            "value": "payload__from__contact__website",
+            "format": null
+          }
+        ]
+      },
+      "position": [
+        410,
+        806
+      ],
+      "section": "footer",
+      "selector": "footer-right"
+    },
+    {
+      "name": "sections__eight__snippet",
+      "type": "option",
+      "nr": "F.16",
+      "value": {
+        "content": null,
+        "struct": "Thank you for using <<--a-->> Services.\n\n\nSincerely,\n\n<<--a-->>",
+        "assigns": [
+          {
+            "value": "payload__from__address__name",
+            "format": null
+          }
+        ]
+      },
+      "position": [
+        30,
+        615
+      ],
+      "section": "eight",
+      "selector": "snippet"
+    },
+    {
+      "name": "sections__seven__snippet",
+      "type": "option",
+      "nr": "F.17",
+      "value": {
+        "content": null,
+        "struct": " We will debit your bank account for <b><<--a-->></b> on <<--b-->>. Please ensure you have sufficient funds in your bank account to avoid service disruptions.",
+        "assigns": [
+          {
+            "value": "payload__items__total_gross",
+            "format": "obj__format_types__currency__long"
+          },
+          {
+            "value": "payload__date__billing",
+            "format": "obj__format_types__date__long"
+          }
+        ]
+      },
+      "position": [
+        30,
+        578
+      ],
+      "section": "seven",
+      "selector": "snippet"
+    },
+    {
+      "name": "sections__six__sub_total",
+      "type": "option",
+      "nr": "F.18",
+      "value": {
+        "content": null,
+        "struct": "<<--a-->>",
+        "assigns": [
+          {
+            "value": "payload__items__sub_total",
+            "format": "obj__format_types__currency__short"
+          }
+        ]
+      },
+      "position": [
+        345,
+        463
+      ],
+      "section": "six",
+      "selector": "sub_total"
+    },
+    {
+      "name": "sections__six__shipping",
+      "type": "option",
+      "nr": "F.19",
+      "value": {
+        "content": null,
+        "struct": "<<--a-->>",
+        "assigns": [
+          {
+            "value": "payload__items__shipping_fee",
+            "format": "obj__format_types__currency__short"
+          }
+        ]
+      },
+      "position": [
+        345,
+        485
+      ],
+      "section": "six",
+      "selector": "shipping"
+    },
+    {
+      "name": "sections__six__total_net",
+      "type": "option",
+      "nr": "F.20",
+      "value": {
+        "content": null,
+        "struct": "<b><<--a-->><b> ",
+        "assigns": [
+          {
+            "value": "payload__items__total_net",
+            "format": "obj__format_types__currency__short"
+          }
+        ]
+      },
+      "position": [
+        345,
+        506
+      ],
+      "section": "six",
+      "selector": "total_net"
+    },
+    {
+      "name": "sections__six__vat",
+      "type": "option",
+      "nr": "F.21",
+      "value": {
+        "content": null,
+        "struct": "<<--a-->>",
+        "assigns": [
+          {
+            "value": "payload__items__vat",
+            "format": "obj__format_types__currency__short"
+          }
+        ]
+      },
+      "position": [
+        345,
+        528
+      ],
+      "section": "six",
+      "selector": "vat"
+    },
+    {
+      "name": "sections__six__total_gross",
+      "type": "option",
+      "nr": "F.22",
+      "value": {
+        "content": null,
+        "struct": "<b><<--a-->></b>",
+        "assigns": [
+          {
+            "value": "payload__items__total_gross",
+            "format": "obj__format_types__currency__short"
+          }
+        ]
+      },
+      "position": [
+        345,
+        550
+      ],
+      "section": "six",
+      "selector": "total_gross"
+    },
+    {
+      "name": "sections__four__snippet",
+      "type": "option",
+      "nr": "F.23",
+      "value": {
+        "content": null,
+        "struct": "Greetings from <<--a-->>,\n\nThis is a <u>demo invoice</u> for usage of <<--a-->> services for billing period <b><<--b-->> - <<--c-->></b>.",
+        "assigns": [
+          {
+            "value": "payload__from__address__name",
+            "format": null
+          },
+          {
+            "value": "payload__date__period__from",
+            "format": "obj__format_types__date__short"
+          },
+          {
+            "value": "payload__date__period__to",
+            "format": "obj__format_types__date__default"
+          }
+        ]
+      },
+      "position": [
+        30,
+        305
+      ],
+      "section": "four",
+      "selector": "snippet"
+    },
+    {
+      "name": "sections__three__qr_code",
+      "type": "option",
+      "nr": "F.24",
+      "value": {
+        "content": null,
+        "struct": "<<--a-->>",
+        "assigns": [
+          {
+            "value": "payload__meta__qr_code",
+            "format": null
+          }
+        ]
+      },
+      "position": [
+        525,
+        275
+      ],
+      "section": "three",
+      "selector": "qr_code"
+    },
+    {
+      "name": "sections__three__date",
+      "type": "option",
+      "nr": "F.25",
+      "value": {
+        "content": null,
+        "struct": "<<--a-->>",
+        "assigns": [
+          {
+            "value": "payload__date__invoice",
+            "format": "obj__format_types__date__eu"
+          }
+        ]
+      },
+      "position": [
+        30,
+        267
+      ],
+      "section": "three",
+      "selector": "date"
+    },
+    {
+      "name": "sections__three__headline",
+      "type": "option",
+      "nr": "F.26",
+      "value": {
+        "content": null,
+        "struct": "<b><<--a-->> | <<--b-->></b>",
+        "assigns": [
+          {
+            "value": "obj__text__invoice",
+            "format": null
+          },
+          {
+            "value": "payload__meta__id",
+            "format": null
+          }
+        ]
+      },
+      "position": [
+        30,
+        279
+      ],
+      "section": "three",
+      "selector": "snippet"
+    },
+    {
+      "name": "sections__two__small",
+      "type": "option",
+      "nr": "F.27",
+      "value": {
+        "content": null,
+        "struct": "<u><<--a-->> - <<--b-->> - <<--c-->></u>",
+        "assigns": [
+          {
+            "value": "payload__from__address__name",
+            "format": null
+          },
+          {
+            "value": "payload__from__address__street",
+            "format": null
+          },
+          {
+            "value": "payload__from__address__city",
+            "format": null
+          }
+        ]
+      },
+      "position": [
+        30,
+        141
+      ],
+      "section": "two",
+      "selector": "snippet"
+    },
+    {
+      "name": "sections__two__to",
+      "type": "option",
+      "nr": "F.28",
+      "value": {
+        "content": null,
+        "struct": "\t\t<b><<--a-->></b>\n<<--b-->>\n<<--c-->>\nTax ID: <<--d-->>",
+        "assigns": [
+          {
+            "value": "payload__to__address__name",
+            "format": null
+          },
+          {
+            "value": "payload__to__address__street",
+            "format": null
+          },
+          {
+            "value": "payload__to__address__city",
+            "format": null
+          },
+          {
+            "value": "payload__to__tax_id",
+            "format": null
+          }
+        ]
+      },
+      "position": [
+        30,
+        156
+      ],
+      "section": "two",
+      "selector": "snippet"
+    },
+    {
+      "name": "sections__one__name",
+      "type": "option",
+      "nr": "F.29",
+      "value": {
+        "content": null,
+        "struct": "<b><<--a-->></b>\n<<--b-->>\n<<--c-->>\n<<--d-->>",
+        "assigns": [
+          {
+            "value": "payload__from__address__name",
+            "format": null
+          },
+          {
+            "value": "payload__from__address__phrase",
+            "format": null
+          },
+          {
+            "value": "payload__from__address__city",
+            "format": null
+          },
+          {
+            "value": "payload__from__address__country",
+            "format": null
+          }
+        ]
+      },
+      "position": [
+        385,
+        45
+      ],
+      "section": "header",
+      "selector": "snippet"
+    },
+    {
+      "name": "headline__grid__x",
+      "type": "option",
+      "nr": "G.1",
+      "value": 3,
+      "position": [
+        30,
+        20
+      ],
+      "section": "header",
+      "selector": "headline"
+    },
+    {
+      "name": "headline__grid__y",
+      "type": "option",
+      "nr": "G.2",
+      "value": 1,
+      "position": [
+        30,
+        30
+      ],
+      "section": "header",
+      "selector": "headline"
+    },
+    {
+      "name": "headline__default__content",
+      "type": "option",
+      "nr": "G.3",
+      "value": "",
+      "position": [
+        30,
+        40
+      ],
+      "section": "header",
+      "selector": "headline"
+    },
+    {
+      "name": "headline__default__style",
+      "type": "option",
+      "nr": "G.4",
+      "value": ":style__document__font_size__small",
+      "position": [
+        30,
+        50
+      ],
+      "section": "header",
+      "selector": "headline"
+    },
+    {
+      "name": "headline__default__align",
+      "type": "option",
+      "nr": "G.5",
+      "value": ":right",
+      "position": [
+        20,
+        40
+      ],
+      "section": "header",
+      "selector": "headline"
+    },
+    {
+      "name": "headline__default__text_color",
+      "type": "option",
+      "nr": "G.6",
+      "value": ":style__colors__header__default",
+      "position": [
+        20,
+        50
+      ],
+      "section": "header",
+      "selector": "snippet"
+    },
+    {
+      "name": "headline__default__borders",
+      "type": "option",
+      "nr": "G.7",
+      "value": [
+        "left"
+      ],
+      "position": [
+        20,
+        60
+      ],
+      "section": "header",
+      "selector": "headline"
+    },
+    {
+      "name": "headline__default__border_width",
+      "type": "option",
+      "nr": "G.8",
+      "value": 2,
+      "position": [
+        30,
+        60
+      ],
+      "section": "header",
+      "selector": "headline"
+    },
+    {
+      "name": "headline__image__src",
+      "type": "option",
+      "nr": "G.9",
+      "value": "",
+      "position": [
+        20,
+        70
+      ],
+      "section": "header",
+      "selector": "logo"
+    },
+    {
+      "name": "headline__image__colspan",
+      "type": "option",
+      "nr": "G.10",
+      "value": 2,
+      "position": [
+        30,
+        70
+      ],
+      "section": "header",
+      "selector": "logo"
+    },
+    {
+      "name": "headline__image__rowspan",
+      "type": "option",
+      "nr": "G.11",
+      "value": 2,
+      "position": [
+        20,
+        80
+      ],
+      "section": "header",
+      "selector": "logo"
+    },
+    {
+      "name": "headline__image__grid",
+      "type": "option",
+      "nr": "G.12",
+      "value": [
+        0,
+        0
+      ],
+      "position": [
+        30,
+        80
+      ],
+      "section": "header",
+      "selector": "logo"
+    },
+    {
+      "name": "headline__image__borders",
+      "type": "option",
+      "nr": "G.13",
+      "value": [
+
+      ],
+      "position": [
+        20,
+        90
+      ],
+      "section": "header",
+      "selector": "logo"
+    },
+    {
+      "name": "headline__image__fit",
+      "type": "option",
+      "nr": "G.14",
+      "value": [
+        160,
+        100
+      ],
+      "position": [
+        30,
+        90
+      ],
+      "section": "header",
+      "selector": "logo"
+    },
+    {
+      "name": "headline__image__border_width",
+      "type": "option",
+      "nr": "G.15",
+      "value": 0,
+      "position": [
+        20,
+        100
+      ],
+      "section": "header",
+      "selector": "logo"
+    },
+    {
+      "name": "headline__texts",
+      "type": "option",
+      "nr": "G.16",
+      "value": [
+        {
+          "content": "sections__one__name__content",
+          "grid": [
+            2,
+            0
+          ],
+          "style": "style__document__font_size__h1",
+          "align": "right",
+          "text_color": "style__colors__header__default",
+          "borders": [
+
+          ],
+          "border_width": 0
+        }
+      ],
+      "position": [
+        30,
+        100
+      ],
+      "section": "header",
+      "selector": "snippet"
+    },
+    {
+      "name": "footer__left__one",
+      "type": "option",
+      "nr": "H.1",
+      "value": ":sections__nine__left_one__content",
+      "position": [
+        20,
+        776
+      ],
+      "section": "footer",
+      "selector": "footer-left"
+    },
+    {
+      "name": "footer__left__two",
+      "type": "option",
+      "nr": "H.2",
+      "value": ":sections__nine__left_two__content",
+      "position": [
+        20,
+        786
+      ],
+      "section": "footer",
+      "selector": "footer-left"
+    },
+    {
+      "name": "footer__left__three",
+      "type": "option",
+      "nr": "H.3",
+      "value": ":sections__nine__left_three__content",
+      "position": [
+        20,
+        796
+      ],
+      "section": "footer",
+      "selector": "footer-left"
+    },
+    {
+      "name": "footer__left__four",
+      "type": "option",
+      "nr": "H.4",
+      "value": ":sections__nine__left_four__content",
+      "position": [
+        20,
+        806
+      ],
+      "section": "footer",
+      "selector": "footer-left"
+    },
+    {
+      "name": "footer__center__one",
+      "type": "option",
+      "nr": "H.5",
+      "value": ":sections__nine__center_one__content",
+      "position": [
+        175,
+        776
+      ],
+      "section": "footer",
+      "selector": "footer-center"
+    },
+    {
+      "name": "footer__center__two",
+      "type": "option",
+      "nr": "H.6",
+      "value": ":sections__nine__center_two__content",
+      "position": [
+        175,
+        786
+      ],
+      "section": "footer",
+      "selector": "footer-center"
+    },
+    {
+      "name": "footer__center__three",
+      "type": "option",
+      "nr": "H.7",
+      "value": ":sections__nine__center_three__content",
+      "position": [
+        175,
+        796
+      ],
+      "section": "footer",
+      "selector": "footer-center"
+    },
+    {
+      "name": "footer__center__four",
+      "type": "option",
+      "nr": "H.8",
+      "value": ":sections__nine__center_four__content",
+      "position": [
+        175,
+        806
+      ],
+      "section": "footer",
+      "selector": "footer-center"
+    },
+    {
+      "name": "footer__right__one",
+      "type": "option",
+      "nr": "H.9",
+      "value": ":sections__nine__right_one__content",
+      "position": [
+        400,
+        776
+      ],
+      "section": "footer",
+      "selector": "footer-right"
+    },
+    {
+      "name": "footer__right__two",
+      "type": "option",
+      "nr": "H.10",
+      "value": ":sections__nine__right_two__content",
+      "position": [
+        400,
+        786
+      ],
+      "section": "footer",
+      "selector": "footer-right"
+    },
+    {
+      "name": "footer__right__three",
+      "type": "option",
+      "nr": "H.11",
+      "value": ":sections__nine__right_three__content",
+      "position": [
+        400,
+        796
+      ],
+      "section": "footer",
+      "selector": "footer-right"
+    },
+    {
+      "name": "footer__right__four",
+      "type": "option",
+      "nr": "H.12",
+      "value": ":sections__nine__right_four__content",
+      "position": [
+        400,
+        806
+      ],
+      "section": "footer",
+      "selector": "footer-right"
+    },
+    {
+      "name": "meta >> id",
+      "type": "payload",
+      "nr": "nr",
+      "value": "S8363649",
+      "position": [
+        135,
+        279
+      ],
+      "section": "three",
+      "selector": "payloads"
+    },
+    {
+      "name": "meta >> qr_code",
+      "type": "payload",
+      "nr": "nr",
+      "value": "https://murray.writeinvoice.com/api/S8363649",
+      "position": [
+        575,
+        255
+      ],
+      "section": "three",
+      "selector": "payloads"
+    },
+    {
+      "name": "date >> period >> from",
+      "type": "payload",
+      "nr": "nr",
+      "value": 885423600,
+      "position": [
+        418,
+        325
+      ],
+      "section": "four",
+      "selector": "payloads"
+    },
+    {
+      "name": "date >> period >> to",
+      "type": "payload",
+      "nr": "nr",
+      "value": 885423600,
+      "position": [
+        492,
+        325
+      ],
+      "section": "four",
+      "selector": "payloads"
+    },
+    {
+      "name": "date >> invoice",
+      "type": "payload",
+      "nr": "nr",
+      "value": 886719600,
+      "position": [
+        135,
+        269
+      ],
+      "section": "three",
+      "selector": "payloads"
+    },
+    {
+      "name": "date >> billing",
+      "type": "payload",
+      "nr": "nr",
+      "value": 888015600,
+      "position": [
+        342,
+        575
+      ],
+      "section": "seven",
+      "selector": "payloads"
+    },
+    {
+      "name": "from >> address >> name",
+      "type": "payload",
+      "nr": "nr",
+      "value": "Balin",
+      "position": [
+        300,
+        141
+      ],
+      "section": "all",
+      "selector": "payloads"
+    },
+    {
+      "name": "from >> address >> name",
+      "type": "payload",
+      "nr": "nr",
+      "value": "Balin",
+      "position": [
+        570,
+        46
+      ],
+      "section": "all",
+      "selector": "payloads"
+    },
+    {
+      "name": "from >> address >> name",
+      "type": "payload",
+      "nr": "nr",
+      "value": "Balin",
+      "position": [
+        200,
+        311
+      ],
+      "section": "all",
+      "selector": "payloads"
+    },
+    {
+      "name": "from >> address >> name",
+      "type": "payload",
+      "nr": "nr",
+      "value": "Balin",
+      "position": [
+        225,
+        325
+      ],
+      "section": "all",
+      "selector": "payloads"
+    },
+    {
+      "name": "from >> address >> name",
+      "type": "payload",
+      "nr": "nr",
+      "value": "Balin",
+      "position": [
+        160,
+        608
+      ],
+      "section": "all",
+      "selector": "payloads"
+    },
+    {
+      "name": "from >> address >> name",
+      "type": "payload",
+      "nr": "nr",
+      "value": "Balin",
+      "position": [
+        110,
+        678
+      ],
+      "section": "all",
+      "selector": "payloads"
+    },
+    {
+      "name": "from >> address >> name",
+      "type": "payload",
+      "nr": "nr",
+      "value": "Balin",
+      "position": [
+        145,
+        776
+      ],
+      "section": "all",
+      "selector": "payloads"
+    },
+    {
+      "name": "from >> address >> phrase",
+      "type": "payload",
+      "nr": "nr",
+      "value": "Fully-configurable systematic function",
+      "position": [
+        570,
+        56
+      ],
+      "section": "header",
+      "selector": "payloads"
+    },
+    {
+      "name": "from >> address >> street",
+      "type": "payload",
+      "nr": "nr",
+      "value": "209 Markus Walks",
+      "position": [
+        310,
+        141
+      ],
+      "section": "all",
+      "selector": "payloads"
+    },
+    {
+      "name": "from >> address >> street",
+      "type": "payload",
+      "nr": "nr",
+      "value": "209 Markus Walks",
+      "position": [
+        145,
+        786
+      ],
+      "section": "all",
+      "selector": "payloads"
+    },
+    {
+      "name": "from >> address >> city",
+      "type": "payload",
+      "nr": "nr",
+      "value": "94799-9873 New Alex",
+      "position": [
+        145,
+        796
+      ],
+      "section": "all",
+      "selector": "payloads"
+    },
+    {
+      "name": "from >> address >> city",
+      "type": "payload",
+      "nr": "nr",
+      "value": "94799-9873 New Alex",
+      "position": [
+        570,
+        66
+      ],
+      "section": "all",
+      "selector": "payloads"
+    },
+    {
+      "name": "from >> address >> city",
+      "type": "payload",
+      "nr": "nr",
+      "value": "94799-9873 New Alex",
+      "position": [
+        320,
+        141
+      ],
+      "section": "all",
+      "selector": "payloads"
+    },
+    {
+      "name": "from >> address >> country",
+      "type": "payload",
+      "nr": "nr",
+      "value": "United States of America",
+      "position": [
+        570,
+        76
+      ],
+      "section": "all",
+      "selector": "payloads"
+    },
+    {
+      "name": "from >> address >> country",
+      "type": "payload",
+      "nr": "nr",
+      "value": "United States of America",
+      "position": [
+        145,
+        806
+      ],
+      "section": "all",
+      "selector": "payloads"
+    },
+    {
+      "name": "from >> bank >> name",
+      "type": "payload",
+      "nr": "nr",
+      "value": "Hodkiewicz Group",
+      "position": [
+        365,
+        776
+      ],
+      "section": "footer",
+      "selector": "payloads"
+    },
+    {
+      "name": "from >> bank >> iban",
+      "type": "payload",
+      "nr": "nr",
+      "value": "GB75KODQ94217971207196",
+      "position": [
+        365,
+        786
+      ],
+      "section": "footer",
+      "selector": "payloads"
+    },
+    {
+      "name": "from >> bank >> bic",
+      "type": "payload",
+      "nr": "nr",
+      "value": "BKCHGB2UXXX",
+      "position": [
+        365,
+        796
+      ],
+      "section": "footer",
+      "selector": "payloads"
+    },
+    {
+      "name": "from >> contact >> phone",
+      "type": "payload",
+      "nr": "nr",
+      "value": "1-399-288-0072 x89236",
+      "position": [
+        575,
+        776
+      ],
+      "section": "footer",
+      "selector": "payloads"
+    },
+    {
+      "name": "from >> contact >> mobile",
+      "type": "payload",
+      "nr": "nr",
+      "value": "1-808-316-7962 x084",
+      "position": [
+        575,
+        786
+      ],
+      "section": "footer",
+      "selector": "payloads"
+    },
+    {
+      "name": "from >> contact >> email",
+      "type": "payload",
+      "nr": "nr",
+      "value": "oma.toy@writeinvoice.com",
+      "position": [
+        575,
+        796
+      ],
+      "section": "footer",
+      "selector": "payloads"
+    },
+    {
+      "name": "from >> contact >> website",
+      "type": "payload",
+      "nr": "nr",
+      "value": "murray.writeinvoice.com",
+      "position": [
+        575,
+        806
+      ],
+      "section": "footer",
+      "selector": "payloads"
+    },
+    {
+      "name": "from >> tax_id",
+      "type": "payload",
+      "nr": "nr",
+      "value": "109-79-0901",
+      "position": [
+        365,
+        806
+      ],
+      "section": "footer",
+      "selector": "payloads"
+    },
+    {
+      "name": "to >> address >> name",
+      "type": "payload",
+      "nr": "nr",
+      "value": "Rose Tico",
+      "position": [
+        200,
+        156
+      ],
+      "section": "two",
+      "selector": "payloads"
+    },
+    {
+      "name": "to >> address >> street",
+      "type": "payload",
+      "nr": "nr",
+      "value": "11974 Veum Island",
+      "position": [
+        200,
+        168
+      ],
+      "section": "two",
+      "selector": "payloads"
+    },
+    {
+      "name": "to >> address >> city",
+      "type": "payload",
+      "nr": "nr",
+      "value": "55098 Port Joeshire",
+      "position": [
+        200,
+        179
+      ],
+      "section": "two",
+      "selector": "payloads"
+    },
+    {
+      "name": "to >> address >> country",
+      "type": "payload",
+      "nr": "nr",
+      "value": "Mustafar",
+      "position": [
+        -1,
+        -1
+      ],
+      "section": "two",
+      "selector": "payloads"
+    },
+    {
+      "name": "to >> tax_id",
+      "type": "payload",
+      "nr": "nr",
+      "value": "631-27-8818",
+      "position": [
+        200,
+        190
+      ],
+      "section": "two",
+      "selector": "payloads"
+    },
+    {
+      "name": "items >> articles",
+      "type": "payload",
+      "nr": "nr",
+      "value": [
+        {
+          "id": "276-03-9155",
+          "name": "Aerodynamic Cotton Coat",
+          "pieces": 3,
+          "single": 80.99,
+          "total": 242.97
+        },
+        {
+          "id": "453-63-3074",
+          "name": "Aerodynamic Leather Shoes",
+          "pieces": 4,
+          "single": 74.6,
+          "total": 298.4
+        }
+      ],
+      "position": [
+        575,
+        396
+      ],
+      "section": "five",
+      "selector": "payloads"
+    },
+    {
+      "name": "items >> articles",
+      "type": "payload",
+      "nr": "nr",
+      "value": [
+        {
+          "id": "276-03-9155",
+          "name": "Aerodynamic Cotton Coat",
+          "pieces": 3,
+          "single": 80.99,
+          "total": 242.97
+        },
+        {
+          "id": "453-63-3074",
+          "name": "Aerodynamic Leather Shoes",
+          "pieces": 4,
+          "single": 74.6,
+          "total": 298.4
+        }
+      ],
+      "position": [
+        575,
+        430
+      ],
+      "section": "five",
+      "selector": "payloads"
+    },
+    {
+      "name": "items >> sub_total",
+      "type": "payload",
+      "nr": "nr",
+      "value": 541.37,
+      "position": [
+        575,
+        463
+      ],
+      "section": "six",
+      "selector": "payloads"
+    },
+    {
+      "name": "items >> shipping_fee",
+      "type": "payload",
+      "nr": "nr",
+      "value": 3.39,
+      "position": [
+        575,
+        485
+      ],
+      "section": "six",
+      "selector": "payloads"
+    },
+    {
+      "name": "items >> total_net",
+      "type": "payload",
+      "nr": "nr",
+      "value": 544.76,
+      "position": [
+        575,
+        506
+      ],
+      "section": "six",
+      "selector": "payloads"
+    },
+    {
+      "name": "items >> vat",
+      "type": "payload",
+      "nr": "nr",
+      "value": 103.5,
+      "position": [
+        575,
+        528
+      ],
+      "section": "six",
+      "selector": "payloads"
+    },
+    {
+      "name": "items >> total_gross",
+      "type": "payload",
+      "nr": "nr",
+      "value": 648.26,
+      "position": [
+        575,
+        550
+      ],
+      "section": "six",
+      "selector": "payloads"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+<script>
+  window.onload = () => {
+    invoiceLoadingTime = {};
+    invoiceLoadingTime['to'] = window.performance.timing.domContentLoadedEventEnd;
+    invoiceLoadingTime['from'] = window.performance.timing.navigationStart;
+    invoiceLoadingTime['time'] = invoiceLoadingTime['to'] - invoiceLoadingTime['from'];
+    console.log( 'Page load time was ' + invoiceLoadingTime['time'] + ' ms' );
+    total = document.getElementsByTagName( '*' ).length;
+
+    [
+      [ 'invoiceStatus', 'loading..', 'Ready!' ],
+      [ 'invoiceLoadingTime', 'waiting..', invoiceLoadingTime['time'] + ' ms.' ],
+      [ 'invoiceDomElements', 'waiting..', total + ' Elements.' ]
+    ].forEach( ( d )  => {
+      element =  document.getElementById( d[ 0 ] );
+      if( typeof( element ) != 'undefined' && element != null ) {
+        str = element.innerText;
+        str = str.replace( d[ 1 ], d[ 2 ] );
+        element.innerText = str;
+      }
+    } )
+  }
+</script>

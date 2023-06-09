@@ -1,0 +1,90 @@
+{
+  "document": {
+    "metadata": {
+      "title": "Balin",
+      "author": "This is a Demo Document.",
+      "subject": "Ecommerce Revenue"
+    },
+    "encrypt": {
+      "user_password": "Uxr7jivvJwS7xdvpMh68Bqd5YtaGsWbynuKLwZLSde",
+      "owner_password": "Uxr7jivvJwS7xdvpMh68Bqd5YtaGsWbynuKLwZLSde",
+      "permissions": {
+        "print_document": true,
+        "modify_contents": false,
+        "copy_contents": false,
+        "modify_annotations": false
+      }
+    }
+  },
+  "invoices": [
+    {
+      "meta": {
+        "id": "S8363649",
+        "qr_code": "https://murray.writeinvoice.com/api/S8363649",
+        "headline": "S8363649 | Rose Tico",
+        "group": "1998-W08"
+      },
+      "date": {
+        "period": {
+          "from": 885423600,
+          "to": 885423600
+        },
+        "invoice": 886719600,
+        "billing": 888015600
+      },
+      "from": {
+        "address": {
+          "name": "Balin",
+          "phrase": "Fully-configurable systematic function",
+          "street": "209 Markus Walks",
+          "city": "94799-9873 New Alex",
+          "country": "United States of America"
+        },
+        "bank": {
+          "name": "Hodkiewicz Group",
+          "iban": "GB75KODQ94217971207196",
+          "bic": "BKCHGB2UXXX"
+        },
+        "contact": {
+          "phone": "1-399-288-0072 x89236",
+          "mobile": "1-808-316-7962 x084",
+          "email": "oma.toy@writeinvoice.com",
+          "website": "murray.writeinvoice.com"
+        },
+        "tax_id": "109-79-0901"
+      },
+      "to": {
+        "address": {
+          "name": "Rose Tico",
+          "street": "11974 Veum Island",
+          "city": "55098 Port Joeshire",
+          "country": "Mustafar"
+        },
+        "tax_id": "631-27-8818"
+      },
+      "items": {
+        "articles": [
+          {
+            "id": "276-03-9155",
+            "name": "Aerodynamic Cotton Coat",
+            "pieces": 3,
+            "single": 80.99,
+            "total": 242.97
+          },
+          {
+            "id": "453-63-3074",
+            "name": "Aerodynamic Leather Shoes",
+            "pieces": 4,
+            "single": 74.6,
+            "total": 298.4
+          }
+        ],
+        "sub_total": 541.37,
+        "shipping_fee": 3.39,
+        "total_net": 544.76,
+        "vat": 103.5,
+        "total_gross": 648.26
+      }
+    }
+  ]
+}
