@@ -10,9 +10,7 @@
 ## Source Code
 
 ```bash
-npm init
-npm install easymina
-node yourProject.js
+...
 ```
 
 ```nodejs
