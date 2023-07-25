@@ -1,0 +1,434 @@
+{
+    "keyPaths": {
+        "meta__name": {
+            "description": {
+                "en": "Here, you can set the project name, which will be used as the file name for newly generated keys."
+            },
+            "note": {
+                "en": "To change the file name, you need to modify the file name structure."
+            },
+            "reference": [],
+            "categories": [
+                "createEnvironment"
+            ],
+            "examples": [
+                {
+                    "template": null,
+                    "description": {
+                        "en": "Change the project name to 'easy-mina'."
+                    },
+                    "self": "easy-mina"
+                }
+            ]
+        },
+        "environment__addresses__splitter": {
+            "description": {
+                "en": "Here you can switch between \"__\" and \"--\" as splitter in your fileName structure"
+            },
+            "note": {
+                "en": ""
+            },
+            "reference": [],
+            "categories": [
+                "createEnvironment",
+                "deployContract",
+                "interactWithContract",
+                "listenToEvents"
+            ],
+            "examples": [
+                {
+                    "template": null,
+                    "description": {
+                        "en": "Set splitter to \"__\""
+                    },
+                    "self": "__"
+                }
+            ]
+        },
+        "environment__addresses__root": {
+            "description": {
+                "en": "Here, you can set the root folder for your credentials."
+            },
+            "note": {
+                "en": "Note that name needs to start with a \".\" for security reasons."
+            },
+            "reference": [],
+            "categories": [
+                "createEnvironment",
+                "deployContract",
+                "interactWithContract",
+                "listenToEvents"
+            ],
+            "examples": [
+                {
+                    "template": null,
+                    "description": {
+                        "en": ""
+                    },
+                    "self": null
+                }
+            ]
+        },
+        "environment__addresses__deployers__folder": {
+            "description": {
+                "en": "Here, you can set the folder name for your account keys."
+            },
+            "note": {
+                "en": "To change your root folder, go to {{environment__addresses__root}}"
+            },
+            "reference": [
+                "environment__addresses__root",
+                "environment__addresses__contracts__folder"
+            ],
+            "categories": [
+                "createEnvironment",
+                "deployContract",
+                "interactWithContract",
+                "listenToEvents"
+            ],
+            "examples": [
+                {
+                    "template": null,
+                    "description": {
+                        "en": "Change folder name to: {{self}}"
+                    },
+                    "self": "my-keys/"
+                }
+            ]
+        },
+        "environment__addresses__contracts__folder": {
+            "description": {
+                "en": "Here, you can set the folder name for your contract keys."
+            },
+            "note": {
+                "en": "To change your root folder, go to {{environment__addresses__root}}."
+            },
+            "reference": [
+                "environment__addresses__root",
+                "environment__addresses__deployers__folder"
+            ],
+            "categories": [
+                "createEnvironment",
+                "deployContract",
+                "interactWithContract",
+                "listenToEvents"
+            ],
+            "examples": [
+                {
+                    "template": null,
+                    "description": {
+                        "en": "Change folder name to: {{self}}"
+                    },
+                    "self": "my-contracts/"
+                }
+            ]
+        },
+        "environment__workspace__contracts__root": {
+            "description": {
+                "en": "This root folder includes all your smart contracts, in both .ts versions and those compiled through TypeScript."
+            },
+            "note": {
+                "en": ""
+            },
+            "reference": [
+                "environment__workspace__contracts__ts__folder",
+                "environment__workspace__contracts__build__folder"
+            ],
+            "categories": [
+                "createEnvironment",
+                "deployContract",
+                "interactWithContract",
+                "listenToEvents"
+            ],
+            "examples": [
+                {
+                    "template": null,
+                    "description": {
+                        "en": "Change folder name to:"
+                    },
+                    "self": "my-work/"
+                }
+            ]
+        },
+        "environment__workspace__contracts__ts__folder": {
+            "description": {
+                "en": "This folder sets a name where all your developed TypeScript smart contracts will located."
+            },
+            "note": {
+                "en": "Only the files in this folder will be selected for compilation by TypeScript."
+            },
+            "reference": [
+                "environment__workspace__contracts__root",
+                "environment__workspace__contracts__build__folder"
+            ],
+            "categories": [
+                "createEnvironment",
+                "deployContract",
+                "interactWithContract",
+                "listenToEvents"
+            ],
+            "examples": [
+                {
+                    "template": null,
+                    "description": {
+                        "en": "Change name to: {{self}}"
+                    },
+                    "self": "my-smart-contracts/"
+                }
+            ]
+        },
+        "environment__workspace__contracts__build__folder": {
+            "description": {
+                "en": "This folder sets a name for the location of all your automatically compiled TypeScript smart contracts."
+            },
+            "note": {
+                "en": "The compiled smart contracts in this folder are used to deploy a smart contract to the Mina blockchain."
+            },
+            "reference": [
+                "environment__workspace__contracts__root",
+                "environment__workspace__contracts__ts__folder"
+            ],
+            "categories": [
+                "createEnvironment",
+                "deployContract",
+                "interactWithContract",
+                "listenToEvents"
+            ],
+            "examples": [
+                {
+                    "template": null,
+                    "description": {
+                        "en": "Change name to: {{self}}"
+                    },
+                    "self": "ready-to-deploy/"
+                }
+            ]
+        },
+        "network__use": {
+            "description": {
+                "en": "Here you can change the network your are using."
+            },
+            "note": {
+                "en": "Currently, only the 'berkeley' test network is supported"
+            },
+            "reference": [],
+            "categories": [
+                "createEnvironment",
+                "deployContract",
+                "interactWithContract",
+                "listenToEvents"
+            ],
+            "examples": []
+        },
+        "network__berkeley__explorer__transaction": {
+            "description": {
+                "en": "Here, you can change the default explorer for transactions. This is used to generate direct links, which will also be stored in the respective account files."
+            },
+            "note": {
+                "en": "To switch to another network, go to {{network__use}}."
+            },
+            "reference": [
+                "network__use"
+            ],
+            "categories": [
+                "createEnvironment",
+                "deployContract",
+                "interactWithContract",
+                "listenToEvents"
+            ],
+            "examples": []
+        },
+        "network__berkeley__explorer__wallet": {
+            "description": {
+                "en": "Here, you can change the default explorer to show wallet accounts. This is used to generate direct links, which will also be stored in the respective account files."
+            },
+            "note": {
+                "en": "To switch to another network, go to {{network__use}}."
+            },
+            "reference": [
+                "network__use"
+            ],
+            "categories": [
+                "createEnvironment",
+                "deployContract",
+                "interactWithContract",
+                "listenToEvents"
+            ],
+            "examples": []
+        },
+        "network__berkeley__node": {
+            "description": {
+                "en": "Here, the node provider can be set."
+            },
+            "note": {
+                "en": "This node is not used for account queries via snarkyjs; instead, the proxy access is utilized."
+            },
+            "reference": [
+                "network__use"
+            ],
+            "categories": [
+                "createEnvironment",
+                "deployContract",
+                "interactWithContract",
+                "listenToEvents"
+            ],
+            "examples": []
+        },
+        "network__berkeley__nodeProxy": {
+            "description": {
+                "en": "Here, you can change the node URL used to query account balances and similar information, for example."
+            },
+            "note": {
+                "en": "To switch to another network, go to {{network__use}}."
+            },
+            "reference": [
+                "network__use"
+            ],
+            "categories": [
+                "createEnvironment",
+                "deployContract",
+                "interactWithContract",
+                "listenToEvents"
+            ],
+            "examples": []
+        },
+        "network__berkeley__graphQl": {
+            "description": {
+                "en": "Here you can change the GraphQl URL."
+            },
+            "note": {
+                "en": "To switch to another network, go to {{network__use}}."
+            },
+            "reference": [
+                "network__use"
+            ],
+            "categories": [
+                "createEnvironment",
+                "deployContract",
+                "interactWithContract",
+                "listenToEvents"
+            ],
+            "examples": []
+        },
+        "network__berkeley__transaction_fee": {
+            "description": {
+                "en": "Here, you can modify the standard fee. This fee is used to calculate how many interactions with an account are possible without creating new tokens."
+            },
+            "note": {
+                "en": "To switch to another network, go to {{network__use}}."
+            },
+            "reference": [
+                "network__use"
+            ],
+            "categories": [
+                "createEnvironment",
+                "deployContract",
+                "interactWithContract",
+                "listenToEvents"
+            ],
+            "examples": []
+        },
+        "console__messages__accountComment": {
+            "description": {
+                "en": "Here, you can set the message that will be inserted as a comment in each account file. It is intended as a reminder to handle this sensitive data with care."
+            },
+            "note": {
+                "en": ""
+            },
+            "reference": [],
+            "categories": [
+                "createEnvironment",
+                "deployContract",
+                "interactWithContract",
+                "listenToEvents"
+            ],
+            "examples": [
+                {
+                    "template": null,
+                    "description": {
+                        "en": "Change the text to: {{self}}"
+                    },
+                    "self": "Please do not share the contents of this file."
+                }
+            ]
+        },
+        "print__spaces__standard": {
+            "description": {
+                "en": "This splitter can be used to divide the output of information in the terminal."
+            },
+            "note": {
+                "en": ""
+            },
+            "reference": [],
+            "categories": [
+                "createEnvironment",
+                "deployContract",
+                "interactWithContract",
+                "listenToEvents"
+            ],
+            "examples": [
+                {
+                    "template": null,
+                    "description": {
+                        "en": "Change the width to: {{self}}."
+                    },
+                    "self": 50
+                }
+            ]
+        },
+        "print__spaces__extended": {
+            "description": {
+                "en": "This splitter can be used to divide the output of information in the terminal."
+            },
+            "note": {
+                "en": "Diese sekundäre Stufe wird nur sehr selten verwendet. Gehe zu {{print__spaces__standard}} für die Standard Einstellung."
+            },
+            "reference": [],
+            "categories": [
+                "createEnvironment",
+                "deployContract",
+                "interactWithContract",
+                "listenToEvents"
+            ],
+            "examples": [
+                {
+                    "template": null,
+                    "description": {
+                        "en": "Change the width to: {{self}}."
+                    },
+                    "self": 60
+                }
+            ]
+        },
+        "messages__use": {
+            "description": {
+                "en": "Here, you can set the language of the terminal output."
+            },
+            "note": {
+                "en": "Currently, only the English language is allowed, more languages will be added in the future."
+            },
+            "reference": [],
+            "categories": [
+                "createEnvironment",
+                "deployContract",
+                "interactWithContract",
+                "listenToEvents"
+            ],
+            "examples": []
+        }
+    },
+    "categories": {
+        "general": {
+            "en": "This section contains general parameters that offer customization options for project settings and terminal output, including setting the project name, defining account messages, adjusting console spacing, and selecting the terminal language."
+        },
+        "network": {
+            "en": "In this section, you will find network-related variables that can be adjusted to customize the behavior of the network you are using, such as changing the default explorer for transactions or modifying the standard transaction fee."
+        },
+        "account": {
+            "en": "This section contains parameters related to credentials and accounts, enabling customization of the folder structure for efficiently managing account keys, such as the root folder for credentials and the folder names for accounts and contracts."
+        },
+        "workspace": {
+            "en": "This section contains parameters related to your workspace, allowing you to customize the folder structure for managing smart contracts and TypeScript files efficiently, including the root folder, TypeScript folder, and build folder locations."
+        }
+    }
+}
