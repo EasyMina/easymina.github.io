@@ -95,6 +95,15 @@ export class GenerateOptions {
             )
         return result
     }
+
+
+    #setQuotes( str ) {
+        if( str && str.trim() !== "") {
+            return `"${str}"`
+          } else {
+            return `${str}`
+        }
+    }
     
     
     #keyPathToValue( { data, keyPath, separator='__' } ) {
@@ -231,7 +240,7 @@ export class GenerateOptions {
                 const row = [
                     `${a['data']['numbering']}`,
                     `[${a['data']['headline']}](../options/${a['fileName']})`,
-                    `\`\`\`${a['data']['_default_value']}\`\`\``,
+                    `\`\`\`${this.#setQuotes( a['data']['_default_value'] )}\`\`\``,
                     ``,
                     `${a['data']['description']}`
                 ]
