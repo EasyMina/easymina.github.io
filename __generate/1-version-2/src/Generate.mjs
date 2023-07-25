@@ -231,7 +231,7 @@ export class GenerateOptions {
                 const row = [
                     `${a['data']['numbering']}`,
                     `[${a['data']['headline']}](../options/${a['fileName']})`,
-                    `${a['data']['_default_value']}`,
+                    `\`\`\`${a['data']['_default_value']}\`\`\``,
                     ``,
                     `${a['data']['description']}`
                 ]
