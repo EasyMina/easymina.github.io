@@ -155,7 +155,7 @@ export class GenerateOptions {
         const str1 = Number.isInteger( default_value ) ? default_value : `"${default_value}"`
         struct['data']['default_value'] = `\`\`\`{ "${userKeyPath}": ${str1} }\`\`\``
 
-        const category = [ 'Default', 'default' ]
+        const category = [ this.#titleizeString( struct['category'] ), struct['category'] ]
         struct['data']['key_row'] = [
             `\`\`\`${userKeyPath}\`\`\``,
             `\`\`\`${keyPath}\`\`\``,
@@ -169,9 +169,10 @@ export class GenerateOptions {
         const regex = this.#easyMinaConfig['validations']['regexs'][ one ][ two ]
 
         struct['data']['validation_description'] = regex['description'][ this.#language ]
+
         struct['data']['validation_row'] = [
             `\`\`\`${default_value}\`\`\``,
-            `\`\`\`${regex['regex']}\`\`\``.replace( '$', "\$"),
+            `\`\`\`${regex['regex']}\`\`\``,
             `\`\`\`${one}\`\`\``,
         ]   
             .join( ' | ' )
@@ -291,10 +292,13 @@ export class GenerateOptions {
                         const [ key, value ] = a
                         const insert = `{{${key}}}`
     
-                            const start = txt.indexOf( insert )
-                            const end = start + insert.length
-    
+                        const start = txt.indexOf( insert )
+                        const end = start + insert.length
+                        console.log( '>>>', start )
+                        if( start !== -1 ) {
                             txt = txt.slice( 0, start ) + value + txt.slice( end )
+                        }
+                        
                     } )
 
                 fs.writeFileSync( 
