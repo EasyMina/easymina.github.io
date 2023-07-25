@@ -24,5 +24,5 @@ URLs with optional "http://" or "https://", followed by a domain name, a top-lev
 
 | **Default** | **Validation** | **Type** |
 |:--|:--|:--|
-| ```https://berkeley.minaexplorer.com/transaction/``` | ```(https?:\/\/)?([a-zA-Z0-9.-]+)\.([a-zA-Z]{2,})(\/\S*)?$``` | ```string``` |
+| ```https://berkeley.minaexplorer.com/transaction/``` | ```"(https?:\/\/)?([a-zA-Z0-9.-]+)\.([a-zA-Z]{2,})(\/\S*)?$"``` | ```string``` |
 

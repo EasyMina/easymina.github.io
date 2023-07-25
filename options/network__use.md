@@ -24,5 +24,5 @@ Currently only "berkeley" is valid
 
 | **Default** | **Validation** | **Type** |
 |:--|:--|:--|
-| ```berkeley``` | ```^(berkeley|none)$``` | ```string``` |
+| ```berkeley``` | ```"^(berkeley|none)$"``` | ```string``` |
 

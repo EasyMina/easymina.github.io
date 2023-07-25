@@ -24,5 +24,5 @@ Allow A-Z, a-b and 0-9 as value, use '-' for space.
 
 | **Default** | **Validation** | **Type** |
 |:--|:--|:--|
-| ```hello-world``` | ```^[a-zA-Z0-9-]*$``` | ```string``` |
+| ```hello-world``` | ```"^[a-zA-Z0-9-]*$"``` | ```string``` |
 

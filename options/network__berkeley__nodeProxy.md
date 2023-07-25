@@ -24,5 +24,5 @@ URLs with optional "http://" or "https://", followed by a domain name, a top-lev
 
 | **Default** | **Validation** | **Type** |
 |:--|:--|:--|
-| ```https://proxy.berkeley.minaexplorer.com/graphql``` | ```(https?:\/\/)?([a-zA-Z0-9.-]+)\.([a-zA-Z]{2,})(\/\S*)?$``` | ```string``` |
+| ```https://proxy.berkeley.minaexplorer.com/graphql``` | ```"(https?:\/\/)?([a-zA-Z0-9.-]+)\.([a-zA-Z]{2,})(\/\S*)?$"``` | ```string``` |
 

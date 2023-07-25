@@ -24,5 +24,5 @@ start with a ".", followed by a lowercase letter, and may contain alphanumeric c
 
 | **Default** | **Validation** | **Type** |
 |:--|:--|:--|
-| ```.mina/``` | ```^[.][a-z](?!.*[-_]{2})[a-z0-9-_]*[a-z0-9]\/$``` | ```string``` |
+| ```.mina/``` | ```"^[.][a-z](?!.*[-_]{2})[a-z0-9-_]*[a-z0-9]\/$"``` | ```string``` |
 

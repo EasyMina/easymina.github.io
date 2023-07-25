@@ -24,5 +24,5 @@ The first character must be from 'a' to 'z', followed by a combination of 'a' to
 
 | **Default** | **Validation** | **Type** |
 |:--|:--|:--|
-| ```ts/``` | ```^[a-z](?!.*[-_]{2})[a-z0-9-_]*[a-z0-9]\/$``` | ```string``` |
+| ```ts/``` | ```"^[a-z](?!.*[-_]{2})[a-z0-9-_]*[a-z0-9]\/$"``` | ```string``` |
 
