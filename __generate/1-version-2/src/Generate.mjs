@@ -62,7 +62,6 @@ export class GenerateOptions {
 
 
     save() {
-
         !this.#silent ? console.log( '  Save' ) : ''
         !this.#silent ? console.log( '  - Detail' ) : ''
         this.#detailSave()
@@ -98,7 +97,7 @@ export class GenerateOptions {
 
 
     #setQuotes( str ) {
-        if( typeof myVariable === 'string' ) {
+        if( typeof str === 'string' ) {
             return `"${str}"`
           } else {
             return `${str}`
