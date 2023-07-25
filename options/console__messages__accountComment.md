@@ -24,5 +24,5 @@ Allow A-Z, a-b and 0-9 as value.
 
 | **Default** | **Validation** | **Type** |
 |:--|:--|:--|
-| ```Do not share this file with someone.``` | ```"^[a-zA-Z0-9\s.-]*$"``` | ```string``` |
+| ```"Do not share this file with someone."``` | ```^[a-zA-Z0-9\s.-]*$``` | ```string``` |
 

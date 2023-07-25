@@ -179,8 +179,8 @@ export class GenerateOptions {
         struct['data']['validation_description'] = regex['description'][ this.#language ]
 
         struct['data']['validation_row'] = [
-            `\`\`\`${default_value}\`\`\``,
-            `\`\`\`${this.#setQuotes( regex['regex'] )}\`\`\``,
+            `\`\`\`${this.#setQuotes( default_value )}\`\`\``,
+            `\`\`\`${regex['regex']}\`\`\``,
             `\`\`\`${one}\`\`\``,
         ]   
             .join( ' | ' )

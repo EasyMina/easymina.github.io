@@ -24,5 +24,5 @@ Matches strings containing either "__" without consecutive occurrences or "--" w
 
 | **Default** | **Validation** | **Type** |
 |:--|:--|:--|
-| ```--``` | ```"^(__(?!--)|--(?!__))*$"``` | ```string``` |
+| ```"--"``` | ```^(__(?!--)|--(?!__))*$``` | ```string``` |
 

@@ -24,5 +24,5 @@ Currently only "en" is valid
 
 | **Default** | **Validation** | **Type** |
 |:--|:--|:--|
-| ```en``` | ```"^(en|none)$"``` | ```string``` |
+| ```"en"``` | ```^(en|none)$``` | ```string``` |
 

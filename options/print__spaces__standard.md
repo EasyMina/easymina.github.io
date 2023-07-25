@@ -24,5 +24,5 @@ This regular expression matches any positive integer with one or more digits.
 
 | **Default** | **Validation** | **Type** |
 |:--|:--|:--|
-| ```30``` | ```"^[1-9]\d*$"``` | ```integer``` |
+| ```30``` | ```^[1-9]\d*$``` | ```integer``` |
 
