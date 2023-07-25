@@ -98,7 +98,7 @@ export class GenerateOptions {
 
 
     #setQuotes( str ) {
-        if( str && str.trim() !== "") {
+        if( typeof myVariable === 'string' ) {
             return `"${str}"`
           } else {
             return `${str}`
@@ -303,7 +303,7 @@ export class GenerateOptions {
     
                         const start = txt.indexOf( insert )
                         const end = start + insert.length
-                        console.log( '>>>', start )
+
                         if( start !== -1 ) {
                             txt = txt.slice( 0, start ) + value + txt.slice( end )
                         }
