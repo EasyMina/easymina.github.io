@@ -1,0 +1,70 @@
+{
+    "string": {
+        "default": {
+            "description": "Allow A-Z, a-b and 0-9 as value.",
+            "regex": "^[a-zA-Z0-9]*$"
+        },
+        "arrow_for_space": {
+            "description": "Allow A-Z, a-b and 0-9 as value, use '-' for space.",
+            "regex": "^[a-zA-Z0-9-]*$"
+        },
+        "underscore_for_space": {
+            "description": "Allow A-Z, a-b and 0-9 as value, use _ for space.",
+            "regex": "^[a-zA-Z0-9_]*$"
+        },
+        "text_format": {
+            "description": "Allow \"bold\", \"normal\" and \"underline\" as value.",
+            "regex": "^(?:bold|normal|underline)"
+        },
+        "hex_value": {
+            "description": "Allow hex values including short writing needs to with starting with #.",
+            "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$"
+        },
+        "font_family": {
+            "description": "Allow \"arial\", \"times\" and \"helvetica\" as value",
+            "regex": "^(?:arial|times|helvetica)"
+        },
+        "sort_route": {
+            "description": "Allow \"none\", \"values\" and \"names\" as value",
+            "regex": "^(?:none|values|names)"
+        },
+        "sort_type": {
+            "description": "Allow \"ascending\" or \"decending\" as value.",
+            "regex": "^(?:ascending|decending)"
+        },
+        "sort_selection": {
+            "description": "Allow \"start\" or \"end\" as value.",
+            "regex": "^(?:start|end)"
+        }
+    },
+    "boolean": {
+        "default": {
+            "description": "Allow true or false as value.",
+            "regex": "^(?:true|false)"
+        }
+    },
+    "integer": {
+        "default": {
+        },
+        "i0_n": {
+            "description": "Allow positive integers and 0 as value",
+            "regex": "^(?:[0-9]+(?:.[0-9]+)?)?$"
+        },
+        "i1_n": {
+            "description": "Allow positive integers beginning from 1 as value.",
+            "regex": "^[1-9]d*$"
+        },
+        "minus90_0": {
+            "description": "Allow negative integers from -90 to -1 including 0 as value.",
+            "regex": "^0|-[1-9]d*"
+        }
+    },
+    "float": {
+        "default": {
+        },
+        "f1_3": {
+            "description": "Allow float numbers from 1.0 to 3.99.. as value.",
+            "regex": "^[1-3](.[0-9]+)?$"
+        }
+    }
+}
