@@ -180,7 +180,7 @@ export class GenerateOptions {
 
         struct['data']['validation_row'] = [
             `\`\`\`${default_value}\`\`\``,
-            `\`\`\`${regex['regex']}\`\`\``,
+            `\`\`\`${this.#setQuotes( regex['regex'] )}\`\`\``,
             `\`\`\`${one}\`\`\``,
         ]   
             .join( ' | ' )
