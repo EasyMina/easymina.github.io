@@ -1,5 +1,5 @@
 ---
-sort: 1
+sort: 8
 title: B.4. contractsFolderName
 ---
 
@@ -25,8 +25,58 @@ The first character must be from 'a' to 'z', followed by a combination of 'a' to
 | **Default** | **Validation** | **Type** |
 |:--|:--|:--|
 | ```contracts/``` | ```^[a-z](?!.*[-_]{2})[a-z0-9-_]*[a-z0-9]\/$``` | ```string``` |
-B.4index}}
+B.4title: {{title}}
+---
+
+# {{headline}}
+
+{{description}}
+
+
+## Specification
+
+Default implementation: {{default_value}}
+
+### Key
+
+| **Name** | **Alias** | **Category** |  
+|:--|:--|:--|
+{{key_row}}
+
+### Value
+
+{{validation_description}}
+
+| **Default** | **Validation** | **Type** |
+|:--|:--|:--|
+{{validation_row}}
+1: 8
 title: {{title}}
+---
+
+# {{headline}}
+
+{{description}}
+
+
+## Specification
+
+Default implementation: {{default_value}}
+
+### Key
+
+| **Name** | **Alias** | **Category** |  
+|:--|:--|:--|
+{{key_row}}
+
+### Value
+
+{{validation_description}}
+
+| **Default** | **Validation** | **Type** |
+|:--|:--|:--|
+{{validation_row}}
+B.4title: {{title}}
 ---
 
 # {{headline}}
@@ -76,8 +126,58 @@ Default implementation: ```{ "contractsFolderName": "contracts/" }```
 | **Default** | **Validation** | **Type** |
 |:--|:--|:--|
 {{validation_row}}
-B.4index}}
+B.4title: {{title}}
+---
+
+# {{headline}}
+
+{{description}}
+
+
+## Specification
+
+Default implementation: {{default_value}}
+
+### Key
+
+| **Name** | **Alias** | **Category** |  
+|:--|:--|:--|
+{{key_row}}
+
+### Value
+
+{{validation_description}}
+
+| **Default** | **Validation** | **Type** |
+|:--|:--|:--|
+{{validation_row}}
+1: 8
 title: {{title}}
+---
+
+# {{headline}}
+
+{{description}}
+
+
+## Specification
+
+Default implementation: {{default_value}}
+
+### Key
+
+| **Name** | **Alias** | **Category** |  
+|:--|:--|:--|
+{{key_row}}
+
+### Value
+
+{{validation_description}}
+
+| **Default** | **Validation** | **Type** |
+|:--|:--|:--|
+{{validation_row}}
+B.4title: {{title}}
 ---
 
 # {{headline}}

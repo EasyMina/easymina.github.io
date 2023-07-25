@@ -25,8 +25,58 @@ Allow A-Z, a-b and 0-9 as value, use '-' for space.
 | **Default** | **Validation** | **Type** |
 |:--|:--|:--|
 | ```hello-world``` | ```^[a-zA-Z0-9-]*$``` | ```string``` |
-A.1index}}
+A.1title: {{title}}
+---
+
+# {{headline}}
+
+{{description}}
+
+
+## Specification
+
+Default implementation: {{default_value}}
+
+### Key
+
+| **Name** | **Alias** | **Category** |  
+|:--|:--|:--|
+{{key_row}}
+
+### Value
+
+{{validation_description}}
+
+| **Default** | **Validation** | **Type** |
+|:--|:--|:--|
+{{validation_row}}
+0: 0
 title: {{title}}
+---
+
+# {{headline}}
+
+{{description}}
+
+
+## Specification
+
+Default implementation: {{default_value}}
+
+### Key
+
+| **Name** | **Alias** | **Category** |  
+|:--|:--|:--|
+{{key_row}}
+
+### Value
+
+{{validation_description}}
+
+| **Default** | **Validation** | **Type** |
+|:--|:--|:--|
+{{validation_row}}
+A.1title: {{title}}
 ---
 
 # {{headline}}
@@ -76,8 +126,58 @@ Default implementation: ```{ "projectName": "hello-world" }```
 | **Default** | **Validation** | **Type** |
 |:--|:--|:--|
 {{validation_row}}
-A.1index}}
+A.1title: {{title}}
+---
+
+# {{headline}}
+
+{{description}}
+
+
+## Specification
+
+Default implementation: {{default_value}}
+
+### Key
+
+| **Name** | **Alias** | **Category** |  
+|:--|:--|:--|
+{{key_row}}
+
+### Value
+
+{{validation_description}}
+
+| **Default** | **Validation** | **Type** |
+|:--|:--|:--|
+{{validation_row}}
+0: 0
 title: {{title}}
+---
+
+# {{headline}}
+
+{{description}}
+
+
+## Specification
+
+Default implementation: {{default_value}}
+
+### Key
+
+| **Name** | **Alias** | **Category** |  
+|:--|:--|:--|
+{{key_row}}
+
+### Value
+
+{{validation_description}}
+
+| **Default** | **Validation** | **Type** |
+|:--|:--|:--|
+{{validation_row}}
+A.1title: {{title}}
 ---
 
 # {{headline}}

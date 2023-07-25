@@ -1,5 +1,5 @@
 ---
-sort: {{index}}
+sort: {{sort}}
 title: {{title}}
 ---
 

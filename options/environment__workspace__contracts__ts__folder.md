@@ -1,5 +1,5 @@
 ---
-sort: 2
+sort: 10
 title: C.2. workspaceTypescriptFolderName
 ---
 
@@ -25,7 +25,7 @@ The first character must be from 'a' to 'z', followed by a combination of 'a' to
 | **Default** | **Validation** | **Type** |
 |:--|:--|:--|
 | ```ts/``` | ```^[a-z](?!.*[-_]{2})[a-z0-9-_]*[a-z0-9]\/$``` | ```string``` |
-C.2index}}
+C.2
 title: {{title}}
 ---
 
@@ -51,7 +51,59 @@ Default implementation: {{default_value}}
 | **Default** | **Validation** | **Type** |
 |:--|:--|:--|
 {{validation_row}}
-ts/: C.2. workspaceTypescriptFolderName
+2: 10
+title: {{title}}
+---
+
+# {{headline}}
+
+{{description}}
+
+
+## Specification
+
+Default implementation: {{default_value}}
+
+### Key
+
+| **Name** | **Alias** | **Category** |  
+|:--|:--|:--|
+{{key_row}}
+
+### Value
+
+{{validation_description}}
+
+| **Default** | **Validation** | **Type** |
+|:--|:--|:--|
+{{validation_row}}
+C.2
+title: {{title}}
+---
+
+# {{headline}}
+
+{{description}}
+
+
+## Specification
+
+Default implementation: {{default_value}}
+
+### Key
+
+| **Name** | **Alias** | **Category** |  
+|:--|:--|:--|
+{{key_row}}
+
+### Value
+
+{{validation_description}}
+
+| **Default** | **Validation** | **Type** |
+|:--|:--|:--|
+{{validation_row}}
+ts/e: C.2. workspaceTypescriptFolderName
 ---
 
 # workspaceTypescriptFolderName
@@ -76,7 +128,59 @@ Default implementation: ```{ "workspaceTypescriptFolderName": "ts/" }```
 | **Default** | **Validation** | **Type** |
 |:--|:--|:--|
 {{validation_row}}
-C.2index}}
+C.2
+title: {{title}}
+---
+
+# {{headline}}
+
+{{description}}
+
+
+## Specification
+
+Default implementation: {{default_value}}
+
+### Key
+
+| **Name** | **Alias** | **Category** |  
+|:--|:--|:--|
+{{key_row}}
+
+### Value
+
+{{validation_description}}
+
+| **Default** | **Validation** | **Type** |
+|:--|:--|:--|
+{{validation_row}}
+2: 10
+title: {{title}}
+---
+
+# {{headline}}
+
+{{description}}
+
+
+## Specification
+
+Default implementation: {{default_value}}
+
+### Key
+
+| **Name** | **Alias** | **Category** |  
+|:--|:--|:--|
+{{key_row}}
+
+### Value
+
+{{validation_description}}
+
+| **Default** | **Validation** | **Type** |
+|:--|:--|:--|
+{{validation_row}}
+C.2
 title: {{title}}
 ---
 

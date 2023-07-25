@@ -1,5 +1,5 @@
 ---
-sort: 3
+sort: 13
 title: D.2. transactionExplorer
 ---
 
@@ -25,7 +25,7 @@ URLs with optional "http://" or "https://", followed by a domain name, a top-lev
 | **Default** | **Validation** | **Type** |
 |:--|:--|:--|
 | ```https://berkeley.minaexplorer.com/transaction/``` | ```(https?:\/\/)?([a-zA-Z0-9.-]+)\.([a-zA-Z]{2,})(\/\S*)?$``` | ```string``` |
-D.2index}}
+D.2
 title: {{title}}
 ---
 
@@ -51,7 +51,59 @@ Default implementation: {{default_value}}
 | **Default** | **Validation** | **Type** |
 |:--|:--|:--|
 {{validation_row}}
-https://berkeley.minaexplorer.com/transaction/: D.2. transactionExplorer
+3: 13
+title: {{title}}
+---
+
+# {{headline}}
+
+{{description}}
+
+
+## Specification
+
+Default implementation: {{default_value}}
+
+### Key
+
+| **Name** | **Alias** | **Category** |  
+|:--|:--|:--|
+{{key_row}}
+
+### Value
+
+{{validation_description}}
+
+| **Default** | **Validation** | **Type** |
+|:--|:--|:--|
+{{validation_row}}
+D.2
+title: {{title}}
+---
+
+# {{headline}}
+
+{{description}}
+
+
+## Specification
+
+Default implementation: {{default_value}}
+
+### Key
+
+| **Name** | **Alias** | **Category** |  
+|:--|:--|:--|
+{{key_row}}
+
+### Value
+
+{{validation_description}}
+
+| **Default** | **Validation** | **Type** |
+|:--|:--|:--|
+{{validation_row}}
+https://berkeley.minaexplorer.com/transaction/e: D.2. transactionExplorer
 ---
 
 # transactionExplorer
@@ -76,7 +128,59 @@ Default implementation: ```{ "transactionExplorer": "https://berkeley.minaexplor
 | **Default** | **Validation** | **Type** |
 |:--|:--|:--|
 {{validation_row}}
-D.2index}}
+D.2
+title: {{title}}
+---
+
+# {{headline}}
+
+{{description}}
+
+
+## Specification
+
+Default implementation: {{default_value}}
+
+### Key
+
+| **Name** | **Alias** | **Category** |  
+|:--|:--|:--|
+{{key_row}}
+
+### Value
+
+{{validation_description}}
+
+| **Default** | **Validation** | **Type** |
+|:--|:--|:--|
+{{validation_row}}
+3: 13
+title: {{title}}
+---
+
+# {{headline}}
+
+{{description}}
+
+
+## Specification
+
+Default implementation: {{default_value}}
+
+### Key
+
+| **Name** | **Alias** | **Category** |  
+|:--|:--|:--|
+{{key_row}}
+
+### Value
+
+{{validation_description}}
+
+| **Default** | **Validation** | **Type** |
+|:--|:--|:--|
+{{validation_row}}
+D.2
 title: {{title}}
 ---
 

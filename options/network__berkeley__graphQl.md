@@ -1,5 +1,5 @@
 ---
-sort: 3
+sort: 17
 title: D.6. berkeleyGraphQl
 ---
 
@@ -25,7 +25,7 @@ URLs with optional "http://" or "https://", followed by a domain name, a top-lev
 | **Default** | **Validation** | **Type** |
 |:--|:--|:--|
 | ```https://berkeley.graphql.minaexplorer.com``` | ```(https?:\/\/)?([a-zA-Z0-9.-]+)\.([a-zA-Z]{2,})(\/\S*)?$``` | ```string``` |
-D.6index}}
+D.6
 title: {{title}}
 ---
 
@@ -51,7 +51,59 @@ Default implementation: {{default_value}}
 | **Default** | **Validation** | **Type** |
 |:--|:--|:--|
 {{validation_row}}
-https://berkeley.graphql.minaexplorer.com: D.6. berkeleyGraphQl
+3: 17
+title: {{title}}
+---
+
+# {{headline}}
+
+{{description}}
+
+
+## Specification
+
+Default implementation: {{default_value}}
+
+### Key
+
+| **Name** | **Alias** | **Category** |  
+|:--|:--|:--|
+{{key_row}}
+
+### Value
+
+{{validation_description}}
+
+| **Default** | **Validation** | **Type** |
+|:--|:--|:--|
+{{validation_row}}
+D.6
+title: {{title}}
+---
+
+# {{headline}}
+
+{{description}}
+
+
+## Specification
+
+Default implementation: {{default_value}}
+
+### Key
+
+| **Name** | **Alias** | **Category** |  
+|:--|:--|:--|
+{{key_row}}
+
+### Value
+
+{{validation_description}}
+
+| **Default** | **Validation** | **Type** |
+|:--|:--|:--|
+{{validation_row}}
+https://berkeley.graphql.minaexplorer.come: D.6. berkeleyGraphQl
 ---
 
 # berkeleyGraphQl
@@ -76,7 +128,59 @@ Default implementation: ```{ "berkeleyGraphQl": "https://berkeley.graphql.minaex
 | **Default** | **Validation** | **Type** |
 |:--|:--|:--|
 {{validation_row}}
-D.6index}}
+D.6
+title: {{title}}
+---
+
+# {{headline}}
+
+{{description}}
+
+
+## Specification
+
+Default implementation: {{default_value}}
+
+### Key
+
+| **Name** | **Alias** | **Category** |  
+|:--|:--|:--|
+{{key_row}}
+
+### Value
+
+{{validation_description}}
+
+| **Default** | **Validation** | **Type** |
+|:--|:--|:--|
+{{validation_row}}
+3: 17
+title: {{title}}
+---
+
+# {{headline}}
+
+{{description}}
+
+
+## Specification
+
+Default implementation: {{default_value}}
+
+### Key
+
+| **Name** | **Alias** | **Category** |  
+|:--|:--|:--|
+{{key_row}}
+
+### Value
+
+{{validation_description}}
+
+| **Default** | **Validation** | **Type** |
+|:--|:--|:--|
+{{validation_row}}
+D.6
 title: {{title}}
 ---
 

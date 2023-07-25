@@ -1,5 +1,5 @@
 ---
-sort: 3
+sort: 14
 title: D.3. walletExplorer
 ---
 
@@ -25,7 +25,7 @@ URLs with optional "http://" or "https://", followed by a domain name, a top-lev
 | **Default** | **Validation** | **Type** |
 |:--|:--|:--|
 | ```https://berkeley.minaexplorer.com/wallet/``` | ```(https?:\/\/)?([a-zA-Z0-9.-]+)\.([a-zA-Z]{2,})(\/\S*)?$``` | ```string``` |
-D.3index}}
+D.3
 title: {{title}}
 ---
 
@@ -51,7 +51,59 @@ Default implementation: {{default_value}}
 | **Default** | **Validation** | **Type** |
 |:--|:--|:--|
 {{validation_row}}
-https://berkeley.minaexplorer.com/wallet/: D.3. walletExplorer
+3: 14
+title: {{title}}
+---
+
+# {{headline}}
+
+{{description}}
+
+
+## Specification
+
+Default implementation: {{default_value}}
+
+### Key
+
+| **Name** | **Alias** | **Category** |  
+|:--|:--|:--|
+{{key_row}}
+
+### Value
+
+{{validation_description}}
+
+| **Default** | **Validation** | **Type** |
+|:--|:--|:--|
+{{validation_row}}
+D.3
+title: {{title}}
+---
+
+# {{headline}}
+
+{{description}}
+
+
+## Specification
+
+Default implementation: {{default_value}}
+
+### Key
+
+| **Name** | **Alias** | **Category** |  
+|:--|:--|:--|
+{{key_row}}
+
+### Value
+
+{{validation_description}}
+
+| **Default** | **Validation** | **Type** |
+|:--|:--|:--|
+{{validation_row}}
+https://berkeley.minaexplorer.com/wallet/e: D.3. walletExplorer
 ---
 
 # walletExplorer
@@ -76,7 +128,59 @@ Default implementation: ```{ "walletExplorer": "https://berkeley.minaexplorer.co
 | **Default** | **Validation** | **Type** |
 |:--|:--|:--|
 {{validation_row}}
-D.3index}}
+D.3
+title: {{title}}
+---
+
+# {{headline}}
+
+{{description}}
+
+
+## Specification
+
+Default implementation: {{default_value}}
+
+### Key
+
+| **Name** | **Alias** | **Category** |  
+|:--|:--|:--|
+{{key_row}}
+
+### Value
+
+{{validation_description}}
+
+| **Default** | **Validation** | **Type** |
+|:--|:--|:--|
+{{validation_row}}
+3: 14
+title: {{title}}
+---
+
+# {{headline}}
+
+{{description}}
+
+
+## Specification
+
+Default implementation: {{default_value}}
+
+### Key
+
+| **Name** | **Alias** | **Category** |  
+|:--|:--|:--|
+{{key_row}}
+
+### Value
+
+{{validation_description}}
+
+| **Default** | **Validation** | **Type** |
+|:--|:--|:--|
+{{validation_row}}
+D.3
 title: {{title}}
 ---
 

@@ -1,5 +1,5 @@
 ---
-sort: 0
+sort: 4
 title: A.5. consoleLanguage
 ---
 
@@ -25,8 +25,58 @@ Currently only "en" is valid
 | **Default** | **Validation** | **Type** |
 |:--|:--|:--|
 | ```en``` | ```^(en|none)$``` | ```string``` |
-A.5index}}
+A.5title: {{title}}
+---
+
+# {{headline}}
+
+{{description}}
+
+
+## Specification
+
+Default implementation: {{default_value}}
+
+### Key
+
+| **Name** | **Alias** | **Category** |  
+|:--|:--|:--|
+{{key_row}}
+
+### Value
+
+{{validation_description}}
+
+| **Default** | **Validation** | **Type** |
+|:--|:--|:--|
+{{validation_row}}
+0: 4
 title: {{title}}
+---
+
+# {{headline}}
+
+{{description}}
+
+
+## Specification
+
+Default implementation: {{default_value}}
+
+### Key
+
+| **Name** | **Alias** | **Category** |  
+|:--|:--|:--|
+{{key_row}}
+
+### Value
+
+{{validation_description}}
+
+| **Default** | **Validation** | **Type** |
+|:--|:--|:--|
+{{validation_row}}
+A.5title: {{title}}
 ---
 
 # {{headline}}
@@ -76,8 +126,58 @@ Default implementation: ```{ "consoleLanguage": "en" }```
 | **Default** | **Validation** | **Type** |
 |:--|:--|:--|
 {{validation_row}}
-A.5index}}
+A.5title: {{title}}
+---
+
+# {{headline}}
+
+{{description}}
+
+
+## Specification
+
+Default implementation: {{default_value}}
+
+### Key
+
+| **Name** | **Alias** | **Category** |  
+|:--|:--|:--|
+{{key_row}}
+
+### Value
+
+{{validation_description}}
+
+| **Default** | **Validation** | **Type** |
+|:--|:--|:--|
+{{validation_row}}
+0: 4
 title: {{title}}
+---
+
+# {{headline}}
+
+{{description}}
+
+
+## Specification
+
+Default implementation: {{default_value}}
+
+### Key
+
+| **Name** | **Alias** | **Category** |  
+|:--|:--|:--|
+{{key_row}}
+
+### Value
+
+{{validation_description}}
+
+| **Default** | **Validation** | **Type** |
+|:--|:--|:--|
+{{validation_row}}
+A.5title: {{title}}
 ---
 
 # {{headline}}

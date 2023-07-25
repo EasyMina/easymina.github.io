@@ -115,19 +115,16 @@ export class GenerateOptions {
     }
 
 
-    #detailPrepare( { item, index, rindex } ) {
+    #detailPrepare( { item, index, rindex, sort } ) {
         const alpha = [ 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K' ]
         const keyPath = item['keyPath']
-        console.log( '>>>>', this.#language )
-
-        
-        console.log( '>>>', item )
         const userKeyPath = item['userPath'][ this.#language ]
 
         const struct = {
             'fileName': null, 
             'category': null,
             'data': {
+                'sort': null,
                 'numbering': null,
                 'index': null,
                 'title': null,
@@ -139,6 +136,8 @@ export class GenerateOptions {
                 'validation_row': null
             }
         }
+
+        struct['data']['sort'] = sort
 
         struct['category'] = item['category']
         struct['data']['numbering'] = `${alpha[ index ]}.${rindex+1}`
@@ -207,7 +206,7 @@ export class GenerateOptions {
                 values
                     .sort( ( a, b ) => b['headline'] - a['headline'] )
                     .forEach( ( item, rindex ) => {
-                        const result = this.#detailPrepare( { item, index, rindex } )
+                        const result = this.#detailPrepare( { item, index, rindex, 'sort': acc.length } )
                         acc.push( result )
                     } )
     

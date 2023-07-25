@@ -1,5 +1,5 @@
 ---
-sort: 3
+sort: 16
 title: D.5. berkeleyNodeProxy
 ---
 
@@ -25,7 +25,7 @@ URLs with optional "http://" or "https://", followed by a domain name, a top-lev
 | **Default** | **Validation** | **Type** |
 |:--|:--|:--|
 | ```https://proxy.berkeley.minaexplorer.com/graphql``` | ```(https?:\/\/)?([a-zA-Z0-9.-]+)\.([a-zA-Z]{2,})(\/\S*)?$``` | ```string``` |
-D.5index}}
+D.5
 title: {{title}}
 ---
 
@@ -51,7 +51,59 @@ Default implementation: {{default_value}}
 | **Default** | **Validation** | **Type** |
 |:--|:--|:--|
 {{validation_row}}
-https://proxy.berkeley.minaexplorer.com/graphql: D.5. berkeleyNodeProxy
+3: 16
+title: {{title}}
+---
+
+# {{headline}}
+
+{{description}}
+
+
+## Specification
+
+Default implementation: {{default_value}}
+
+### Key
+
+| **Name** | **Alias** | **Category** |  
+|:--|:--|:--|
+{{key_row}}
+
+### Value
+
+{{validation_description}}
+
+| **Default** | **Validation** | **Type** |
+|:--|:--|:--|
+{{validation_row}}
+D.5
+title: {{title}}
+---
+
+# {{headline}}
+
+{{description}}
+
+
+## Specification
+
+Default implementation: {{default_value}}
+
+### Key
+
+| **Name** | **Alias** | **Category** |  
+|:--|:--|:--|
+{{key_row}}
+
+### Value
+
+{{validation_description}}
+
+| **Default** | **Validation** | **Type** |
+|:--|:--|:--|
+{{validation_row}}
+https://proxy.berkeley.minaexplorer.com/graphqle: D.5. berkeleyNodeProxy
 ---
 
 # berkeleyNodeProxy
@@ -76,7 +128,59 @@ Default implementation: ```{ "berkeleyNodeProxy": "https://proxy.berkeley.minaex
 | **Default** | **Validation** | **Type** |
 |:--|:--|:--|
 {{validation_row}}
-D.5index}}
+D.5
+title: {{title}}
+---
+
+# {{headline}}
+
+{{description}}
+
+
+## Specification
+
+Default implementation: {{default_value}}
+
+### Key
+
+| **Name** | **Alias** | **Category** |  
+|:--|:--|:--|
+{{key_row}}
+
+### Value
+
+{{validation_description}}
+
+| **Default** | **Validation** | **Type** |
+|:--|:--|:--|
+{{validation_row}}
+3: 16
+title: {{title}}
+---
+
+# {{headline}}
+
+{{description}}
+
+
+## Specification
+
+Default implementation: {{default_value}}
+
+### Key
+
+| **Name** | **Alias** | **Category** |  
+|:--|:--|:--|
+{{key_row}}
+
+### Value
+
+{{validation_description}}
+
+| **Default** | **Validation** | **Type** |
+|:--|:--|:--|
+{{validation_row}}
+D.5
 title: {{title}}
 ---
 
