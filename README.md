@@ -10,10 +10,20 @@
 ## Source Code
 
 ```bash
+npm init -y
+npm i easy-mina
 ...
 ```
 
 ```nodejs
+
+import { EasyMina } from 'easymina'
+
+const easyMina = new EasyMina()
+await easyMina.setEnvironment( {
+    'projectName': 'hello-world'
+} )
+
 
 ```
 
