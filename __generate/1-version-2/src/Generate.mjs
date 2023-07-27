@@ -19,7 +19,7 @@ export class GenerateOptions {
                     'overview': './data/option-overview.txt'
                 },
                 'output': {
-                    'optionsFolder': './../../options/',
+                    'optionsFolder': './../../environment/',
                 }
             }
         }
