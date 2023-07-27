@@ -1,5 +1,5 @@
 ---
-sort: 18
+sort: 20
 title: D.7. transactionFee
 ---
 

@@ -155,6 +155,7 @@ export class GenerateOptions {
         struct['data']['title'] = `${struct['data']['numbering']}. ${userKeyPath}`
         struct['data']['headline'] = `${userKeyPath}`
 
+        console.log( keyPath )
         struct['data']['description'] = this.#details['keyPaths'][ keyPath ]['description'][ this.#language ]
 
         let default_value = this.#keyPathToValue( { 'data': this.#easyMinaConfig, 'keyPath': keyPath } )

@@ -415,6 +415,38 @@
                 "listenToEvents"
             ],
             "examples": []
+        },
+        "environment__template__source__content": {
+            "description": {
+                "en": "You can leave a reference to a smart contract here. Currently, GitHub Gist and direct HTTPS requests are supported."
+            },
+            "note": {
+                "en": "If key is not provided, an example smart contract will be inserted."
+            },
+            "reference": [],
+            "categories": [
+                "createEnvironment",
+                "deployContract",
+                "interactWithContract",
+                "listenToEvents"
+            ],
+            "examples": []
+        },
+        "environment__template__source__name": {
+            "description": {
+                "en": "Here, you can set the name of your smart contract."
+            },
+            "note": {
+                "en": "You can also create a reference to the current project name using \"{{name}}\", which will be substituted accordingly."
+            },
+            "reference": [],
+            "categories": [
+                "createEnvironment",
+                "deployContract",
+                "interactWithContract",
+                "listenToEvents"
+            ],
+            "examples": []
         }
     },
     "categories": {

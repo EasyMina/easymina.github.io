@@ -10,7 +10,7 @@ Here, you can set the project name, which will be used as the file name for newl
 
 ## Specification
 
-Default implementation: ```{ "projectName": "hello-world" }```
+Default implementation: ```{ "projectName": "easy-mina" }```
 
 ### Key
 
@@ -24,5 +24,5 @@ Allow A-Z, a-b and 0-9 as value, use '-' for space.
 
 | **Default** | **Validation** | **Type** |
 |:--|:--|:--|
-| ```"hello-world"``` | ```^[a-zA-Z0-9-]*$``` | ```string``` |
+| ```"easy-mina"``` | ```^[a-zA-Z0-9-]*$``` | ```string``` |
 

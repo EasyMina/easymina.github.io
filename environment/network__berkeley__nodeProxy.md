@@ -1,5 +1,5 @@
 ---
-sort: 16
+sort: 18
 title: D.5. berkeleyNodeProxy
 ---
 

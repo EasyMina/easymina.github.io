@@ -1,9 +1,13 @@
 {
     "meta": {
-        "name": "hello-world",
-        "unix": 1690122013,
-        "format": "2023-07-23T16:20:13+02:00",
+        "name": "easy-mina",
+        "unix": 1690499421,
+        "format": "2023-07-28T01:10:21+02:00",
         "easyMinaVersion": "0.01"
+    },
+    "docs": {
+        "url": "https://easymina.github.io/",
+        "options": "environment/"
     },
     "environment": {
         "addresses": {
@@ -11,12 +15,12 @@
             "root": ".mina/",
             "deployers": {
                 "folder": "deployers/",
-                "fullFolder": "/Users/andreasbanholzer/PROJEKTE/2023-07-06--zkignite-cohort-2/easy-mina-v3/.mina/deployers/",
+                "fullFolder": ".mina/deployers/",
                 "fileNameStruct": "{{name}}{{splitter}}{{unix}}.json"
             },
             "contracts": {
                 "folder": "contracts/",
-                "fullFolder": "/Users/andreasbanholzer/PROJEKTE/2023-07-06--zkignite-cohort-2/easy-mina-v3/.mina/contracts/",
+                "fullFolder": ".mina/contracts/",
                 "fileNameStruct": "{{name}}{{splitter}}{{unix}}.json"
             },
             "structs": {
@@ -44,7 +48,7 @@
                     "comment": [
                         "String"
                     ],
-                    "faucet": [
+                    "faucets": [
                         "Array"
                     ]
                 }
@@ -55,27 +59,29 @@
                 "root": "./workdir/",
                 "ts": {
                     "folder": "ts/",
-                    "full": "/Users/andreasbanholzer/PROJEKTE/2023-07-06--zkignite-cohort-2/easy-mina-v3/./workdir/ts/"
+                    "full": "./workdir/ts/"
                 },
                 "build": {
                     "folder": "build/",
-                    "full": "/Users/andreasbanholzer/PROJEKTE/2023-07-06--zkignite-cohort-2/easy-mina-v3/./workdir/build/"
+                    "full": "./workdir/build/"
                 }
             },
             "gitignore": ".gitignore"
         },
         "template": {
             "regexs": {
-                "gist": {}
+                "gist": "string__gistTemplate",
+                "https": "string__urlHttps",
+                "plain": "string__plainTemplate"
             },
-            "default": {
-                "source": "gist::e6baafbad2e42e4a259c10b6a3dcc836",
-                "name": "hello-world.ts",
-                "type": "gist"
+            "source": {
+                "content": "import {\n  Field,\n  SmartContract,\n  state,\n  State,\n  method,\n} from 'snarkyjs';\n\n\nexport class Square extends SmartContract {\n    @state(Field) num = State<Field>();\n    \n    \n    init() {\n        super.init();\n        this.num.set( Field( 3 ) );\n    }\n\n\n    @method update( square: Field ) {\n        const currentState = this.num.get();\n        this.num.assertEquals( currentState );\n        square.assertEquals( currentState.mul( currentState ) );\n        this.num.set( square );\n    }\n}",
+                "name": "{{name}}.ts"
             },
             "parse": {
                 "gist": "https://api.github.com/gists/{{three}}",
-                "https": "{{one}}"
+                "https": "{{one}}",
+                "plain": "{{one}}"
             }
         }
     },
@@ -115,6 +121,7 @@
     "graphQl": {
         "render": {
             "frameInterval": 500,
+            "delayBetweenRequests": 10000,
             "singleMaxInSeconds": 30
         },
         "presets": {
@@ -155,9 +162,9 @@
             "key": "blocks",
             "type": "array",
             "cmd": {
-                "query": "query q($maxBlockHeight: Int!) {\n  blocks(limit: 10, sortBy: BLOCKHEIGHT_DESC, query: { blockHeight_lt: $maxBlockHeight }) {\n    dateTime\n    blockHeight\n  }\n}\n",
+                "query": "query q($limit: Int) {\n  blocks(limit: $limit, sortBy: BLOCKHEIGHT_DESC) {\n    blockHeight\n    protocolState {\n      consensusState {\n        slotSinceGenesis\n        slot\n      }\n    }\n    dateTime\n    receivedTime\n  }\n}",
                 "variables": {
-                    "maxBlockHeight": 999999999
+                    "limit": 10
                 },
                 "operationName": "q"
             }
@@ -344,6 +351,15 @@
                 },
                 "cmds": null
             },
+            "standard": {
+                "question": null,
+                "format": {
+                    "progress": "{{levels}}{{messages__standardFront}} {{spaces__standard}}{{status__standard}} {{status__loading}} {{messages__standardProgress}} {{messages__didYouKnow}}",
+                    "finished": "{{levels}}{{messages__standardFront}} {{spaces__standard}}{{status__standard}} {{messages__standardFinished}}",
+                    "failed": "{{levels}}{{messages__standardFront}} {{spaces__standard}}{{status__standard}} {{messages__standardFailed}}"
+                },
+                "cmds": null
+            },
             "addDeployers": {
                 "question": null,
                 "format": {
@@ -522,6 +538,22 @@
             ],
             "errorTypeNotFound": [
                 "Type: \"<<insert>>\" not found"
+            ],
+            "standardFront": [
+                "{{external__front}}"
+            ],
+            "standardProgress": [
+                "Next slot: {{external__progress}}."
+            ],
+            "standardSuccess": [
+                "{{external__success}}"
+            ],
+            "standardFailed": [
+                "{{external__failed}}"
+            ],
+            "didYouKnow": [
+                "Mina is fun.",
+                "Mina is abc"
             ]
         }
     },
@@ -534,8 +566,8 @@
                     "dom",
                     "esnext"
                 ],
-                "outDir": "/Users/andreasbanholzer/PROJEKTE/2023-07-06--zkignite-cohort-2/easy-mina-v3/./workdir/build/",
-                "rootDir": "/Users/andreasbanholzer/PROJEKTE/2023-07-06--zkignite-cohort-2/easy-mina-v3/./workdir/ts/",
+                "outDir": "./workdir/build/",
+                "rootDir": "./workdir/ts/",
                 "strict": true,
                 "strictPropertyInitialization": false,
                 "skipLibCheck": true,
@@ -554,7 +586,7 @@
             "include": null,
             "exclude": [],
             "includes": [
-                "/Users/andreasbanholzer/PROJEKTE/2023-07-06--zkignite-cohort-2/easy-mina-v3/./workdir/ts/"
+                "./workdir/ts/"
             ]
         },
         "fileName": "tsconfig.json"
@@ -566,133 +598,210 @@
                     "en": "projectName"
                 },
                 "validation": "string__hyphenAsSpace",
-                "category": "general"
+                "category": "general",
+                "methods": [
+                    "init"
+                ]
             },
             "environment__addresses__splitter": {
                 "userPath": {
                     "en": "fileNameSplitter"
                 },
                 "validation": "string__splitters",
-                "category": "account"
+                "category": "account",
+                "methods": [
+                    "init"
+                ]
             },
             "environment__addresses__root": {
                 "userPath": {
                     "en": "credentialsRootFolderName"
                 },
                 "validation": "string__folderNameInvisible",
-                "category": "account"
+                "category": "account",
+                "methods": [
+                    "init"
+                ]
             },
             "environment__addresses__deployers__folder": {
                 "userPath": {
                     "en": "accountsFolderName"
                 },
                 "validation": "string__folderName",
-                "category": "account"
+                "category": "account",
+                "methods": [
+                    "init"
+                ]
             },
             "environment__addresses__contracts__folder": {
                 "userPath": {
                     "en": "contractsFolderName"
                 },
                 "validation": "string__folderName",
-                "category": "account"
+                "category": "account",
+                "methods": [
+                    "init"
+                ]
             },
             "environment__workspace__contracts__root": {
                 "userPath": {
                     "en": "workspaceRootFolderName"
                 },
                 "validation": "string__folderName",
-                "category": "workspace"
+                "category": "workspace",
+                "methods": [
+                    "init"
+                ]
             },
             "environment__workspace__contracts__ts__folder": {
                 "userPath": {
                     "en": "workspaceTypescriptFolderName"
                 },
                 "validation": "string__folderName",
-                "category": "workspace"
+                "category": "workspace",
+                "methods": [
+                    "init"
+                ]
             },
             "environment__workspace__contracts__build__folder": {
                 "userPath": {
                     "en": "workspaceBuildFolderName"
                 },
                 "validation": "string__folderName",
-                "category": "workspace"
+                "category": "workspace",
+                "methods": [
+                    "init"
+                ]
+            },
+            "environment__template__source__content": {
+                "userPath": {
+                    "en": "smartContractContent"
+                },
+                "validation": "string__typescriptFileName",
+                "category": "workspace",
+                "methods": [
+                    "init"
+                ]
+            },
+            "environment__template__source__name": {
+                "userPath": {
+                    "en": "smartContractName"
+                },
+                "validation": "string__typescriptFileName",
+                "category": "workspace",
+                "methods": [
+                    "init"
+                ]
             },
             "network__use": {
                 "userPath": {
                     "en": "networkName"
                 },
                 "validation": "string__networkName",
-                "category": "network"
+                "category": "network",
+                "methods": [
+                    "init"
+                ]
             },
             "network__berkeley__explorer__transaction": {
                 "userPath": {
                     "en": "transactionExplorer"
                 },
                 "validation": "string__urlHttps",
-                "category": "network"
+                "category": "network",
+                "methods": [
+                    "init"
+                ]
             },
             "network__berkeley__explorer__wallet": {
                 "userPath": {
                     "en": "walletExplorer"
                 },
                 "validation": "string__urlHttps",
-                "category": "network"
+                "category": "network",
+                "methods": [
+                    "init"
+                ]
             },
             "network__berkeley__node": {
                 "userPath": {
                     "en": "berkeleyNode"
                 },
                 "validation": "string__urlHttps",
-                "category": "network"
+                "category": "network",
+                "methods": [
+                    "init"
+                ]
             },
             "network__berkeley__nodeProxy": {
                 "userPath": {
                     "en": "berkeleyNodeProxy"
                 },
                 "validation": "string__urlHttps",
-                "category": "network"
+                "category": "network",
+                "methods": [
+                    "init"
+                ]
             },
             "network__berkeley__graphQl": {
                 "userPath": {
                     "en": "berkeleyGraphQl"
                 },
                 "validation": "string__urlHttps",
-                "category": "network"
+                "category": "network",
+                "methods": [
+                    "init"
+                ]
             },
             "network__berkeley__transaction_fee": {
                 "userPath": {
                     "en": "transactionFee"
                 },
                 "validation": "string__urlHttps",
-                "category": "network"
+                "category": "network",
+                "methods": [
+                    "init"
+                ]
             },
             "console__messages__accountComment": {
                 "userPath": {
                     "en": "accountMessage"
                 },
                 "validation": "string__default",
-                "category": "general"
+                "category": "general",
+                "methods": [
+                    "init"
+                ]
             },
             "print__spaces__standard": {
                 "userPath": {
                     "en": "consoleSpacesStandard"
                 },
                 "validation": "integer__positiveNumber",
-                "category": "general"
+                "category": "general",
+                "methods": [
+                    "init"
+                ]
             },
             "print__spaces__extended": {
                 "userPath": {
                     "en": "consoleSpacesStandard"
                 },
                 "validation": "integer__positiveNumber",
-                "category": "general"
+                "category": "general",
+                "methods": [
+                    "init"
+                ]
             },
             "messages__use": {
                 "userPath": {
                     "en": "consoleLanguage"
                 },
                 "validation": "string__language",
-                "category": "general"
+                "category": "general",
+                "methods": [
+                    "init"
+                ]
             }
         },
         "regexs": {
@@ -767,6 +876,33 @@
                     "regex": "(https?:\\/\\/)?([a-zA-Z0-9.-]+)\\.([a-zA-Z]{2,})(\\/\\S*)?$",
                     "message": {
                         "en": "Please enter a valid URL with optional \"http://\" or \"https://\" and a valid domain name followed by a top-level domain (TLD) of at least two letters."
+                    }
+                },
+                "gistTemplate": {
+                    "description": {
+                        "en": "Matches strings with two words separated by '::'"
+                    },
+                    "regex": "^(w+)::(w+)$",
+                    "message": {
+                        "en": "The input should consist of two words separated by '::'."
+                    }
+                },
+                "plainTemplate": {
+                    "description": {
+                        "en": "Matches any sequence of characters, including newlines, in a single line"
+                    },
+                    "regex": "[sS]*",
+                    "message": {
+                        "en": "The input should contain any sequence of characters, including whitespace and non-whitespace characters, and can be of any length, including an empty string"
+                    }
+                },
+                "typescriptFileName": {
+                    "description": {
+                        "en": "match strings starting with a lowercase letter, potentially containing multiple occurrences of regular characters or \"{{a-z}}\" input followed by an optional period, and ending with the extension.ts"
+                    },
+                    "regex": "^[a-z](?:([a-z0-9_-]*|{{[a-z]+}})*.?)+.ts",
+                    "message": {
+                        "en": "The filename must start with a lowercase letter and can include multiple occurrences of regular characters or \"{{a-z}}\" input, with an optional period before ending with the extension.ts"
                     }
                 }
             },
