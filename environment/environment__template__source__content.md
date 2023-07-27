@@ -10,32 +10,7 @@ You can leave a reference to a smart contract here. Currently, GitHub Gist and d
 
 ## Specification
 
-Default implementation: ```{ "smartContractContent": "import {
-  Field,
-  SmartContract,
-  state,
-  State,
-  method,
-} from 'snarkyjs';
-
-
-export class Square extends SmartContract {
-    @state(Field) num = State<Field>();
-    
-    
-    init() {
-        super.init();
-        this.num.set( Field( 3 ) );
-    }
-
-
-    @method update( square: Field ) {
-        const currentState = this.num.get();
-        this.num.assertEquals( currentState );
-        square.assertEquals( currentState.mul( currentState ) );
-        this.num.set( square );
-    }
-}" }```
+Default implementation: ```{ "smartContractContent": "..." }```
 
 ### Key
 
@@ -49,30 +24,5 @@ match strings starting with a lowercase letter, potentially containing multiple 
 
 | **Default** | **Validation** | **Type** |
 |:--|:--|:--|
-| ```"import {
-  Field,
-  SmartContract,
-  state,
-  State,
-  method,
-} from 'snarkyjs';
-
-
-export class Square extends SmartContract {
-    @state(Field) num = State<Field>();
-    
-    
-    init() {
-        super.init();
-        this.num.set( Field( 3 ) );
-    }
-
-
-    @method update( square: Field ) {
-        const currentState = this.num.get();
-        this.num.assertEquals( currentState );
-        square.assertEquals( currentState.mul( currentState ) );
-        this.num.set( square );
-    }
-}"``` | ```^[a-z](?:([a-z0-9_-]*|{{[a-z]+}})*.?)+.ts``` | ```string``` |
+| ```"..."``` | ```^[a-z](?:([a-z0-9_-]*|{{[a-z]+}})*.?)+.ts``` | ```string``` |
 

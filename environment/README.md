@@ -43,32 +43,7 @@ This section contains parameters related to your workspace, allowing you to cust
 | C.1 | [workspaceRootFolderName](../options/environment__workspace__contracts__root.md) | ```"./workdir/"``` |  | This root folder includes all your smart contracts, in both .ts versions and those compiled through TypeScript. |
 | C.2 | [workspaceTypescriptFolderName](../options/environment__workspace__contracts__ts__folder.md) | ```"ts/"``` |  | This folder sets a name where all your developed TypeScript smart contracts will located. |
 | C.3 | [workspaceBuildFolderName](../options/environment__workspace__contracts__build__folder.md) | ```"build/"``` |  | This folder sets a name for the location of all your automatically compiled TypeScript smart contracts. |
-| C.4 | [smartContractContent](../options/environment__template__source__content.md) | ```"import {
-  Field,
-  SmartContract,
-  state,
-  State,
-  method,
-} from 'snarkyjs';
-
-
-export class Square extends SmartContract {
-    @state(Field) num = State<Field>();
-    
-    
-    init() {
-        super.init();
-        this.num.set( Field( 3 ) );
-    }
-
-
-    @method update( square: Field ) {
-        const currentState = this.num.get();
-        this.num.assertEquals( currentState );
-        square.assertEquals( currentState.mul( currentState ) );
-        this.num.set( square );
-    }
-}"``` |  | You can leave a reference to a smart contract here. Currently, GitHub Gist and direct HTTPS requests are supported. |
+| C.4 | [smartContractContent](../options/environment__template__source__content.md) | ```"..."``` |  | You can leave a reference to a smart contract here. Currently, GitHub Gist and direct HTTPS requests are supported. |
 | C.5 | [smartContractName](../options/environment__template__source__name.md) | ```"{{name}}.ts"``` |  | Here, you can set the name of your smart contract. |
 
 

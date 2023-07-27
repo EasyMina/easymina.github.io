@@ -159,6 +159,12 @@ export class GenerateOptions {
         struct['data']['description'] = this.#details['keyPaths'][ keyPath ]['description'][ this.#language ]
 
         let default_value = this.#keyPathToValue( { 'data': this.#easyMinaConfig, 'keyPath': keyPath } )
+        switch( keyPath ) {
+            case 'environment__template__source__content':
+                default_value = '...'
+                break
+        }
+        
         struct['data']['_default_value'] = default_value
 
         const str1 = Number.isInteger( default_value ) ? default_value : `"${default_value}"`
@@ -236,11 +242,12 @@ export class GenerateOptions {
                     acc[ key ].push( `|   | **Option** | **Default** | **Examples** | **Description** |` )
                     acc[ key ].push( `|:--|:--|:--|:--|:--|` )
                 }
-    
+
+                let value = a['data']['_default_value']
                 const row = [
                     `${a['data']['numbering']}`,
                     `[${a['data']['headline']}](../options/${a['fileName']})`,
-                    `\`\`\`${this.#setQuotes( a['data']['_default_value'] )}\`\`\``,
+                    `\`\`\`${this.#setQuotes( value )}\`\`\``,
                     ``,
                     `${a['data']['description']}`
                 ]
