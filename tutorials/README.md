@@ -1,6 +1,6 @@
 ---
-sort: 1
-title: TUTORIALS
+sort: 2
+title: Tutorials
 ---
 
 ...
