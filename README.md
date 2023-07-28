@@ -5,10 +5,10 @@
 Made for zk beginners and busy beavers 🦫
 
 Helps you set up:
-:heavy_check_mark: Environment variables and folders
-:heavy_check_mark: Your smart contract workspace with a small example
-:heavy_check_mark: TypeScript config file
-:heavy_check_mark: Security checks to minimize the risk of security exploits.
+:heavy_check_mark: Environment variables and folders  
+:heavy_check_mark: Your smart contract workspace with a small example  
+:heavy_check_mark: TypeScript config file  
+:heavy_check_mark: Security checks to minimize the risk of security exploits.  
 
 
 ## Quickstart
