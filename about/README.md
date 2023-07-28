@@ -3,8 +3,25 @@ sort: 1
 title: About Easy Mina
 ---
 
-<img src="./assets/images/logo.png" height="60px">
+<img src="./../assets/images/logo.png" height="60px">
 
+
+```
+yourFolder
+|-- .minaCredentials (A)
+|   |-- accounts (A.1)
+|   |   |-- yourKey1.json
+|   |   |-- yourKey2.json
+|   |-- contract (A.2)
+|   |   |-- yourContract.json
+|   |   |-- yourContract.json
+|-- Workspace (B)
+|   |-- ts (B.1)
+|   |   |-- yourSmartContract.ts
+|   |-- build (B.2)
+|-- tsconfig.json (C)
+|-- .gitignore (D)
+```
 
 
 # About
@@ -30,16 +47,23 @@ Folgende Funktionen sind vorhanden:
 
 >> Hier findest du mehr Information für diese Methode [setEnvironment](./set%20environment)
 
+
 `deployContract`: Hilft dir deinen ersten Smart Contract hochzuladen
 
 :heavy_check_mark: Erstellen von Contract Addressen  
 :heavy_check_mark: Finden und setzen von einem Payer Account  
 :heavy_check_mark: Hochladen und abspeichern, der wichtigsten Informationen in einer Datei  
 
+>> Hier findest du mehr Information für diese Methode [deployContract](./deploy%20Contract)
+
+
 `fetchInformation`: Hilft dir möglichst einfach die ersten Daten von der graphQl Schnittstelle abzufragen.
 
 :heavy_check_mark: Vorgefertigte graphQl Queries für einen schnellen Start.  
 :heavy_check_mark: Warten auf Confirmation und Schätzung der Zeit bis zum nächsten Slot.  
+
+>> Hier findest du mehr Information für diese Methode [fetchInformatione](./fetch%20Informationen)
+
 
 `readContract` coming soon...
 
