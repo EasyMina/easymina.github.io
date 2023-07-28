@@ -1,6 +1,6 @@
 ---
 sort: 1
-title: About Easy Mina
+title: About
 ---
 
 <img src="./../assets/images/logo.png" height="60px">
