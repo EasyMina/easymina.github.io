@@ -17,15 +17,12 @@ npm i easy-mina
 
 index.mjs
 ```js
-
 import { EasyMina } from 'easymina'
 
 const easyMina = new EasyMina()
 await easyMina.setEnvironment( {
     'projectName': 'hello-world'
 } )
-
-
 ```
 
 
