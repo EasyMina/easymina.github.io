@@ -25,82 +25,42 @@ yourFolder
 
 
 # About
-`easy mina` is a Node.js module that helps you create a bare-bones environment with minimal opinionated pre-configuration.
+`easy mina` is a Node.js module that assists newcomers in getting started with zk-snark development by providing a minimal and straightforward environment with minimal opinionated pre-configuration.
 
-Das Ziel ist es Neueinsteiger einen möglichst reibungslosen Einstieg in das Entwicklen von zk-snarks zu geben. Durch das Erstellen einer minimalen Arbeitsoberfläche wird die Aufmerksamkeit des Entwicklers ersteinmal auf die Struktur gerichtet. Die durch ihre simple Aufbauweise grundlegende Regeln indirekt erklärt. Auch werden best-practises per default mit eingebaut, wie verschlüsselung der Keys oder setzen eine `gitignore` datei mit einem ausschlusseintrag des credentialfolder und der zugehörigen keys. 
+The goal is to offer developers a smooth entry into zk-snark development by creating a minimal workspace that focuses their attention on the structure. The simple setup indirectly explains fundamental rules. Additionally, best practices are built-in by default, such as key encryption and the inclusion of a `.gitignore` file with exclusions for the credential folder and its associated keys.
 
-# History
-Easy Mina wurde ursprünglich als side-projekt entwicklelt, um die entwicklung einer einreichnung für mina´s `zkignite cohort 0`zu erleichtern. In `cohort 1` wurde dann `Easy Mina` eigenständig gefördert mit dem Ziel über den Code hinaus auch eine umfassende Dokumentation zu erstellen.
+## History
+Easy Mina was originally developed as a side project to facilitate the submission process for Mina's `zkignite cohort 0`. In `cohort 1`, `Easy Mina` received independent funding with the aim of creating comprehensive documentation beyond the code.
 
+## Features
+The actual functions come with several configurable settings. To reduce complexity, the functions can be executed with as few parameters as possible or none at all.
 
-## Funktionsumfang
-Die eigentlichen Funktionen habe teilweise viele veränderbare Einstellungen. Um die komplexitä†zu reduzieren, können die Funktionen mit möglichst wenig oder keinen Parametern ausgeführt werden.
+The following functions are available:
 
-Folgende Funktionen sind vorhanden:
+`setEnvironment`: Assists in creating your workspace:
 
-`setEnvironment`: Hilft dir beim Erstellen deines Arbeitsbereiches:
+:heavy_check_mark: Account creation and Test Token transfers  
+:heavy_check_mark: Directory setup for TypeScript programming  
+:heavy_check_mark: Creation of an appropriate TypeScript config file  
+:heavy_check_mark: Best-practice behavior and continuous security checks  
 
-:heavy_check_mark: Erstellen von Accounts und Transfer von Test Tokens  
-:heavy_check_mark: Erstellen von Verzeichnissen für die Typescript programmierung   
-:heavy_check_mark: Erstellen einer passenden typescript config file   
-:heavy_check_mark: Best-practise Verhaltensweise und kontinuierliche Sicherheitschecks.  
+>> Find more information about this method [setEnvironment](./set%20environment)
 
->> Hier findest du mehr Information für diese Methode [setEnvironment](./set%20environment)
+`deployContract`: Helps you upload your first Smart Contract
 
+:heavy_check_mark: Creation of Contract Addresses  
+:heavy_check_mark: Finding and setting a Payer Account  
+:heavy_check_mark: Uploading and saving essential information in a file  
 
-`deployContract`: Hilft dir deinen ersten Smart Contract hochzuladen
+>> Find more information about this method [deployContract](./deploy%20Contract)
 
-:heavy_check_mark: Erstellen von Contract Addressen  
-:heavy_check_mark: Finden und setzen von einem Payer Account  
-:heavy_check_mark: Hochladen und abspeichern, der wichtigsten Informationen in einer Datei  
+`fetchInformation`: Helps you easily query initial data from the GraphQL interface
 
->> Hier findest du mehr Information für diese Methode [deployContract](./deploy%20Contract)
+:heavy_check_mark: Pre-built GraphQL queries for a quick start  
+:heavy_check_mark: Waiting for confirmation and estimating the time until the next slot  
 
-
-`fetchInformation`: Hilft dir möglichst einfach die ersten Daten von der graphQl Schnittstelle abzufragen.
-
-:heavy_check_mark: Vorgefertigte graphQl Queries für einen schnellen Start.  
-:heavy_check_mark: Warten auf Confirmation und Schätzung der Zeit bis zum nächsten Slot.  
-
->> Hier findest du mehr Information für diese Methode [fetchInformatione](./fetch%20Informationen)
-
+>> Find more information about this method [fetchInformation](./fetch%20Informationen)
 
 `readContract` coming soon...
 
 `updateContract` coming soon...
-
-
-## Arbeitsbereich
-
-Folgende Structur wird für den Arbeitsbereich verwendet:
-
-```
-yourFolder
-|-- .minaCredentials (A)
-|   |-- accounts (A.1)
-|   |   |-- yourKey1.json
-|   |   |-- yourKey2.json
-|   |-- contract (A.2)
-|   |   |-- yourContract.json
-|   |   |-- yourContract.json
-|-- Workspace (B)
-|   |-- ts (B.1)
-|   |   |-- yourSmartContract.ts
-|   |-- build (B.2)
-|-- tsconfig.json (C)
-|-- .gitignore (D)
-```
-
-
-
-
-**A. Credentials**  
-Dieses Verzeichnis beinhaltet die beiden Verzeichnisse `accounts` und `contracts`. Der folder name ist mit einem '.' versehen, dem Betriebssystem andeutet das es sich um einen versteckten Ordner handelt. Dieser Ordner beinhaltet als sicherheitsrelevanten eintragung und muss deshalb mit besonderer Sorgfalt behandelt werden
-
-- A.1. Dieses Verzeichniss enthält alle generierten account keys. Jeder Account wird standardmässig mit Test Tokens befüllt. Kann aber nur einmal aufgeladen werden. 
-- A.2. In diesem Verzeichnis sind alle hochgeladenen Verträge hinterlegt. Die jeweilige enthält auch eine Menge weiterer Daten die für spätere Interaktionen wichtig sein könnte.
-
-**B. Workspace**  
-Dieses Verzeichniss beinhaltet alle deine smart contracts.
-
-B.1. Hier 
