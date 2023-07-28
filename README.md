@@ -4,7 +4,7 @@ Made for zk beginners and busy beavers 🦫
 
 `easy mina` is a nodejs module to create a bare-bone environment, with less a possible optionated pre-configuration.
 
-Helps you set up:
+Helps you set up:  
 :heavy_check_mark: Environment variables and folders  
 :heavy_check_mark: Your smart contract workspace with a small example  
 :heavy_check_mark: TypeScript config file  
