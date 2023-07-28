@@ -1,8 +1,8 @@
 <img src="./assets/images/logo.png" height="60px">
 
-`easy mina` is a nodejs module to create a bare-bone environment, with less a possible optionated pre-configuration.
-
 Made for zk beginners and busy beavers 🦫
+
+`easy mina` is a nodejs module to create a bare-bone environment, with less a possible optionated pre-configuration.
 
 Helps you set up:
 :heavy_check_mark: Environment variables and folders  
