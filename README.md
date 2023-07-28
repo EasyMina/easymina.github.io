@@ -12,10 +12,11 @@
 ```bash
 npm init -y
 npm i easy-mina
-...
 ```
 
-```nodejs
+
+index.mjs
+```js
 
 import { EasyMina } from 'easymina'
 
