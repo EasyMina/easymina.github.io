@@ -1,6 +1,6 @@
 ---
 sort: 2
-title: setEnvironment({})
+title: set Environment
 ---
 
 # setEnvironment({})
