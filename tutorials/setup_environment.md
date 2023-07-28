@@ -39,14 +39,14 @@ The fastest way to get started is as follows:
 ### 1: Create a new folder
 Create a new folder and navigate into it.
 
-```linux / mac
+```bash
 mkdir first-mina-project && cd first-mina-project
 ```
 
 ### 2: Initialize npm
 Initialize the Node Package Manager and add `easymina` as a package. Using `&&`, the commands `npm init -y` and `npm i easymina` will be executed one after the other. The `-y` after `npm init` means that all recommended settings will be added. If you want to see the prompts and customize the settings, simply omit the `-y`. The `i` after `npm` stands for `install`. With this command, npm will download the latest version of EasyMina and place it in the modules folder.
 
-```linux / mac
+```bash
 npm init -y && npm i easymina
 ```
 
