@@ -3,7 +3,6 @@ sort: 1
 title: Features
 ---
 
-
 ## Features
 The actual functions come with several configurable settings. To reduce complexity, the functions can be executed with as few parameters as possible or none at all.
 
@@ -16,6 +15,23 @@ The following functions are available:
 :heavy_check_mark: Directory setup for TypeScript programming  
 :heavy_check_mark: Creation of an appropriate TypeScript config file  
 :heavy_check_mark: Best-practice behavior and continuous security checks  
+
+```
+yourFolder
+|-- .minaCredentials (A)
+|   |-- accounts (A.1)
+|   |   |-- yourKey1.json
+|   |   |-- yourKey2.json
+|   |-- contract (A.2)
+|   |   |-- yourContract.json
+|   |   |-- yourContract.json
+|-- Workspace (B)
+|   |-- ts (B.1)
+|   |   |-- yourSmartContract.ts
+|   |-- build (B.2)
+|-- tsconfig.json (C)
+|-- .gitignore (D)
+```
 
 Find more information about this method [setEnvironment](../setEnvironment)
 

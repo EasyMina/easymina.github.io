@@ -6,24 +6,6 @@ title: About
 <img src="./../assets/images/logo.png" height="60px">
 
 
-```
-yourFolder
-|-- .minaCredentials (A)
-|   |-- accounts (A.1)
-|   |   |-- yourKey1.json
-|   |   |-- yourKey2.json
-|   |-- contract (A.2)
-|   |   |-- yourContract.json
-|   |   |-- yourContract.json
-|-- Workspace (B)
-|   |-- ts (B.1)
-|   |   |-- yourSmartContract.ts
-|   |-- build (B.2)
-|-- tsconfig.json (C)
-|-- .gitignore (D)
-```
-
-
 # About
 `easy mina` is a Node.js module that assists newcomers in getting started with zk-snark development by providing a minimal and straightforward environment with minimal opinionated pre-configuration.
 
