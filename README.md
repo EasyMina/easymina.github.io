@@ -1,17 +1,21 @@
 <img src="./assets/images/logo.png" height="60px">
 
-`easy mina` is a nodejs module to create your first mina smart contract.
- 
-:heavy_check_mark: Easy to use
+`easy mina` is a nodejs module to create a bare-bone environment, with less a possible optionated pre-configuration.
 
-:heavy_check_mark: Help you to create your environment. 
+Made for zk beginners and busy beavers 🦫
+
+Helps you set up:
+:heavy_check_mark: Environment variables and folders
+:heavy_check_mark: Your smart contract workspace with a small example
+:heavy_check_mark: TypeScript config file
+:heavy_check_mark: Security checks to minimize the risk of security exploits.
 
 
-## Source Code
+## Quickstart
 
 ```bash
 npm init -y
-npm i easy-mina
+npm i easymina
 ```
 
 
@@ -21,7 +25,8 @@ import { EasyMina } from 'easymina'
 
 const easyMina = new EasyMina()
 await easyMina.setEnvironment( {
-    'projectName': 'hello-world'
+    'projectName': 'hello-world',
+    'encrypt': false
 } )
 ```
 
