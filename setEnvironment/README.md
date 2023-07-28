@@ -1,15 +1,15 @@
 ---
-sort: 5
+sort: 2
 title: set Environment
 ---
 
-# setEnvironment({})
+# setEnvironment()
 
 This configuration guide provides access to various categories of parameters, enabling users to customize their projects and workspaces according to their preferences. You can adjust general settings, account-related options, workspace parameters, and network variables to tailor your development experience.
 
-## Workspace
+## Environment
 
-The following structure is used for the workspace:
+The following structure is used for the environment:
 
 ```
 yourFolder
