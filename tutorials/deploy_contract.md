@@ -27,7 +27,13 @@ await easyMina.deployContract({
 
 ## Overview
 The fastest way to get started is as follows:
-- 
+- Create a folder.
+- Initialize a Node.js project with `npm init`.
+- Install EasyMina with `npm i easymina`.
+- Create a file `index.mjs`.
+- Import the `EasyMina` class with `import { EasyMina } from 'easymina'`.
+- Instantiate an instance of `EasyMina` with `const easyMina = new EasyMina()`.
+- Execute the asynchronous method: `await easyMina.deployContract({})`.
 
 *Check all available options and payload data points here: [sections/](../sections/)*
 
