@@ -5,7 +5,7 @@ title: C. Fetch Information from Mina
 
 # C. Fetch Information from Mina
 
-## Result
+## Code
 
 ## Overview
 The fastest way to get started is as follows:

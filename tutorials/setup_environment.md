@@ -7,7 +7,7 @@ title: A. Setup your environment
 
 This guide explains the steps to quickly set up and use the "Easy Mina" Node.js module, which includes creating a new folder, initializing a Node.js project, installing the module, importing and instantiating the `EasyMina` class, and setting up the workspace environment.
 
-## Result
+## Code
 terminal
 ```
 mkdir first-mina-project && cd first-mina-project
@@ -22,7 +22,9 @@ nodejs (index.mjs)
 import { EasyMina } from 'easymina'
 
 const easyMina = new EasyMina()
-easyMina.setEnvironment({})
+await easyMina.setEnvironment({
+    'projectName': 'hello-world'
+})
 ```
 
 
@@ -66,10 +68,15 @@ const easyMina = new EasyMina()
 ```
 
 ### 4: Set up your workspace
-The `setEnvironment` method checks whether an EasyMina environment already exists. It either creates it from scratch, replaces parts of it, or skips functions if everything already exists. During this process, a Mina account is created and stored, and test tokens called `faucets` are requested. Track the progress in the terminal, where you will also find further links. Please note that there are curly braces inside the round brackets `({})`. By default, you don't need to pass any variables; you can find a wide range of modification options at [./environment](https://easymina.github.io/environment/).
+The `setEnvironment` method checks whether an EasyMina environment already exists. It either creates it from scratch, replaces parts of it, or skips functions if everything already exists. During this process, a Mina account is created and stored, and test tokens called `faucets` are requested. Track the progress in the terminal, where you will also find further links. Please note that there are curly braces inside the round brackets `({})`. By default, you don't need to pass any variables; you can find a wide range of modification options at [./options](https://easymina.github.io/options/).
 
 ```nodejs
-easyMina.setEnvironment({})
+import { EasyMina } from 'easymina'
+const easyMina = new EasyMina()
+
+await easyMina.setEnvironment({
+    'projectName': 'hello-world'
+})
 ```
 
 ### 5: Run your program

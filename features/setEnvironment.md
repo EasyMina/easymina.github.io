@@ -3,7 +3,7 @@ sort: 1
 title: A. setEnvironment()
 ---
 
-# A. setEnvironment({})
+# A. setEnvironment()
 
 `.setEnvironment({})`: Assists in creating your workspace:
 

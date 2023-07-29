@@ -3,9 +3,9 @@ sort: 2
 title: B. deployContract()
 ---
 
-# B. deployContract({})
+# B. deployContract()
 
-`deployContract`: Helps you upload your first Smart Contract
+`.deployContract({})`: Helps you upload your first Smart Contract
 
 :heavy_check_mark: Creation of Contract Addresses  
 :heavy_check_mark: Finding and setting a Payer Account  
