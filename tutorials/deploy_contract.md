@@ -8,7 +8,7 @@ title: B. Deploy your Contract
 EasyMina offers a swift and straightforward way to start deploying contracts. Just create a new folder, initialize npm, install EasyMina, create an `index.mjs` file, and execute the contract deployment method using `await easyMina.deployContract({ 'projectName': 'hello-world' })`.
 
 ## Result
-terminal
+1. terminal
 ```
 mkdir first-mina-project && cd first-mina-project
 ```
@@ -17,7 +17,7 @@ mkdir first-mina-project && cd first-mina-project
 npm init -y && npm i easymina
 ```
 
-nodejs (index.mjs)
+2. index.mjs
 ```nodejs
 import { EasyMina } from 'easymina';
 const easyMina = new EasyMina();
@@ -26,6 +26,12 @@ await easyMina.deployContract({
     'projectName': 'hello-world'
 });
 ```
+
+3. terminal
+```
+node index.mjs
+```
+
 
 ## Overview
 The fastest way to get started is as follows:
