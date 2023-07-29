@@ -5,7 +5,12 @@ title: A. setEnvironment()
 
 # setEnvironment()
 
-This configuration guide provides access to various categories of parameters, enabling users to customize their projects and workspaces according to their preferences. You can adjust general settings, account-related options, workspace parameters, and network variables to tailor your development experience.
+`.setEnvironment({})`: Assists in creating your workspace:
+
+:heavy_check_mark: Account creation and Test Token transfers  
+:heavy_check_mark: Directory setup for TypeScript programming  
+:heavy_check_mark: Creation of an appropriate TypeScript config file  
+:heavy_check_mark: Best-practice behavior and continuous security checks  
 
 
 ## Quickstart
@@ -26,7 +31,7 @@ const easyMina = new EasyMina()
 easyMina.setEnvironment({})
 ```
 
-Visit [Tutorials](./tutorials) for mr
+You can find detailed instructions in [Setup your Environment](../tutorials/setup_environment.html).
 
 
 ## Overview
