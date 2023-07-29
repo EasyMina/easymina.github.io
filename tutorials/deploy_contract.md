@@ -90,7 +90,7 @@ await easyMina.deployContract({
 
 ### Step 5: Execute the Program
 
-Now, the Deployer Key is initialized, a Verification Key is calculated, the transaction is prepared, and subsequently uploaded. Upon a successful transaction submission, a Contract Key file is created, containing all essential information, including direct links to the respective detail pages of the blockchain explorers. The Verification Key and the actual Smart Contract are also stored in this file, making future interactions more straightforward.
+Now, a Deployer Account (see [setEnviroment A.1.](../features/setEnvironment.html#a-credentials) Key will be initialized, a Verification Key will be calculated, and the transaction will be prepared and subsequently uploaded. Upon successful transaction submission, a Contract Key (see [setEnviroment A.2.](../features/setEnvironment.html#a-credentials) file will be created, containing all essential information, including direct links to the respective detail pages of the blockchain explorers. The Verification Key and the actual Smart Contract will also be stored in this file, making future interactions more straightforward.
 
 ```bash
 node index.mjs
