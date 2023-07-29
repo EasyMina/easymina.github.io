@@ -8,7 +8,7 @@ The actual methods come with several configurable settings. To reduce complexity
 
 The following methods are available:
 
-| **Nr** | **Method** | **Description** |
+| | **Method** | **Description** |
 | :-- | :-- | :-- |
 | A | [setEnvironment()](./setEnvironment.html) | Assists in creating your workspace | 
 | B | [deployContract()](./deployContract.html) | Helps you upload your first Smart Contract | 
