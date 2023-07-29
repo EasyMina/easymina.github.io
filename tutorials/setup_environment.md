@@ -79,7 +79,8 @@ await easyMina.setEnvironment({
 })
 ```
 
-### 5: Run your program
+### 5: Run your script
+Sure, you can execute the script and track the progress in the `Terminal Console`. When this method is executed for the first time, waiting for the verification of the requested test tokens may take several minutes. The progress will be continuously updated and displayed in the console.
 
 ```bash
 node index.mjs
