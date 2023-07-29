@@ -17,7 +17,7 @@ mkdir first-mina-project && cd first-mina-project
 npm init -y && npm i easymina
 ```
 
-nodejs
+nodejs (index.mjs)
 ```
 import { EasyMina } from 'easymina'
 
