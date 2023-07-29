@@ -9,6 +9,7 @@ EasyMina offers a swift and straightforward way to start deploying contracts. Ju
 
 ## Result
 1. terminal
+
 ```
 mkdir first-mina-project && cd first-mina-project
 ```
@@ -28,7 +29,8 @@ await easyMina.deployContract({
 });
 ```
 
-1. terminal
+3. terminal
+
 ```
 node index.mjs
 ```
