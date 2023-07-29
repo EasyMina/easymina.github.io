@@ -3,7 +3,7 @@ sort: 3
 title: C. fetchInformation()
 ---
 
-# fetchInfomation
+# C. fetchInfomation({})
 
 `fetchInformation`: Helps you easily query initial data from the GraphQL interface
 

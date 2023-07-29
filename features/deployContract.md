@@ -3,7 +3,7 @@ sort: 2
 title: B. deployContract()
 ---
 
-# deployContract()
+# B. deployContract({})
 
 `deployContract`: Helps you upload your first Smart Contract
 
