@@ -334,7 +334,7 @@ export class GenerateOptions {
             'utf-8' 
         )
 
-        const overview = template.replace( '{{tables}}', this.#state['overview'] )
+        const overview = template.replace( '{{by_categories}}', this.#state['overview'] )
         fs.writeFileSync( 
             `${this.#config['path']['output']['optionsFolder']}README.md`, 
             overview, 

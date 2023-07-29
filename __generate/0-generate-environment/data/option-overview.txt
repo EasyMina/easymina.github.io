@@ -7,4 +7,4 @@ title: Options
 
 ## Sort By Categories
 
-{{tables}}
+{{by_categories}}
