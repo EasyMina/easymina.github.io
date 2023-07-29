@@ -5,7 +5,11 @@ title: Options
 
 # Options
 
-## Sort By Categories
+## By Method
+
+{{by_method}}
+
+## By Category
 
 ### General
 
