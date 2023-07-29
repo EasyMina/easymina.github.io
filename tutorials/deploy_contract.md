@@ -5,7 +5,7 @@ title: B. Deploy your Contract
 
 # B. Deploy your Contract
 
-## Code
+## Result
 terminal
 ```
 mkdir first-mina-project && cd first-mina-project
