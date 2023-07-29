@@ -1,6 +1,12 @@
 ---
-sort: 2
-title: B. fetchInformation()
+sort: 3
+title: C. fetchInformation()
 ---
 
-# Fetch Information
+# fetchInfomation
+
+## Quickstart
+
+## Overview
+
+## Options

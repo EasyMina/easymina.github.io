@@ -1,6 +1,12 @@
 ---
-sort: 3
-title: C. deployContract()
+sort: 2
+title: B. deployContract()
 ---
 
-# Deploy Contract
+# deployContract()
+
+## Quickstart
+
+## Overview
+
+## Options
