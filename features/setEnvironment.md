@@ -1,9 +1,9 @@
 ---
 sort: 1
-title: .setEnvironment()
+title: A. setEnvironment()
 ---
 
-# A. setEnvironment()
+# setEnvironment()
 
 This configuration guide provides access to various categories of parameters, enabling users to customize their projects and workspaces according to their preferences. You can adjust general settings, account-related options, workspace parameters, and network variables to tailor your development experience.
 

@@ -8,12 +8,16 @@ title: Setup your environment
 This guide explains the steps to quickly set up and use the "Easy Mina" Node.js module, which includes creating a new folder, initializing a Node.js project, installing the module, importing and instantiating the `EasyMina` class, and setting up the workspace environment.
 
 ## Result
-```bash
+terminal
+```
 mkdir first-mina-project && cd first-mina-project
+```
+
+```
 npm init -y && npm i easymina
 ```
 
-
+nodejs
 ```
 import { EasyMina } from 'easymina'
 
