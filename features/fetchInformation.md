@@ -1,6 +1,6 @@
 ---
 sort: 2
-title: .fetchInformation()
+title: B. .fetchInformation()
 ---
 
 # Fetch Information

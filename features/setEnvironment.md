@@ -3,9 +3,31 @@ sort: 1
 title: .setEnvironment()
 ---
 
-# setEnvironment()
+# A. setEnvironment()
 
 This configuration guide provides access to various categories of parameters, enabling users to customize their projects and workspaces according to their preferences. You can adjust general settings, account-related options, workspace parameters, and network variables to tailor your development experience.
+
+
+## Quickstart
+
+terminal
+```
+mkdir first-mina-project && cd first-mina-project
+```
+```
+npm init -y && npm i easymina
+```
+
+nodejs (index.mjs)
+```
+import { EasyMina } from 'easymina'
+
+const easyMina = new EasyMina()
+easyMina.setEnvironment({})
+```
+
+Visit [Tutorials](./tutorials) for mr
+
 
 ## Overview
 
