@@ -16,11 +16,13 @@ npm init -y && npm i easymina
 ```
 
 nodejs (index.mjs)
-```
-import { EasyMina } from 'easymina'
+```nodejs
+import { EasyMina } from 'easymina';
+const easyMina = new EasyMina();
 
-const easyMina = new EasyMina()
-easyMina.deploy({})
+await easyMina.deployContract({
+    'projectName': 'hello-world'
+});
 ```
 
 ## Overview
