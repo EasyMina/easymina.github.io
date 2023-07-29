@@ -1,9 +1,9 @@
 ---
 sort: 3
-title: Fetch Information from Mina
+title: C. Fetch Information from Mina
 ---
 
-# Fetch Information from Mina
+# C. Fetch Information from Mina
 
 ## Result
 

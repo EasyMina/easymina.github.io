@@ -1,9 +1,9 @@
 ---
-sort: 3
-title: Deploy your Contract
+sort: 2
+title: B. Deploy your Contract
 ---
 
-# Deploy your Contract
+# B. Deploy your Contract
 
 ## Result
 
