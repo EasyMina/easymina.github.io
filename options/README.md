@@ -5,6 +5,8 @@ title: Options
 
 # Options
 
+## Sort By Categories
+
 ### General
 
 This section contains general parameters that offer customization options for project settings and terminal output, including setting the project name, defining account messages, adjusting console spacing, and selecting the terminal language.
