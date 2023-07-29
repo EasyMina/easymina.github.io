@@ -1,9 +1,9 @@
 ---
 sort: 1
-title: Features
+title: Methods
 ---
 
-## Features
+## Methods
 The actual functions come with several configurable settings. To reduce complexity, the functions can be executed with as few parameters as possible or none at all.
 
 The following functions are available:

@@ -1,6 +1,6 @@
 ---
 sort: 3
-title: Deploy Contract
+title: .deployContract()
 ---
 
 # Deploy Contract
