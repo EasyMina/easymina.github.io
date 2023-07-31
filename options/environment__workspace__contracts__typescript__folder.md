@@ -16,7 +16,7 @@ Default implementation: ```{ "workspaceTypescriptFolderName": "typescript/" }```
 
 | **Name** | **Alias** | **Methods** | **Category** |  
 |:--|:--|:--|:--|
-| ```workspaceTypescriptFolderName``` | ```environment__workspace__contracts__typescript__folder``` | [setEnvironment](../methods//setEnvironment.html#options) | [Workspace](../options/#workspace) |
+| ```workspaceTypescriptFolderName``` | ```environment__workspace__contracts__typescript__folder``` | [setEnvironment](../methods/setEnvironment.html#options) | [Workspace](../options/#workspace) |
 
 ### Value
 

@@ -16,7 +16,7 @@ Default implementation: ```{ "accountMessage": "Do not share this file with some
 
 | **Name** | **Alias** | **Methods** | **Category** |  
 |:--|:--|:--|:--|
-| ```accountMessage``` | ```console__messages__accountComment``` | [setEnvironment](../methods//setEnvironment.html#options), [deployContract](../methods//deployContract.html#options) | [General](../options/#general) |
+| ```accountMessage``` | ```console__messages__accountComment``` | [setEnvironment](../methods/setEnvironment.html#options), [deployContract](../methods/deployContract.html#options) | [General](../options/#general) |
 
 ### Value
 

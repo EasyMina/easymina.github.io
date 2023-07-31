@@ -16,7 +16,7 @@ Default implementation: ```{ "consoleSpacesStandard": 30 }```
 
 | **Name** | **Alias** | **Methods** | **Category** |  
 |:--|:--|:--|:--|
-| ```consoleSpacesStandard``` | ```print__spaces__standard``` | [setEnvironment](../methods//setEnvironment.html#options), [deployContract](../methods//deployContract.html#options) | [General](../options/#general) |
+| ```consoleSpacesStandard``` | ```print__spaces__standard``` | [setEnvironment](../methods/setEnvironment.html#options), [deployContract](../methods/deployContract.html#options) | [General](../options/#general) |
 
 ### Value
 

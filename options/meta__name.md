@@ -16,7 +16,7 @@ Default implementation: ```{ "projectName": "12345" }```
 
 | **Name** | **Alias** | **Methods** | **Category** |  
 |:--|:--|:--|:--|
-| ```projectName``` | ```meta__name``` | [setEnvironment](../methods//setEnvironment.html#options), [deployContract](../methods//deployContract.html#options) | [General](../options/#general) |
+| ```projectName``` | ```meta__name``` | [setEnvironment](../methods/setEnvironment.html#options), [deployContract](../methods/deployContract.html#options) | [General](../options/#general) |
 
 ### Value
 

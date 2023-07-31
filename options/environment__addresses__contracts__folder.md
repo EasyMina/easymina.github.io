@@ -16,7 +16,7 @@ Default implementation: ```{ "contractsFolderName": "contracts/" }```
 
 | **Name** | **Alias** | **Methods** | **Category** |  
 |:--|:--|:--|:--|
-| ```contractsFolderName``` | ```environment__addresses__contracts__folder``` | [setEnvironment](../methods//setEnvironment.html#options) | [Account](../options/#account) |
+| ```contractsFolderName``` | ```environment__addresses__contracts__folder``` | [setEnvironment](../methods/setEnvironment.html#options) | [Account](../options/#account) |
 
 ### Value
 

@@ -16,7 +16,7 @@ Default implementation: ```{ "smartContractContentDefault": "..." }```
 
 | **Name** | **Alias** | **Methods** | **Category** |  
 |:--|:--|:--|:--|
-| ```smartContractContentDefault``` | ```environment__template__source__content``` | [setEnvironment](../methods//setEnvironment.html#options) | [Workspace](../options/#workspace) |
+| ```smartContractContentDefault``` | ```environment__template__source__content``` | [setEnvironment](../methods/setEnvironment.html#options) | [Workspace](../options/#workspace) |
 
 ### Value
 

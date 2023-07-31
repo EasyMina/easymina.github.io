@@ -16,7 +16,7 @@ Default implementation: ```{ "transactionExplorer": "https://berkeley.minaexplor
 
 | **Name** | **Alias** | **Methods** | **Category** |  
 |:--|:--|:--|:--|
-| ```transactionExplorer``` | ```network__berkeley__explorer__transaction``` | [setEnvironment](../methods//setEnvironment.html#options), [deployContract](../methods//deployContract.html#options) | [Network](../options/#network) |
+| ```transactionExplorer``` | ```network__berkeley__explorer__transaction``` | [setEnvironment](../methods/setEnvironment.html#options), [deployContract](../methods/deployContract.html#options) | [Network](../options/#network) |
 
 ### Value
 

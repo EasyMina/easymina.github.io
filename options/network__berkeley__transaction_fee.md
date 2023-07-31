@@ -16,7 +16,7 @@ Default implementation: ```{ "transactionFee": 100000000 }```
 
 | **Name** | **Alias** | **Methods** | **Category** |  
 |:--|:--|:--|:--|
-| ```transactionFee``` | ```network__berkeley__transaction_fee``` | [setEnvironment](../methods//setEnvironment.html#options), [deployContract](../methods//deployContract.html#options) | [Network](../options/#network) |
+| ```transactionFee``` | ```network__berkeley__transaction_fee``` | [setEnvironment](../methods/setEnvironment.html#options), [deployContract](../methods/deployContract.html#options) | [Network](../options/#network) |
 
 ### Value
 

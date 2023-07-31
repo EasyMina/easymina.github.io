@@ -16,7 +16,7 @@ Default implementation: ```{ "workspaceBuildFolderName": "build/" }```
 
 | **Name** | **Alias** | **Methods** | **Category** |  
 |:--|:--|:--|:--|
-| ```workspaceBuildFolderName``` | ```environment__workspace__contracts__build__folder``` | [setEnvironment](../methods//setEnvironment.html#options) | [Workspace](../options/#workspace) |
+| ```workspaceBuildFolderName``` | ```environment__workspace__contracts__build__folder``` | [setEnvironment](../methods/setEnvironment.html#options) | [Workspace](../options/#workspace) |
 
 ### Value
 
