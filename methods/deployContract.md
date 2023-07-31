@@ -11,8 +11,6 @@ title: B. deployContract()
 :heavy_check_mark: Finding and setting a Payer Account  
 :heavy_check_mark: Uploading and saving essential information in a file  
 
-Find more information about this method [deployContract](../deployContract)
-
 
 ## Quickstart
 
