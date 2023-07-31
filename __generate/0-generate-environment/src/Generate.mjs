@@ -180,7 +180,7 @@ export class GenerateOptions {
         const category = [ this.#titleizeString( struct['category'] ), struct['category'] ]
         console.log( 'item', item )
         const methods = item['methods']
-            .map( method => `[${method}](../${this.#config['url']['methods']}/${method}.html#options)` )
+            .map( method => `[${method}](../${this.#config['url']['methods']}${method}.html#options)` )
             .join( ', ' )
 
         struct['data']['key_row'] = [
