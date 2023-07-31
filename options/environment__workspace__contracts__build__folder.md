@@ -1,6 +1,6 @@
 ---
-sort: 11
-title: C.3. workspaceBuildFolderName
+sort: 13
+title: C.4. workspaceBuildFolderName
 ---
 
 # workspaceBuildFolderName
@@ -14,9 +14,9 @@ Default implementation: ```{ "workspaceBuildFolderName": "build/" }```
 
 ### Key
 
-| **Name** | **Alias** | **Category** |  
-|:--|:--|:--|
-| ```workspaceBuildFolderName``` | ```environment__workspace__contracts__build__folder``` | [Workspace](../options/#workspace) |
+| **Name** | **Alias** | **Category** | **Methods** |  
+|:--|:--|:--|:--|
+| ```workspaceBuildFolderName``` | ```environment__workspace__contracts__build__folder``` | [Workspace](../options/#workspace) | [setEnvironment](../features/setEnvironment.html#options) |
 
 ### Value
 

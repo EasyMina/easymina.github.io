@@ -1,0 +1,28 @@
+---
+sort: 12
+title: C.3. smartContractFileName
+---
+
+# smartContractFileName
+
+Here, you can set your typescript fileNName.
+
+
+## Specification
+
+Default implementation: ```{ "smartContractFileName": "12345.ts" }```
+
+### Key
+
+| **Name** | **Alias** | **Category** | **Methods** |  
+|:--|:--|:--|:--|
+| ```smartContractFileName``` | ```environment__workspace__contracts__typescript__fileName``` | [Workspace](../options/#workspace) | [deployContract](../features/deployContract.html#options) |
+
+### Value
+
+Matches file names starting with a lowercase letter, potentially containing multiple occurrences of alphanumerics, hyphens, or underscores, with an optional period, and ending with the extension ".ts".
+
+| **Default** | **Validation** | **Type** |
+|:--|:--|:--|
+| ```"12345.ts"``` | ```^[a-z](?:[a-z0-9_-]*\.?)+\.ts``` | ```string``` |
+

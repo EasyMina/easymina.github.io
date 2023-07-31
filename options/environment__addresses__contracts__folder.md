@@ -1,6 +1,6 @@
 ---
-sort: 8
-title: B.4. contractsFolderName
+sort: 9
+title: B.5. contractsFolderName
 ---
 
 # contractsFolderName
@@ -14,9 +14,9 @@ Default implementation: ```{ "contractsFolderName": "contracts/" }```
 
 ### Key
 
-| **Name** | **Alias** | **Category** |  
-|:--|:--|:--|
-| ```contractsFolderName``` | ```environment__addresses__contracts__folder``` | [Account](../options/#account) |
+| **Name** | **Alias** | **Category** | **Methods** |  
+|:--|:--|:--|:--|
+| ```contractsFolderName``` | ```environment__addresses__contracts__folder``` | [Account](../options/#account) | [setEnvironment](../features/setEnvironment.html#options) |
 
 ### Value
 

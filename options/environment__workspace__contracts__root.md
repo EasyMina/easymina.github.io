@@ -1,5 +1,5 @@
 ---
-sort: 9
+sort: 10
 title: C.1. workspaceRootFolderName
 ---
 
@@ -10,13 +10,13 @@ This root folder includes all your smart contracts, in both .ts versions and tho
 
 ## Specification
 
-Default implementation: ```{ "workspaceRootFolderName": "./workdir/" }```
+Default implementation: ```{ "workspaceRootFolderName": "workdir/" }```
 
 ### Key
 
-| **Name** | **Alias** | **Category** |  
-|:--|:--|:--|
-| ```workspaceRootFolderName``` | ```environment__workspace__contracts__root``` | [Workspace](../options/#workspace) |
+| **Name** | **Alias** | **Category** | **Methods** |  
+|:--|:--|:--|:--|
+| ```workspaceRootFolderName``` | ```environment__workspace__contracts__root``` | [Workspace](../options/#workspace) | [setEnvironment](../features/setEnvironment.html#options) |
 
 ### Value
 
@@ -24,5 +24,5 @@ The first character must be from 'a' to 'z', followed by a combination of 'a' to
 
 | **Default** | **Validation** | **Type** |
 |:--|:--|:--|
-| ```"./workdir/"``` | ```^[a-z](?!.*[-_]{2})[a-z0-9-_]*[a-z0-9]\/$``` | ```string``` |
+| ```"workdir/"``` | ```^[a-z](?!.*[-_]{2})[a-z0-9-_]*[a-z0-9]\/$``` | ```string``` |
 

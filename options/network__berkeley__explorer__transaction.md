@@ -1,5 +1,5 @@
 ---
-sort: 15
+sort: 17
 title: D.2. transactionExplorer
 ---
 
@@ -14,9 +14,9 @@ Default implementation: ```{ "transactionExplorer": "https://berkeley.minaexplor
 
 ### Key
 
-| **Name** | **Alias** | **Category** |  
-|:--|:--|:--|
-| ```transactionExplorer``` | ```network__berkeley__explorer__transaction``` | [Network](../options/#network) |
+| **Name** | **Alias** | **Category** | **Methods** |  
+|:--|:--|:--|:--|
+| ```transactionExplorer``` | ```network__berkeley__explorer__transaction``` | [Network](../options/#network) | [setEnvironment](../features/setEnvironment.html#options), [deployContract](../features/deployContract.html#options) |
 
 ### Value
 

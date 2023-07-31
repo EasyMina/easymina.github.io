@@ -14,9 +14,9 @@ Default implementation: ```{ "fileNameSplitter": "--" }```
 
 ### Key
 
-| **Name** | **Alias** | **Category** |  
-|:--|:--|:--|
-| ```fileNameSplitter``` | ```environment__addresses__splitter``` | [Account](../options/#account) |
+| **Name** | **Alias** | **Category** | **Methods** |  
+|:--|:--|:--|:--|
+| ```fileNameSplitter``` | ```environment__addresses__splitter``` | [Account](../options/#account) | [setEnvironment](../features/setEnvironment.html#options) |
 
 ### Value
 

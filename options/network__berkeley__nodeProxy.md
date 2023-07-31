@@ -1,5 +1,5 @@
 ---
-sort: 18
+sort: 20
 title: D.5. berkeleyNodeProxy
 ---
 
@@ -14,9 +14,9 @@ Default implementation: ```{ "berkeleyNodeProxy": "https://proxy.berkeley.minaex
 
 ### Key
 
-| **Name** | **Alias** | **Category** |  
-|:--|:--|:--|
-| ```berkeleyNodeProxy``` | ```network__berkeley__nodeProxy``` | [Network](../options/#network) |
+| **Name** | **Alias** | **Category** | **Methods** |  
+|:--|:--|:--|:--|
+| ```berkeleyNodeProxy``` | ```network__berkeley__nodeProxy``` | [Network](../options/#network) | [setEnvironment](../features/setEnvironment.html#options), [deployContract](../features/deployContract.html#options) |
 
 ### Value
 

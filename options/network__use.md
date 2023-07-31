@@ -1,5 +1,5 @@
 ---
-sort: 14
+sort: 16
 title: D.1. networkName
 ---
 
@@ -14,9 +14,9 @@ Default implementation: ```{ "networkName": "berkeley" }```
 
 ### Key
 
-| **Name** | **Alias** | **Category** |  
-|:--|:--|:--|
-| ```networkName``` | ```network__use``` | [Network](../options/#network) |
+| **Name** | **Alias** | **Category** | **Methods** |  
+|:--|:--|:--|:--|
+| ```networkName``` | ```network__use``` | [Network](../options/#network) | [setEnvironment](../features/setEnvironment.html#options), [deployContract](../features/deployContract.html#options) |
 
 ### Value
 

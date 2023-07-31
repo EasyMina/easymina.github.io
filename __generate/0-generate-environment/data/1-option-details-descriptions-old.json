@@ -8,6 +8,9 @@
                 "en": "To change the file name, you need to modify the file name structure."
             },
             "reference": [],
+            "categories": [
+                "createEnvironment"
+            ],
             "examples": [
                 {
                     "template": null,
@@ -26,6 +29,12 @@
                 "en": ""
             },
             "reference": [],
+            "categories": [
+                "createEnvironment",
+                "deployContract",
+                "interactWithContract",
+                "listenToEvents"
+            ],
             "examples": [
                 {
                     "template": null,
@@ -44,6 +53,12 @@
                 "en": "Note that name needs to start with a \".\" for security reasons."
             },
             "reference": [],
+            "categories": [
+                "createEnvironment",
+                "deployContract",
+                "interactWithContract",
+                "listenToEvents"
+            ],
             "examples": [
                 {
                     "template": null,
@@ -64,6 +79,12 @@
             "reference": [
                 "environment__addresses__root",
                 "environment__addresses__contracts__folder"
+            ],
+            "categories": [
+                "createEnvironment",
+                "deployContract",
+                "interactWithContract",
+                "listenToEvents"
             ],
             "examples": [
                 {
@@ -86,6 +107,12 @@
                 "environment__addresses__root",
                 "environment__addresses__deployers__folder"
             ],
+            "categories": [
+                "createEnvironment",
+                "deployContract",
+                "interactWithContract",
+                "listenToEvents"
+            ],
             "examples": [
                 {
                     "template": null,
@@ -106,6 +133,12 @@
             "reference": [
                 "environment__workspace__contracts__ts__folder",
                 "environment__workspace__contracts__build__folder"
+            ],
+            "categories": [
+                "createEnvironment",
+                "deployContract",
+                "interactWithContract",
+                "listenToEvents"
             ],
             "examples": [
                 {
@@ -128,6 +161,12 @@
                 "environment__workspace__contracts__root",
                 "environment__workspace__contracts__build__folder"
             ],
+            "categories": [
+                "createEnvironment",
+                "deployContract",
+                "interactWithContract",
+                "listenToEvents"
+            ],
             "examples": [
                 {
                     "template": null,
@@ -149,6 +188,12 @@
                 "environment__workspace__contracts__root",
                 "environment__workspace__contracts__ts__folder"
             ],
+            "categories": [
+                "createEnvironment",
+                "deployContract",
+                "interactWithContract",
+                "listenToEvents"
+            ],
             "examples": [
                 {
                     "template": null,
@@ -167,6 +212,12 @@
                 "en": "Currently, only the 'berkeley' test network is supported"
             },
             "reference": [],
+            "categories": [
+                "createEnvironment",
+                "deployContract",
+                "interactWithContract",
+                "listenToEvents"
+            ],
             "examples": []
         },
         "network__berkeley__explorer__transaction": {
@@ -178,6 +229,12 @@
             },
             "reference": [
                 "network__use"
+            ],
+            "categories": [
+                "createEnvironment",
+                "deployContract",
+                "interactWithContract",
+                "listenToEvents"
             ],
             "examples": []
         },
@@ -191,6 +248,12 @@
             "reference": [
                 "network__use"
             ],
+            "categories": [
+                "createEnvironment",
+                "deployContract",
+                "interactWithContract",
+                "listenToEvents"
+            ],
             "examples": []
         },
         "network__berkeley__node": {
@@ -202,6 +265,12 @@
             },
             "reference": [
                 "network__use"
+            ],
+            "categories": [
+                "createEnvironment",
+                "deployContract",
+                "interactWithContract",
+                "listenToEvents"
             ],
             "examples": []
         },
@@ -215,6 +284,12 @@
             "reference": [
                 "network__use"
             ],
+            "categories": [
+                "createEnvironment",
+                "deployContract",
+                "interactWithContract",
+                "listenToEvents"
+            ],
             "examples": []
         },
         "network__berkeley__graphQl": {
@@ -226,6 +301,12 @@
             },
             "reference": [
                 "network__use"
+            ],
+            "categories": [
+                "createEnvironment",
+                "deployContract",
+                "interactWithContract",
+                "listenToEvents"
             ],
             "examples": []
         },
@@ -239,6 +320,12 @@
             "reference": [
                 "network__use"
             ],
+            "categories": [
+                "createEnvironment",
+                "deployContract",
+                "interactWithContract",
+                "listenToEvents"
+            ],
             "examples": []
         },
         "console__messages__accountComment": {
@@ -249,6 +336,12 @@
                 "en": ""
             },
             "reference": [],
+            "categories": [
+                "createEnvironment",
+                "deployContract",
+                "interactWithContract",
+                "listenToEvents"
+            ],
             "examples": [
                 {
                     "template": null,
@@ -267,6 +360,12 @@
                 "en": ""
             },
             "reference": [],
+            "categories": [
+                "createEnvironment",
+                "deployContract",
+                "interactWithContract",
+                "listenToEvents"
+            ],
             "examples": [
                 {
                     "template": null,
@@ -285,6 +384,12 @@
                 "en": "Diese sekundäre Stufe wird nur sehr selten verwendet. Gehe zu {{print__spaces__standard}} für die Standard Einstellung."
             },
             "reference": [],
+            "categories": [
+                "createEnvironment",
+                "deployContract",
+                "interactWithContract",
+                "listenToEvents"
+            ],
             "examples": [
                 {
                     "template": null,
@@ -303,6 +408,12 @@
                 "en": "Currently, only the English language is allowed, more languages will be added in the future."
             },
             "reference": [],
+            "categories": [
+                "createEnvironment",
+                "deployContract",
+                "interactWithContract",
+                "listenToEvents"
+            ],
             "examples": []
         },
         "environment__template__source__content": {
@@ -313,6 +424,12 @@
                 "en": "If key is not provided, an example smart contract will be inserted."
             },
             "reference": [],
+            "categories": [
+                "createEnvironment",
+                "deployContract",
+                "interactWithContract",
+                "listenToEvents"
+            ],
             "examples": []
         },
         "environment__template__source__name": {
@@ -323,6 +440,12 @@
                 "en": "You can also create a reference to the current project name using \"{{name}}\", which will be substituted accordingly."
             },
             "reference": [],
+            "categories": [
+                "createEnvironment",
+                "deployContract",
+                "interactWithContract",
+                "listenToEvents"
+            ],
             "examples": []
         },
         "environment__addresses__deployers__fileName": {
@@ -333,26 +456,12 @@
                 "en": ""
             },
             "reference": [],
-            "examples": []
-        },
-        "environment__workspace__contracts__typescript__folder": {
-            "description": {
-                "en": "Here, you can set your typescript folder."
-            },
-            "note": {
-                "en": ""
-            },
-            "reference": [],
-            "examples": []
-        },
-        "environment__workspace__contracts__typescript__fileName": {
-            "description": {
-                "en": "Here, you can set your typescript fileNName."
-            },
-            "note": {
-                "en": ""
-            },
-            "reference": [],
+            "categories": [
+                "createEnvironment",
+                "deployContract",
+                "interactWithContract",
+                "listenToEvents"
+            ],
             "examples": []
         }
     },
@@ -368,14 +477,6 @@
         },
         "workspace": {
             "en": "This section contains parameters related to your workspace, allowing you to customize the folder structure for managing smart contracts and TypeScript files efficiently, including the root folder, TypeScript folder, and build folder locations."
-        }
-    },
-    "methods": {
-        "setEnvironment": {
-            "en": "Assists in creating your workspace."
-        },
-        "deployContract": {
-            "en": "Helps you upload your first Smart Contract"
         }
     }
 }

@@ -1,5 +1,5 @@
 ---
-sort: 17
+sort: 19
 title: D.4. berkeleyNode
 ---
 
@@ -14,9 +14,9 @@ Default implementation: ```{ "berkeleyNode": "https://berkeley.graphql.minaexplo
 
 ### Key
 
-| **Name** | **Alias** | **Category** |  
-|:--|:--|:--|
-| ```berkeleyNode``` | ```network__berkeley__node``` | [Network](../options/#network) |
+| **Name** | **Alias** | **Category** | **Methods** |  
+|:--|:--|:--|:--|
+| ```berkeleyNode``` | ```network__berkeley__node``` | [Network](../options/#network) | [setEnvironment](../features/setEnvironment.html#options), [deployContract](../features/deployContract.html#options) |
 
 ### Value
 

@@ -1,22 +1,22 @@
 ---
-sort: 13
-title: C.5. smartContractName
+sort: 15
+title: C.6. smartContractNameDefault
 ---
 
-# smartContractName
+# smartContractNameDefault
 
 Here, you can set the name of your smart contract.
 
 
 ## Specification
 
-Default implementation: ```{ "smartContractName": "{{name}}.ts" }```
+Default implementation: ```{ "smartContractNameDefault": "{{name}}.ts" }```
 
 ### Key
 
-| **Name** | **Alias** | **Category** |  
-|:--|:--|:--|
-| ```smartContractName``` | ```environment__template__source__name``` | [Workspace](../options/#workspace) |
+| **Name** | **Alias** | **Category** | **Methods** |  
+|:--|:--|:--|:--|
+| ```smartContractNameDefault``` | ```environment__template__source__name``` | [Workspace](../options/#workspace) | [setEnvironment](../features/setEnvironment.html#options) |
 
 ### Value
 

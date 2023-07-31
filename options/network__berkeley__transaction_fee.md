@@ -1,5 +1,5 @@
 ---
-sort: 20
+sort: 22
 title: D.7. transactionFee
 ---
 
@@ -14,9 +14,9 @@ Default implementation: ```{ "transactionFee": 100000000 }```
 
 ### Key
 
-| **Name** | **Alias** | **Category** |  
-|:--|:--|:--|
-| ```transactionFee``` | ```network__berkeley__transaction_fee``` | [Network](../options/#network) |
+| **Name** | **Alias** | **Category** | **Methods** |  
+|:--|:--|:--|:--|
+| ```transactionFee``` | ```network__berkeley__transaction_fee``` | [Network](../options/#network) | [setEnvironment](../features/setEnvironment.html#options), [deployContract](../features/deployContract.html#options) |
 
 ### Value
 

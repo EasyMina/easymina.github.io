@@ -1,5 +1,5 @@
 ---
-sort: 19
+sort: 21
 title: D.6. berkeleyGraphQl
 ---
 
@@ -14,9 +14,9 @@ Default implementation: ```{ "berkeleyGraphQl": "https://berkeley.graphql.minaex
 
 ### Key
 
-| **Name** | **Alias** | **Category** |  
-|:--|:--|:--|
-| ```berkeleyGraphQl``` | ```network__berkeley__graphQl``` | [Network](../options/#network) |
+| **Name** | **Alias** | **Category** | **Methods** |  
+|:--|:--|:--|:--|
+| ```berkeleyGraphQl``` | ```network__berkeley__graphQl``` | [Network](../options/#network) | [setEnvironment](../features/setEnvironment.html#options), [deployContract](../features/deployContract.html#options) |
 
 ### Value
 

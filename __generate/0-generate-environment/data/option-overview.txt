@@ -7,8 +7,8 @@ title: Options
 
 ## By Method
 
-{{by_method}}
+{{byMethod}}
 
 ## By Category
 
-{{by_categories}}
+{{byCategory}}

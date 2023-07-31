@@ -1,16 +1,13 @@
 {
     "meta": {
-        "name": "12345",
-        "unix": 1690811826,
-        "format": "2023-07-31T15:57:06+02:00",
+        "name": "easy-mina",
+        "unix": 1690499421,
+        "format": "2023-07-28T01:10:21+02:00",
         "easyMinaVersion": "0.01"
     },
     "docs": {
         "url": "https://easymina.github.io/",
-        "options": "options",
-        "setEnvironment": "features/setEnvironment.html",
-        "fetchInformation": "features/fetchEnvironment.html",
-        "deployContract": "features/deployContract.html"
+        "options": "environment/"
     },
     "environment": {
         "addresses": {
@@ -18,13 +15,12 @@
             "root": ".mina/",
             "deployers": {
                 "folder": "deployers/",
-                "fullFolder": "/Users/andreasbanholzer/PROJEKTE/2023-07-06--zkignite-cohort-2/1-js/6-easy-mina-v5/.mina/deployers/",
-                "fileNameStruct": "{{name}}{{splitter}}{{unix}}.json",
-                "fileName": "12345--1690811826.json"
+                "fullFolder": ".mina/deployers/",
+                "fileNameStruct": "{{name}}{{splitter}}{{unix}}.json"
             },
             "contracts": {
                 "folder": "contracts/",
-                "fullFolder": "/Users/andreasbanholzer/PROJEKTE/2023-07-06--zkignite-cohort-2/1-js/6-easy-mina-v5/.mina/contracts/",
+                "fullFolder": ".mina/contracts/",
                 "fileNameStruct": "{{name}}{{splitter}}{{unix}}.json"
             },
             "structs": {
@@ -60,17 +56,14 @@
         },
         "workspace": {
             "contracts": {
-                "root": "workdir/",
-                "typescript": {
-                    "folder": "typescript/",
-                    "full": "/Users/andreasbanholzer/PROJEKTE/2023-07-06--zkignite-cohort-2/1-js/6-easy-mina-v5/workdir/typescript/",
-                    "fullRelative": "workdir/typescript/",
-                    "fileName": "12345.ts"
+                "root": "./workdir/",
+                "ts": {
+                    "folder": "ts/",
+                    "full": "./workdir/ts/"
                 },
                 "build": {
                     "folder": "build/",
-                    "full": "/Users/andreasbanholzer/PROJEKTE/2023-07-06--zkignite-cohort-2/1-js/6-easy-mina-v5/workdir/build/",
-                    "fullRelative": "workdir/build/"
+                    "full": "./workdir/build/"
                 }
             },
             "gitignore": ".gitignore"
@@ -127,7 +120,7 @@
     },
     "graphQl": {
         "render": {
-            "frameInterval": 1000,
+            "frameInterval": 500,
             "delayBetweenRequests": 10000,
             "singleMaxInSeconds": 30
         },
@@ -573,14 +566,13 @@
                     "dom",
                     "esnext"
                 ],
-                "outDir": "workdir/build/",
-                "rootDir": "workdir/typescript/",
+                "outDir": "./workdir/build/",
+                "rootDir": "./workdir/ts/",
                 "strict": true,
                 "strictPropertyInitialization": false,
                 "skipLibCheck": true,
                 "forceConsistentCasingInFileNames": true,
                 "esModuleInterop": true,
-                "resolveJsonModule": true,
                 "moduleResolution": "node",
                 "experimentalDecorators": true,
                 "emitDecoratorMetadata": true,
@@ -591,10 +583,11 @@
                 "allowSyntheticDefaultImports": true,
                 "isolatedModules": true
             },
-            "include": [
-                "workdir/typescript/"
-            ],
-            "exclude": []
+            "include": null,
+            "exclude": [],
+            "includes": [
+                "./workdir/ts/"
+            ]
         },
         "fileName": "tsconfig.json"
     },
@@ -607,8 +600,7 @@
                 "validation": "string__hyphenAsSpace",
                 "category": "general",
                 "methods": [
-                    "setEnvironment",
-                    "deployContract"
+                    "init"
                 ]
             },
             "environment__addresses__splitter": {
@@ -618,7 +610,7 @@
                 "validation": "string__splitters",
                 "category": "account",
                 "methods": [
-                    "setEnvironment"
+                    "init"
                 ]
             },
             "environment__addresses__root": {
@@ -628,7 +620,7 @@
                 "validation": "string__folderNameInvisible",
                 "category": "account",
                 "methods": [
-                    "setEnvironment"
+                    "init"
                 ]
             },
             "environment__addresses__deployers__folder": {
@@ -638,17 +630,7 @@
                 "validation": "string__folderName",
                 "category": "account",
                 "methods": [
-                    "setEnvironment"
-                ]
-            },
-            "environment__addresses__deployers__fileName": {
-                "userPath": {
-                    "en": "deployerFileName"
-                },
-                "validation": "string__fileNameCredentials",
-                "category": "account",
-                "methods": [
-                    "deployContract"
+                    "init"
                 ]
             },
             "environment__addresses__contracts__folder": {
@@ -658,7 +640,7 @@
                 "validation": "string__folderName",
                 "category": "account",
                 "methods": [
-                    "setEnvironment"
+                    "init"
                 ]
             },
             "environment__workspace__contracts__root": {
@@ -668,27 +650,17 @@
                 "validation": "string__folderName",
                 "category": "workspace",
                 "methods": [
-                    "setEnvironment"
+                    "init"
                 ]
             },
-            "environment__workspace__contracts__typescript__folder": {
+            "environment__workspace__contracts__ts__folder": {
                 "userPath": {
                     "en": "workspaceTypescriptFolderName"
                 },
                 "validation": "string__folderName",
                 "category": "workspace",
                 "methods": [
-                    "setEnvironment"
-                ]
-            },
-            "environment__workspace__contracts__typescript__fileName": {
-                "userPath": {
-                    "en": "smartContractFileName"
-                },
-                "validation": "string__typescriptFileName",
-                "category": "workspace",
-                "methods": [
-                    "deployContract"
+                    "init"
                 ]
             },
             "environment__workspace__contracts__build__folder": {
@@ -698,27 +670,27 @@
                 "validation": "string__folderName",
                 "category": "workspace",
                 "methods": [
-                    "setEnvironment"
+                    "init"
                 ]
             },
             "environment__template__source__content": {
                 "userPath": {
-                    "en": "smartContractContentDefault"
+                    "en": "smartContractContent"
                 },
-                "validation": "string__plainTemplate",
+                "validation": "string__typescriptFileName",
                 "category": "workspace",
                 "methods": [
-                    "setEnvironment"
+                    "init"
                 ]
             },
             "environment__template__source__name": {
                 "userPath": {
-                    "en": "smartContractNameDefault"
+                    "en": "smartContractName"
                 },
-                "validation": "string__typescriptFileNamePlaceholder",
+                "validation": "string__typescriptFileName",
                 "category": "workspace",
                 "methods": [
-                    "setEnvironment"
+                    "init"
                 ]
             },
             "network__use": {
@@ -728,8 +700,7 @@
                 "validation": "string__networkName",
                 "category": "network",
                 "methods": [
-                    "setEnvironment",
-                    "deployContract"
+                    "init"
                 ]
             },
             "network__berkeley__explorer__transaction": {
@@ -739,8 +710,7 @@
                 "validation": "string__urlHttps",
                 "category": "network",
                 "methods": [
-                    "setEnvironment",
-                    "deployContract"
+                    "init"
                 ]
             },
             "network__berkeley__explorer__wallet": {
@@ -750,8 +720,7 @@
                 "validation": "string__urlHttps",
                 "category": "network",
                 "methods": [
-                    "setEnvironment",
-                    "deployContract"
+                    "init"
                 ]
             },
             "network__berkeley__node": {
@@ -761,8 +730,7 @@
                 "validation": "string__urlHttps",
                 "category": "network",
                 "methods": [
-                    "setEnvironment",
-                    "deployContract"
+                    "init"
                 ]
             },
             "network__berkeley__nodeProxy": {
@@ -772,8 +740,7 @@
                 "validation": "string__urlHttps",
                 "category": "network",
                 "methods": [
-                    "setEnvironment",
-                    "deployContract"
+                    "init"
                 ]
             },
             "network__berkeley__graphQl": {
@@ -783,8 +750,7 @@
                 "validation": "string__urlHttps",
                 "category": "network",
                 "methods": [
-                    "setEnvironment",
-                    "deployContract"
+                    "init"
                 ]
             },
             "network__berkeley__transaction_fee": {
@@ -794,8 +760,7 @@
                 "validation": "string__urlHttps",
                 "category": "network",
                 "methods": [
-                    "setEnvironment",
-                    "deployContract"
+                    "init"
                 ]
             },
             "console__messages__accountComment": {
@@ -805,8 +770,7 @@
                 "validation": "string__default",
                 "category": "general",
                 "methods": [
-                    "setEnvironment",
-                    "deployContract"
+                    "init"
                 ]
             },
             "print__spaces__standard": {
@@ -816,8 +780,7 @@
                 "validation": "integer__positiveNumber",
                 "category": "general",
                 "methods": [
-                    "setEnvironment",
-                    "deployContract"
+                    "init"
                 ]
             },
             "print__spaces__extended": {
@@ -827,8 +790,7 @@
                 "validation": "integer__positiveNumber",
                 "category": "general",
                 "methods": [
-                    "setEnvironment",
-                    "deployContract"
+                    "init"
                 ]
             },
             "messages__use": {
@@ -838,8 +800,7 @@
                 "validation": "string__language",
                 "category": "general",
                 "methods": [
-                    "setEnvironment",
-                    "deployContract"
+                    "init"
                 ]
             }
         },
@@ -861,15 +822,6 @@
                     "regex": "^[a-zA-Z0-9-]*$",
                     "message": {
                         "en": "You can use only letters (A-Z, a-z), numbers (0-9), and hyphens. Replace spaces with hyphens."
-                    }
-                },
-                "fileNameCredentials": {
-                    "description": {
-                        "en": "Allows file names with the structure \"{{name}}--{{unix}}.json\". {{name}} can contain alphanumerics and hyphens, and {{unix}} is a Unix timestamp."
-                    },
-                    "regex": "^[a-zA-Z0-9-]+--\\d+\\.json$",
-                    "message": {
-                        "en": "The file name should follow the pattern \"{{name}}--{{unix}}.json\", where {{name}} contains alphanumerics and hyphens, and {{unix}} is a Unix timestamp."
                     }
                 },
                 "splitters": {
@@ -945,15 +897,6 @@
                     }
                 },
                 "typescriptFileName": {
-                    "description": {
-                        "en": "Matches file names starting with a lowercase letter, potentially containing multiple occurrences of alphanumerics, hyphens, or underscores, with an optional period, and ending with the extension \".ts\"."
-                    },
-                    "regex": "^[a-z](?:[a-z0-9_-]*\\.?)+\\.ts",
-                    "message": {
-                        "en": "The file name must start with a lowercase letter and can include multiple occurrences of alphanumerics, hyphens, or underscores, with an optional period before ending with the extension \".ts\"."
-                    }
-                },
-                "typescriptFileNamePlaceholder": {
                     "description": {
                         "en": "match strings starting with a lowercase letter, potentially containing multiple occurrences of regular characters or \"{{a-z}}\" input followed by an optional period, and ending with the extension.ts"
                     },

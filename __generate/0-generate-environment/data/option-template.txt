@@ -14,8 +14,8 @@ Default implementation: {{default_value}}
 
 ### Key
 
-| **Name** | **Alias** | **Category** |  
-|:--|:--|:--|
+| **Name** | **Alias** | **Methods** | **Category** |  
+|:--|:--|:--|:--|
 {{key_row}}
 
 ### Value

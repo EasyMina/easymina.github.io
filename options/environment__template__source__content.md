@@ -1,28 +1,28 @@
 ---
-sort: 12
-title: C.4. smartContractContent
+sort: 14
+title: C.5. smartContractContentDefault
 ---
 
-# smartContractContent
+# smartContractContentDefault
 
 You can leave a reference to a smart contract here. Currently, GitHub Gist and direct HTTPS requests are supported.
 
 
 ## Specification
 
-Default implementation: ```{ "smartContractContent": "..." }```
+Default implementation: ```{ "smartContractContentDefault": "..." }```
 
 ### Key
 
-| **Name** | **Alias** | **Category** |  
-|:--|:--|:--|
-| ```smartContractContent``` | ```environment__template__source__content``` | [Workspace](../options/#workspace) |
+| **Name** | **Alias** | **Category** | **Methods** |  
+|:--|:--|:--|:--|
+| ```smartContractContentDefault``` | ```environment__template__source__content``` | [Workspace](../options/#workspace) | [setEnvironment](../features/setEnvironment.html#options) |
 
 ### Value
 
-match strings starting with a lowercase letter, potentially containing multiple occurrences of regular characters or "{{a-z}}" input followed by an optional period, and ending with the extension.ts
+Matches any sequence of characters, including newlines, in a single line
 
 | **Default** | **Validation** | **Type** |
 |:--|:--|:--|
-| ```"..."``` | ```^[a-z](?:([a-z0-9_-]*|{{[a-z]+}})*.?)+.ts``` | ```string``` |
+| ```"..."``` | ```[sS]*``` | ```string``` |
 

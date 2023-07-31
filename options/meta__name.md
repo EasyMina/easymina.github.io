@@ -10,13 +10,13 @@ Here, you can set the project name, which will be used as the file name for newl
 
 ## Specification
 
-Default implementation: ```{ "projectName": "easy-mina" }```
+Default implementation: ```{ "projectName": "12345" }```
 
 ### Key
 
-| **Name** | **Alias** | **Category** |  
-|:--|:--|:--|
-| ```projectName``` | ```meta__name``` | [General](../options/#general) |
+| **Name** | **Alias** | **Category** | **Methods** |  
+|:--|:--|:--|:--|
+| ```projectName``` | ```meta__name``` | [General](../options/#general) | [setEnvironment](../features/setEnvironment.html#options), [deployContract](../features/deployContract.html#options) |
 
 ### Value
 
@@ -24,5 +24,5 @@ Allow A-Z, a-b and 0-9 as value, use '-' for space.
 
 | **Default** | **Validation** | **Type** |
 |:--|:--|:--|
-| ```"easy-mina"``` | ```^[a-zA-Z0-9-]*$``` | ```string``` |
+| ```"12345"``` | ```^[a-zA-Z0-9-]*$``` | ```string``` |
 

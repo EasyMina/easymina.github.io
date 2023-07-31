@@ -32,10 +32,12 @@ export class GenerateOptions {
         !this.#silent ? console.log( 'Generate Pages' ) : ''
         !this.#silent ? console.log( '--------------' ) : ''
 
-        this.#language = ( language === null ) ? this.#config['language'] : language
         this.#silent = silent
         this.#easyMinaConfig = config
 
+        this.#language = this.#easyMinaConfig['messages']['use']
+        console.log( this.#language )
+        
         !this.#silent ? console.log( '  Init' ) : ''
         this.#addDetails()
 
@@ -54,8 +56,8 @@ export class GenerateOptions {
         this.#state['details'] = this.#detailPrepares()
 
         !this.#silent ? console.log( '  - Overview' ) : ''
-        this.#state['overview'] = this.#overviewPrepares()
-
+        const prepare = this.#overviewPrepares()
+        this.#state['templates'] = this.#overviewRenderTemplates( { prepare } )
 
         return this
     }
@@ -131,6 +133,7 @@ export class GenerateOptions {
         const struct = {
             'fileName': null, 
             'category': null,
+            'methods': null,
             'data': {
                 'sort': null,
                 'numbering': null,
@@ -147,6 +150,8 @@ export class GenerateOptions {
 
         struct['data']['sort'] = sort
 
+        struct['methods'] = this.#easyMinaConfig['validations']['keyPaths'][ keyPath ]['methods']
+
         struct['category'] = item['category']
         struct['data']['numbering'] = `${alpha[ index ]}.${rindex+1}`
         struct['fileName'] = `${keyPath}.md`
@@ -155,7 +160,6 @@ export class GenerateOptions {
         struct['data']['title'] = `${struct['data']['numbering']}. ${userKeyPath}`
         struct['data']['headline'] = `${userKeyPath}`
 
-        console.log( keyPath )
         struct['data']['description'] = this.#details['keyPaths'][ keyPath ]['description'][ this.#language ]
 
         let default_value = this.#keyPathToValue( { 'data': this.#easyMinaConfig, 'keyPath': keyPath } )
@@ -164,17 +168,23 @@ export class GenerateOptions {
                 default_value = '...'
                 break
         }
-        
+        console.log( 'item', item )
         struct['data']['_default_value'] = default_value
 
         const str1 = Number.isInteger( default_value ) ? default_value : `"${default_value}"`
         struct['data']['default_value'] = `\`\`\`{ "${userKeyPath}": ${str1} }\`\`\``
 
         const category = [ this.#titleizeString( struct['category'] ), struct['category'] ]
+        console.log( 'item', item )
+        const methods = item['methods']
+            .map( method => `[${method}](../features/${method}.html#options)` )
+            .join( ', ' )
+
         struct['data']['key_row'] = [
             `\`\`\`${userKeyPath}\`\`\``,
             `\`\`\`${keyPath}\`\`\``,
-            `[${category[ 0 ]}](../options/#${category[ 1 ]})`
+            `${methods}`,
+            `[${category[ 0 ]}](../options/#${category[ 1 ]})`,
         ]   
             .join( ' | ' )
             .replace( /^/, '| ' ) 
@@ -233,7 +243,97 @@ export class GenerateOptions {
     }
 
 
-    #overviewPrepares() {
+    #overviewRenderTemplates( { prepare } ) {
+        const result = {
+            'overview': []
+        }
+
+        result['overview'] = [ 
+            [ 'methods', 'By Method', '{{byMethod}}' ],
+            [ 'categories', 'By Category', '{{byCategory}}' ]
+        ]
+            .reduce( ( acc, a, index ) => {
+                const [ type, headline, selector ] = a
+                const tmp = Object
+                    .entries( prepare[ type ] )
+                    .reduce( ( abb, b, rindex ) => {
+                        const [ key, str ] = b 
+                        abb += [
+                            `### ${key}`,
+                            '',
+                            str,
+                            '',
+                            ''
+                        ]   
+                            .join( "\n" )
+
+                        return abb
+                    }, '' )
+
+                const str = [ tmp ]
+                    .join( "\n" )
+
+                const r = [
+                    selector,
+                    str
+                ]
+
+                acc.push( r )
+
+                return acc
+            }, [] )
+
+        return result
+    }
+
+
+    #overviewPrepareByMethod() {
+        console.log( '>>>', this.#state['details'] )
+
+        const unique = this.#state['details']
+            .map( a => a['methods'] )
+            .flat( 1 )
+            .filter( ( v, i, a ) => a.indexOf( v ) === i )
+
+        const method = unique[ 0 ]
+
+        const n = this.#state['details']
+            .filter( a => a['methods'].includes( method ) ) 
+            .reduce( ( acc, a, index, all ) => {
+                const key = method
+                if( !Object.hasOwn( acc, key ) ) {
+                    acc[ key ] = []
+                    acc[ key ].push( `|   | **Option** | **Default** | **Examples** | **Description** |` )
+                    acc[ key ].push( `|:--|:--|:--|:--|:--|` )
+                }
+
+                let value = a['data']['_default_value']
+                const row = [
+                    `${a['data']['numbering']}`,
+                    `[${a['data']['headline']}](../options/${a['fileName']})`,
+                    `\`\`\`${this.#setQuotes( value )}\`\`\``,
+                    ``,
+                    `${a['data']['description']}`
+                ]
+                    .join( ' | ' )
+                    .replace( /^/, '| ' ) 
+                    .replace( /$/, ' |' )
+            
+                acc[ key ].push( row )
+
+                if( index === all.length - 1 ) {
+                    acc = Object.entries( acc )
+                }
+
+                return acc
+            }, {} )
+
+        return true
+    }
+
+
+
+    #overviewPrepareByCategory() {
         const str = this.#state['details']
             .reduce( ( acc, a, index, all ) => {
                 const key = a['category']
@@ -256,11 +356,11 @@ export class GenerateOptions {
                     .replace( /$/, ' |' )
             
                 acc[ key ].push( row )
-    
+
                 if( index === all.length - 1 ) {
                     acc = Object.entries( acc )
                 }
-    
+
                 return acc
             }, {} )
             .map( a => {
@@ -284,13 +384,119 @@ export class GenerateOptions {
                     ``
                 ]
                     .join( "\n" )
-    
+
                 acc += str
                 
                 return acc
             }, '' )
-        
+
         return str
+    }
+
+
+    overviewRenderTable( { indexes, type, key } ) {
+        const rows = indexes
+            .reduce( ( acc, i, index, all ) => {
+                if( index === 0 ) {
+                    acc.push( `|   | **Option** | **Default** | **Examples** | **Description** |` )
+                    acc.push( `|:--|:--|:--|:--|:--|` )
+                }
+
+                const a = this.#state['details'][ i ]
+                let value = a['data']['_default_value']
+                const row = [
+                    `${a['data']['numbering']}`,
+                    `[${a['data']['headline']}](../options/${a['fileName']})`,
+                    `\`\`\`${this.#setQuotes( value )}\`\`\``,
+                    ``,
+                    `${a['data']['description']}`
+                ]
+                    .join( ' | ' )
+                    .replace( /^/, '| ' ) 
+                    .replace( /$/, ' |' )
+            
+                acc.push( row )
+                return acc
+            }, [] )
+
+        const result = [
+            `${this.#details[ type ][ key ][ this.#language ]}`,
+            ``,
+            rows.join( "\n" )
+        ]
+            .join( "\n")
+
+        return result
+    }
+
+
+    #overviewPrepares() {
+        let result = {
+            'methods': {},
+            'categories': {}
+        }
+
+        const lookUp = [
+            [ 'methods', 'methods' ],
+            [ 'categories', 'category' ]
+        ]
+            .reduce( ( abb, b, rindex ) => {
+                const [ category, type ] = b
+
+                abb[ category ] = this.#state['details']
+                    .map( a => {
+                        switch( type ) {
+                            case 'category':
+                                return [ a[ type ] ]
+                                break
+                            case 'methods':
+                                return a[ type ]
+                            default:
+                                console.log( `Type "${type}" not found` ) 
+                                process.exit( 1 )
+                                break
+                        }
+                    } )
+                    .flat( 1 )
+                    .filter( ( v, i, a ) => a.indexOf( v ) === i )
+                    .reduce( ( acc, key, index ) => {
+                        acc[ key ] = this.#state['details']
+                            .map( ( a, index ) => {
+                                a['index'] = index
+                                return a
+                            } )
+                            .filter( item => {
+                                switch( type ) {
+                                    case 'category': 
+                                        return item[ type ] === key
+                                        break
+                                    case 'methods':
+                                        return item[ type ].includes( key )
+                                        break
+                                }
+                            } )
+                            .map( a => a['index'] )
+                        return acc
+                    }, {} )
+                return abb
+            }, {} )
+
+        result = Object
+            .entries( lookUp )
+            .reduce( ( abb, b, rindex ) => {
+                const [ type, value ] = b
+                abb[ type ] = Object
+                    .entries( value )
+                    .reduce( ( acc, a, index ) => {
+                        const [ key, indexes ] = a
+                        acc[ key ] = this.overviewRenderTable( { indexes, type, key } )
+                        return acc
+                    }, {} )
+
+                return abb
+            }, {} )
+
+        return result
     }
 
 
@@ -334,7 +540,16 @@ export class GenerateOptions {
             'utf-8' 
         )
 
-        const overview = template.replace( '{{by_categories}}', this.#state['overview'] )
+        const overview = this.#state['templates']['overview']
+            .reduce( ( acc, a, index ) => {
+                const [ from, to ] = a
+
+                acc = acc
+                    .replace( from, to  )
+
+                return acc
+            }, template )
+
         fs.writeFileSync( 
             `${this.#config['path']['output']['optionsFolder']}README.md`, 
             overview, 

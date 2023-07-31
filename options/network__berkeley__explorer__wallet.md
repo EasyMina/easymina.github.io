@@ -1,5 +1,5 @@
 ---
-sort: 16
+sort: 18
 title: D.3. walletExplorer
 ---
 
@@ -14,9 +14,9 @@ Default implementation: ```{ "walletExplorer": "https://berkeley.minaexplorer.co
 
 ### Key
 
-| **Name** | **Alias** | **Category** |  
-|:--|:--|:--|
-| ```walletExplorer``` | ```network__berkeley__explorer__wallet``` | [Network](../options/#network) |
+| **Name** | **Alias** | **Category** | **Methods** |  
+|:--|:--|:--|:--|
+| ```walletExplorer``` | ```network__berkeley__explorer__wallet``` | [Network](../options/#network) | [setEnvironment](../features/setEnvironment.html#options), [deployContract](../features/deployContract.html#options) |
 
 ### Value
 
