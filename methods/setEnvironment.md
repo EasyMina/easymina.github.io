@@ -71,7 +71,7 @@ yourFolder
 
 This directory contains the two subdirectories `accounts` and `contracts`. The folder name is prefixed with a '.', which indicates that it's a hidden folder according to the operating system. This folder contains sensitive information and must be handled with special care.
 
-**A.1. Accounts**
+#### A.1. Accounts
 This directory contains all generated account keys. Each account is initially funded with test tokens but can only be funded once.
 
 sudo structure
@@ -114,7 +114,7 @@ yourFolder
 ```
 
 
-**A.2. Contracts**
+#### A.2. Contracts
 In this directory, all uploaded contracts are stored. Each contract also contains additional data that may be important for future interactions.
 
 sudo structure
