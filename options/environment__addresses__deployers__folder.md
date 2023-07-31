@@ -14,9 +14,9 @@ Default implementation: ```{ "accountsFolderName": "deployers/" }```
 
 ### Key
 
-| **Name** | **Alias** | **Category** | **Methods** |  
+| **Name** | **Alias** | **Methods** | **Category** |  
 |:--|:--|:--|:--|
-| ```accountsFolderName``` | ```environment__addresses__deployers__folder``` | [Account](../options/#account) | [setEnvironment](../features/setEnvironment.html#options) |
+| ```accountsFolderName``` | ```environment__addresses__deployers__folder``` | [setEnvironment](../methods//setEnvironment.html#options) | [Account](../options/#account) |
 
 ### Value
 

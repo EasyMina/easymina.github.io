@@ -14,9 +14,9 @@ Default implementation: ```{ "berkeleyNode": "https://berkeley.graphql.minaexplo
 
 ### Key
 
-| **Name** | **Alias** | **Category** | **Methods** |  
+| **Name** | **Alias** | **Methods** | **Category** |  
 |:--|:--|:--|:--|
-| ```berkeleyNode``` | ```network__berkeley__node``` | [Network](../options/#network) | [setEnvironment](../features/setEnvironment.html#options), [deployContract](../features/deployContract.html#options) |
+| ```berkeleyNode``` | ```network__berkeley__node``` | [setEnvironment](../methods//setEnvironment.html#options), [deployContract](../methods//deployContract.html#options) | [Network](../options/#network) |
 
 ### Value
 

@@ -14,9 +14,9 @@ Default implementation: ```{ "workspaceRootFolderName": "workdir/" }```
 
 ### Key
 
-| **Name** | **Alias** | **Category** | **Methods** |  
+| **Name** | **Alias** | **Methods** | **Category** |  
 |:--|:--|:--|:--|
-| ```workspaceRootFolderName``` | ```environment__workspace__contracts__root``` | [Workspace](../options/#workspace) | [setEnvironment](../features/setEnvironment.html#options) |
+| ```workspaceRootFolderName``` | ```environment__workspace__contracts__root``` | [setEnvironment](../methods//setEnvironment.html#options) | [Workspace](../options/#workspace) |
 
 ### Value
 

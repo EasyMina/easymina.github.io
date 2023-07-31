@@ -14,9 +14,9 @@ Default implementation: ```{ "smartContractFileName": "12345.ts" }```
 
 ### Key
 
-| **Name** | **Alias** | **Category** | **Methods** |  
+| **Name** | **Alias** | **Methods** | **Category** |  
 |:--|:--|:--|:--|
-| ```smartContractFileName``` | ```environment__workspace__contracts__typescript__fileName``` | [Workspace](../options/#workspace) | [deployContract](../features/deployContract.html#options) |
+| ```smartContractFileName``` | ```environment__workspace__contracts__typescript__fileName``` | [deployContract](../methods//deployContract.html#options) | [Workspace](../options/#workspace) |
 
 ### Value
 

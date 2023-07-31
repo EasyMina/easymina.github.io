@@ -14,9 +14,9 @@ Default implementation: ```{ "berkeleyNodeProxy": "https://proxy.berkeley.minaex
 
 ### Key
 
-| **Name** | **Alias** | **Category** | **Methods** |  
+| **Name** | **Alias** | **Methods** | **Category** |  
 |:--|:--|:--|:--|
-| ```berkeleyNodeProxy``` | ```network__berkeley__nodeProxy``` | [Network](../options/#network) | [setEnvironment](../features/setEnvironment.html#options), [deployContract](../features/deployContract.html#options) |
+| ```berkeleyNodeProxy``` | ```network__berkeley__nodeProxy``` | [setEnvironment](../methods//setEnvironment.html#options), [deployContract](../methods//deployContract.html#options) | [Network](../options/#network) |
 
 ### Value
 

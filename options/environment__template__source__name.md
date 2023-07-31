@@ -14,9 +14,9 @@ Default implementation: ```{ "smartContractNameDefault": "{{name}}.ts" }```
 
 ### Key
 
-| **Name** | **Alias** | **Category** | **Methods** |  
+| **Name** | **Alias** | **Methods** | **Category** |  
 |:--|:--|:--|:--|
-| ```smartContractNameDefault``` | ```environment__template__source__name``` | [Workspace](../options/#workspace) | [setEnvironment](../features/setEnvironment.html#options) |
+| ```smartContractNameDefault``` | ```environment__template__source__name``` | [setEnvironment](../methods//setEnvironment.html#options) | [Workspace](../options/#workspace) |
 
 ### Value
 

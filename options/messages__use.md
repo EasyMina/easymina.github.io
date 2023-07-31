@@ -14,9 +14,9 @@ Default implementation: ```{ "consoleLanguage": "en" }```
 
 ### Key
 
-| **Name** | **Alias** | **Category** | **Methods** |  
+| **Name** | **Alias** | **Methods** | **Category** |  
 |:--|:--|:--|:--|
-| ```consoleLanguage``` | ```messages__use``` | [General](../options/#general) | [setEnvironment](../features/setEnvironment.html#options), [deployContract](../features/deployContract.html#options) |
+| ```consoleLanguage``` | ```messages__use``` | [setEnvironment](../methods//setEnvironment.html#options), [deployContract](../methods//deployContract.html#options) | [General](../options/#general) |
 
 ### Value
 

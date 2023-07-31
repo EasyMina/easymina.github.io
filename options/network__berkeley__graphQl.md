@@ -14,9 +14,9 @@ Default implementation: ```{ "berkeleyGraphQl": "https://berkeley.graphql.minaex
 
 ### Key
 
-| **Name** | **Alias** | **Category** | **Methods** |  
+| **Name** | **Alias** | **Methods** | **Category** |  
 |:--|:--|:--|:--|
-| ```berkeleyGraphQl``` | ```network__berkeley__graphQl``` | [Network](../options/#network) | [setEnvironment](../features/setEnvironment.html#options), [deployContract](../features/deployContract.html#options) |
+| ```berkeleyGraphQl``` | ```network__berkeley__graphQl``` | [setEnvironment](../methods//setEnvironment.html#options), [deployContract](../methods//deployContract.html#options) | [Network](../options/#network) |
 
 ### Value
 

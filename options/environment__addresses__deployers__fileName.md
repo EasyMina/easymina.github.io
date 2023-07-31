@@ -14,9 +14,9 @@ Default implementation: ```{ "deployerFileName": "12345--1690811826.json" }```
 
 ### Key
 
-| **Name** | **Alias** | **Category** | **Methods** |  
+| **Name** | **Alias** | **Methods** | **Category** |  
 |:--|:--|:--|:--|
-| ```deployerFileName``` | ```environment__addresses__deployers__fileName``` | [Account](../options/#account) | [deployContract](../features/deployContract.html#options) |
+| ```deployerFileName``` | ```environment__addresses__deployers__fileName``` | [deployContract](../methods//deployContract.html#options) | [Account](../options/#account) |
 
 ### Value
 

@@ -14,9 +14,9 @@ Default implementation: ```{ "contractsFolderName": "contracts/" }```
 
 ### Key
 
-| **Name** | **Alias** | **Category** | **Methods** |  
+| **Name** | **Alias** | **Methods** | **Category** |  
 |:--|:--|:--|:--|
-| ```contractsFolderName``` | ```environment__addresses__contracts__folder``` | [Account](../options/#account) | [setEnvironment](../features/setEnvironment.html#options) |
+| ```contractsFolderName``` | ```environment__addresses__contracts__folder``` | [setEnvironment](../methods//setEnvironment.html#options) | [Account](../options/#account) |
 
 ### Value
 

@@ -14,9 +14,9 @@ Default implementation: ```{ "walletExplorer": "https://berkeley.minaexplorer.co
 
 ### Key
 
-| **Name** | **Alias** | **Category** | **Methods** |  
+| **Name** | **Alias** | **Methods** | **Category** |  
 |:--|:--|:--|:--|
-| ```walletExplorer``` | ```network__berkeley__explorer__wallet``` | [Network](../options/#network) | [setEnvironment](../features/setEnvironment.html#options), [deployContract](../features/deployContract.html#options) |
+| ```walletExplorer``` | ```network__berkeley__explorer__wallet``` | [setEnvironment](../methods//setEnvironment.html#options), [deployContract](../methods//deployContract.html#options) | [Network](../options/#network) |
 
 ### Value
 

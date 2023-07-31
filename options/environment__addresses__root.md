@@ -14,9 +14,9 @@ Default implementation: ```{ "credentialsRootFolderName": ".mina/" }```
 
 ### Key
 
-| **Name** | **Alias** | **Category** | **Methods** |  
+| **Name** | **Alias** | **Methods** | **Category** |  
 |:--|:--|:--|:--|
-| ```credentialsRootFolderName``` | ```environment__addresses__root``` | [Account](../options/#account) | [setEnvironment](../features/setEnvironment.html#options) |
+| ```credentialsRootFolderName``` | ```environment__addresses__root``` | [setEnvironment](../methods//setEnvironment.html#options) | [Account](../options/#account) |
 
 ### Value
 

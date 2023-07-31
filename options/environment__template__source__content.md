@@ -14,9 +14,9 @@ Default implementation: ```{ "smartContractContentDefault": "..." }```
 
 ### Key
 
-| **Name** | **Alias** | **Category** | **Methods** |  
+| **Name** | **Alias** | **Methods** | **Category** |  
 |:--|:--|:--|:--|
-| ```smartContractContentDefault``` | ```environment__template__source__content``` | [Workspace](../options/#workspace) | [setEnvironment](../features/setEnvironment.html#options) |
+| ```smartContractContentDefault``` | ```environment__template__source__content``` | [setEnvironment](../methods//setEnvironment.html#options) | [Workspace](../options/#workspace) |
 
 ### Value
 
