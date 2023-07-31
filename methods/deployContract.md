@@ -16,6 +16,25 @@ Find more information about this method [deployContract](../deployContract)
 
 ## Quickstart
 
+terminal
+```
+mkdir first-mina-project && cd first-mina-project
+```
+```
+npm init -y && npm i easymina
+```
+
+nodejs (index.mjs)
+```
+import { EasyMina } from 'easymina'
+
+const easyMina = new EasyMina()
+easyMina.setEnvironment({})
+await easyMina.deployContract({})
+```
+
+You can find detailed instructions in [Setup your Environment](../tutorials/setup_environment.html).
+
 ## Overview
  
 With this method, it is easy to upload a Smart Contract to the blockchain. All necessary steps are either automatically handled or can be adjusted via parameters. As a prerequisite, `setEnvironment()` should have been called before.
@@ -23,7 +42,7 @@ With this method, it is easy to upload a Smart Contract to the blockchain. All n
 ### Default
 To upload a Smart Contract using the `default` profile, no options need to be provided. Make sure to execute `setEnvironment()` beforehand. When called multiple times, no additional accounts will be created.
 
-```javascript
+```
 await easyMina
     .setEnvironment({})
 await easyMina
@@ -47,7 +66,7 @@ Here is a selection of available settings:
 
 More options can be found under [options](#options)
 
-```javascript
+```
 ...
 await easyMina
     .deployContract( { 

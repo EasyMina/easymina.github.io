@@ -227,3 +227,5 @@ easyMina.setEnvironment( {
 In this example, the project name is changed using the key `projectName`, and the credentials root folder is changed using the key: `credentialsRootFolderName`. Please note that each input is validated against specific criteria. For instance, the credentials folder must start with a '.' and end with '/'. For more information, refer to the respective details page for each key, or check the code for error messages in the terminal in case of incorrect input.
 
 For more information visit: [options](../options)
+
+{{options}}
