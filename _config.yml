@@ -1,6 +1,6 @@
-title: Easy Mina v2
+title: Easy Mina
 lang: en
-description: Develope your idea faster with easyMina 
+description: Made for zk beginners 
 
 plugins:
     - jekyll-default-layout
