@@ -18,7 +18,7 @@ The following methods are available:
 | :-- | :-- | :-- |
 | A | [setEnvironment()](./setEnvironment.html) | Assists in creating your workspace | 
 | B | [deployContract()](./deployContract.html) | Helps you upload your first Smart Contract | 
-| C | [fetchInformation()](./fetchInformation.html) | Helps you easily query initial data from the GraphQL interface |  
+| C | fetchInformation() | Helps you easily query initial data from the GraphQL interface |  
 | D | readContract() | coming soon... |
 | E | updateContract() | coming soon... |
 
