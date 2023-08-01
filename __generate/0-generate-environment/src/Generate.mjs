@@ -15,11 +15,13 @@ export class GenerateOptions {
             'path': {
                 'descriptions': './data/1-option-details-descriptions.json',
                 'templates': {
+                    'root': './data/',
                     'detail': './data/option-template.txt',
                     'overview': './data/option-overview.txt'
                 },
                 'output': {
                     'optionsFolder': './../../options/',
+                    'methodsFolder': './../../methods/'
                 }
             },
             'url': {
@@ -72,7 +74,8 @@ export class GenerateOptions {
         this.#detailSave()
 
         !this.#silent ? console.log( '  - Overview' ) : ''
-        this.#overviewSave()
+        this.#overviewSaveOptions()
+        this.#overviewSaveMethods()
 
         return true
     }
@@ -171,14 +174,12 @@ export class GenerateOptions {
                 default_value = '...'
                 break
         }
-        console.log( 'item', item )
         struct['data']['_default_value'] = default_value
 
         const str1 = Number.isInteger( default_value ) ? default_value : `"${default_value}"`
         struct['data']['default_value'] = `\`\`\`{ "${userKeyPath}": ${str1} }\`\`\``
 
         const category = [ this.#titleizeString( struct['category'] ), struct['category'] ]
-        console.log( 'item', item )
         const methods = item['methods']
             .map( method => `[${method}](../${this.#config['url']['methods']}${method}.html#options)` )
             .join( ', ' )
@@ -248,7 +249,8 @@ export class GenerateOptions {
 
     #overviewRenderTemplates( { prepare } ) {
         const result = {
-            'overview': []
+            'overview': [],
+            'methods': []
         }
 
         result['overview'] = [ 
@@ -286,10 +288,15 @@ export class GenerateOptions {
                 return acc
             }, [] )
 
+        result['methods'] = prepare['methods']
+
         return result
     }
 
 
+
+
+/*
     #overviewPrepareByMethod() {
         console.log( '>>>', this.#state['details'] )
 
@@ -333,9 +340,9 @@ export class GenerateOptions {
 
         return true
     }
+*/
 
-
-
+/*
     #overviewPrepareByCategory() {
         const str = this.#state['details']
             .reduce( ( acc, a, index, all ) => {
@@ -395,7 +402,7 @@ export class GenerateOptions {
 
         return str
     }
-
+*/
 
     overviewRenderTable( { indexes, type, key } ) {
         const rows = indexes
@@ -537,7 +544,32 @@ export class GenerateOptions {
     }
 
 
-    #overviewSave() {
+    #overviewSaveMethods() {
+        Object
+            .entries( this.#state['templates']['methods'] )
+            .forEach( a => {
+                const [ key, str ] = a
+                const template = fs.readFileSync( 
+                    this.#config['path']['templates']['root'] + key + '.txt', 
+                    'utf-8' 
+                )
+                    .replace( '{{options}}', str )
+
+
+                fs.writeFileSync( 
+                    `${this.#config['path']['output']['methodsFolder']}${key}.md`, 
+                    template, 
+                    'utf-8'
+                )
+
+                
+            })
+
+        return true
+    }
+
+
+    #overviewSaveOptions() {
         const template = fs.readFileSync( 
             this.#config['path']['templates']['overview'], 
             'utf-8' 
