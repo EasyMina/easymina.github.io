@@ -232,9 +232,9 @@ Assists in creating your workspace.
 
 |   | **Option** | **Default** | **Examples** | **Description** |
 |:--|:--|:--|:--|:--|
-| A.1 | [projectName](../options/meta__name.md) | ```"12345"``` |  | Here, you can set the project name, which will be used as the file name for newly generated keys. |
+| A.1 | [projectName](../options/meta__name.md) | ```"default"``` |  | Here, you can set the project name, which will be used as the file name for newly generated keys. |
 | A.2 | [accountMessage](../options/console__messages__accountComment.md) | ```"Do not share this file with someone."``` |  | Here, you can set the message that will be inserted as a comment in each account file. It is intended as a reminder to handle this sensitive data with care. |
-| A.3 | [consoleSpacesStandard](../options/print__spaces__standard.md) | ```30``` |  | This splitter can be used to divide the output of information in the terminal. |
+| A.3 | [consoleSpacesStandard](../options/print__spaces__standard.md) | ```24``` |  | This splitter can be used to divide the output of information in the terminal. |
 | A.4 | [consoleSpacesStandard](../options/print__spaces__extended.md) | ```40``` |  | This splitter can be used to divide the output of information in the terminal. |
 | A.5 | [consoleLanguage](../options/messages__use.md) | ```"en"``` |  | Here, you can set the language of the terminal output. |
 | B.1 | [fileNameSplitter](../options/environment__addresses__splitter.md) | ```"--"``` |  | Here you can switch between "__" and "--" as splitter in your fileName structure |

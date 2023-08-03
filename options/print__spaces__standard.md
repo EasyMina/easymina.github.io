@@ -10,7 +10,7 @@ This splitter can be used to divide the output of information in the terminal.
 
 ## Specification
 
-Default implementation: ```{ "consoleSpacesStandard": 30 }```
+Default implementation: ```{ "consoleSpacesStandard": 24 }```
 
 ### Key
 
@@ -24,5 +24,5 @@ This regular expression matches any positive integer with one or more digits.
 
 | **Default** | **Validation** | **Type** |
 |:--|:--|:--|
-| ```30``` | ```^[1-9]\d*$``` | ```integer``` |
+| ```24``` | ```^[1-9]\d*$``` | ```integer``` |
 

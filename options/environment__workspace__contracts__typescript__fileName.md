@@ -10,7 +10,7 @@ Here, you can set your typescript fileNName.
 
 ## Specification
 
-Default implementation: ```{ "smartContractFileName": "12345.ts" }```
+Default implementation: ```{ "smartContractFileName": "default.ts" }```
 
 ### Key
 
@@ -24,5 +24,5 @@ Matches file names starting with a lowercase letter, potentially containing mult
 
 | **Default** | **Validation** | **Type** |
 |:--|:--|:--|
-| ```"12345.ts"``` | ```^[a-z](?:[a-z0-9_-]*\.?)+\.ts``` | ```string``` |
+| ```"default.ts"``` | ```^[a-z](?:[a-z0-9_-]*\.?)+\.ts``` | ```string``` |
 

@@ -1,6 +1,6 @@
 <img src="./assets/images/logo.png" height="60px">
 
-Made for zk beginners and busy beavers 🦫
+Made for zk beginners 🦫
 
 `easy mina` is a Node.js module that helps you create a bare-bones environment with minimal opinionated pre-configuration.
 

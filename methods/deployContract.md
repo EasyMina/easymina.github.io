@@ -83,13 +83,13 @@ Helps you upload your first Smart Contract
 
 |   | **Option** | **Default** | **Examples** | **Description** |
 |:--|:--|:--|:--|:--|
-| A.1 | [projectName](../options/meta__name.md) | ```"12345"``` |  | Here, you can set the project name, which will be used as the file name for newly generated keys. |
+| A.1 | [projectName](../options/meta__name.md) | ```"default"``` |  | Here, you can set the project name, which will be used as the file name for newly generated keys. |
 | A.2 | [accountMessage](../options/console__messages__accountComment.md) | ```"Do not share this file with someone."``` |  | Here, you can set the message that will be inserted as a comment in each account file. It is intended as a reminder to handle this sensitive data with care. |
-| A.3 | [consoleSpacesStandard](../options/print__spaces__standard.md) | ```30``` |  | This splitter can be used to divide the output of information in the terminal. |
+| A.3 | [consoleSpacesStandard](../options/print__spaces__standard.md) | ```24``` |  | This splitter can be used to divide the output of information in the terminal. |
 | A.4 | [consoleSpacesStandard](../options/print__spaces__extended.md) | ```40``` |  | This splitter can be used to divide the output of information in the terminal. |
 | A.5 | [consoleLanguage](../options/messages__use.md) | ```"en"``` |  | Here, you can set the language of the terminal output. |
-| B.4 | [deployerFileName](../options/environment__addresses__deployers__fileName.md) | ```"12345--1690811826.json"``` |  | Here, you can set your deployer file name. |
-| C.3 | [smartContractFileName](../options/environment__workspace__contracts__typescript__fileName.md) | ```"12345.ts"``` |  | Here, you can set your typescript fileNName. |
+| B.4 | [deployerFileName](../options/environment__addresses__deployers__fileName.md) | ```"default--1691021406.json"``` |  | Here, you can set your deployer file name. |
+| C.3 | [smartContractFileName](../options/environment__workspace__contracts__typescript__fileName.md) | ```"default.ts"``` |  | Here, you can set your typescript fileNName. |
 | D.1 | [networkName](../options/network__use.md) | ```"berkeley"``` |  | Here you can change the network your are using. |
 | D.2 | [transactionExplorer](../options/network__berkeley__explorer__transaction.md) | ```"https://berkeley.minaexplorer.com/transaction/"``` |  | Here, you can change the default explorer for transactions. This is used to generate direct links, which will also be stored in the respective account files. |
 | D.3 | [walletExplorer](../options/network__berkeley__explorer__wallet.md) | ```"https://berkeley.minaexplorer.com/wallet/"``` |  | Here, you can change the default explorer to show wallet accounts. This is used to generate direct links, which will also be stored in the respective account files. |
