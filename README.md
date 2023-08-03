@@ -25,8 +25,7 @@ import { EasyMina } from 'easymina'
 
 const easyMina = new EasyMina()
 await easyMina.setEnvironment( {
-    'projectName': 'hello-world',
-    'encrypt': false
+    'projectName': 'hello-world'
 } )
 ```
 
