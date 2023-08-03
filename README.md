@@ -2,7 +2,7 @@
 
 Made for zk beginners 🦫
 
-`easy mina` is a Node.js module that helps you create a bare-bones environment with minimal opinionated pre-configuration.
+`easy mina` is a Node.js module that helps you create a bare-bones environment for developing applications on the Mina blockchain and its testnet 🎉.
 
 Helps you set up:  
 :heavy_check_mark: Environment variables and folders  
