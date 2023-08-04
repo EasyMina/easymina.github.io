@@ -217,7 +217,7 @@ export class GenerateOptions {
 
 
     #detailPrepares() {
-        let sum = 0
+        let sum = 1
         const prepare = Object
             .entries( this.#easyMinaConfig['validations']['keyPaths'] )
             .reduce( ( acc, a, index, all ) => {
