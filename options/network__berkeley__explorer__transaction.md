@@ -1,6 +1,6 @@
 ---
 sort: 17
-title: D.2. transactionExplorer
+title: . transactionExplorer
 ---
 
 # transactionExplorer

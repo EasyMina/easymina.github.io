@@ -1,6 +1,6 @@
 ---
 sort: 0
-title: A.1. projectName
+title: . projectName
 ---
 
 # projectName

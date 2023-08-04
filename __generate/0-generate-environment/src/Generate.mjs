@@ -159,7 +159,7 @@ export class GenerateOptions {
         struct['methods'] = this.#easyMinaConfig['validations']['keyPaths'][ keyPath ]['methods']
 
         struct['category'] = item['category']
-        struct['data']['numbering'] = `${alpha[ index ]}.${rindex+1}`
+        struct['data']['numbering'] = '' //`${alpha[ index ]}.${rindex+1}`
         struct['fileName'] = `${keyPath}.md`
 
         struct['data']['index'] = index

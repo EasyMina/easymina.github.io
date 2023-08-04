@@ -1,6 +1,6 @@
 ---
 sort: 10
-title: C.1. workspaceRootFolderName
+title: . workspaceRootFolderName
 ---
 
 # workspaceRootFolderName

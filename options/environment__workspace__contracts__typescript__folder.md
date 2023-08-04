@@ -1,6 +1,6 @@
 ---
 sort: 11
-title: C.2. workspaceTypescriptFolderName
+title: . workspaceTypescriptFolderName
 ---
 
 # workspaceTypescriptFolderName

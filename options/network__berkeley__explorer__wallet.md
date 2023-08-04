@@ -1,6 +1,6 @@
 ---
 sort: 18
-title: D.3. walletExplorer
+title: . walletExplorer
 ---
 
 # walletExplorer

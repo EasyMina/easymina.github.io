@@ -1,6 +1,6 @@
 ---
 sort: 12
-title: C.3. smartContractFileName
+title: . smartContractFileName
 ---
 
 # smartContractFileName

@@ -1,6 +1,6 @@
 ---
 sort: 15
-title: C.6. smartContractNameDefault
+title: . smartContractNameDefault
 ---
 
 # smartContractNameDefault

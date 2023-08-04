@@ -1,6 +1,6 @@
 ---
 sort: 5
-title: B.1. fileNameSplitter
+title: . fileNameSplitter
 ---
 
 # fileNameSplitter

@@ -1,6 +1,6 @@
 ---
 sort: 3
-title: A.4. consoleSpacesStandard
+title: . consoleSpacesStandard
 ---
 
 # consoleSpacesStandard
