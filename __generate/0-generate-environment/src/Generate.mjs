@@ -131,7 +131,7 @@ export class GenerateOptions {
     }
 
 
-    #detailPrepare( { item, index, rindex, sort } ) {
+    #detailPrepare( { item, index, rindex, sort, sum } ) {
         const alpha = [ 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K' ]
         const keyPath = item['keyPath']
         const userKeyPath = item['userPath'][ this.#language ]
@@ -142,6 +142,7 @@ export class GenerateOptions {
             'methods': null,
             'data': {
                 'sort': null,
+                'indexing': null,
                 'numbering': null,
                 'index': null,
                 'title': null,
@@ -159,11 +160,13 @@ export class GenerateOptions {
         struct['methods'] = this.#easyMinaConfig['validations']['keyPaths'][ keyPath ]['methods']
 
         struct['category'] = item['category']
-        struct['data']['numbering'] = '' //`${alpha[ index ]}.${rindex+1}`
+
+        struct['data']['indexing'] = sum
+        struct['data']['numbering'] = `${alpha[ index ]}.${rindex+1}`
         struct['fileName'] = `${keyPath}.md`
 
         struct['data']['index'] = index
-        struct['data']['title'] = `${struct['data']['numbering']}. ${userKeyPath}`
+        struct['data']['title'] = `${struct['data']['indexing']}. ${userKeyPath}`//`${struct['data']['numbering']}. ${userKeyPath}`
         struct['data']['headline'] = `${userKeyPath}`
 
         struct['data']['description'] = this.#details['keyPaths'][ keyPath ]['description'][ this.#language ]
@@ -208,12 +211,13 @@ export class GenerateOptions {
             .replace( /^/, '| ' ) 
             .replace( /$/, ' |' )
 
-        return struct
+        return [ struct, sum ]
     }
 
 
 
     #detailPrepares() {
+        let sum = 0
         const prepare = Object
             .entries( this.#easyMinaConfig['validations']['keyPaths'] )
             .reduce( ( acc, a, index, all ) => {
@@ -236,7 +240,8 @@ export class GenerateOptions {
                 values
                     .sort( ( a, b ) => b['headline'] - a['headline'] )
                     .forEach( ( item, rindex ) => {
-                        const result = this.#detailPrepare( { item, index, rindex, 'sort': acc.length } )
+                        const [ result, s ] = this.#detailPrepare( { item, index, rindex, 'sort': acc.length, sum } )
+                        sum = s + 1
                         acc.push( result )
                     } )
     
