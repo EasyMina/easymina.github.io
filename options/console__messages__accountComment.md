@@ -1,6 +1,6 @@
 ---
 sort: 1
-title: . accountMessage
+title: 1. accountMessage
 ---
 
 # accountMessage

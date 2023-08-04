@@ -1,6 +1,6 @@
 ---
 sort: 6
-title: . credentialsRootFolderName
+title: 6. credentialsRootFolderName
 ---
 
 # credentialsRootFolderName

@@ -1,6 +1,6 @@
 ---
 sort: 9
-title: . contractsFolderName
+title: 9. contractsFolderName
 ---
 
 # contractsFolderName

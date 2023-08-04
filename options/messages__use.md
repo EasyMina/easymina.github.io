@@ -1,6 +1,6 @@
 ---
 sort: 4
-title: . consoleLanguage
+title: 4. consoleLanguage
 ---
 
 # consoleLanguage

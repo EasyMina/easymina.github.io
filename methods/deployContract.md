@@ -83,17 +83,17 @@ Helps you upload your first Smart Contract
 
 |   | **Option** | **Default** | **Examples** | **Description** |
 |:--|:--|:--|:--|:--|
-|  | [projectName](../options/meta__name.md) | ```"default"``` |  | Here, you can set the project name, which will be used as the file name for newly generated keys. |
-|  | [accountMessage](../options/console__messages__accountComment.md) | ```"Do not share this file with someone."``` |  | Here, you can set the message that will be inserted as a comment in each account file. It is intended as a reminder to handle this sensitive data with care. |
-|  | [consoleSpacesStandard](../options/print__spaces__standard.md) | ```24``` |  | This splitter can be used to divide the output of information in the terminal. |
-|  | [consoleSpacesStandard](../options/print__spaces__extended.md) | ```40``` |  | This splitter can be used to divide the output of information in the terminal. |
-|  | [consoleLanguage](../options/messages__use.md) | ```"en"``` |  | Here, you can set the language of the terminal output. |
-|  | [deployerFileName](../options/environment__addresses__deployers__fileName.md) | ```"default--1691167916.json"``` |  | Here, you can set your deployer file name. |
-|  | [smartContractFileName](../options/environment__workspace__contracts__typescript__fileName.md) | ```"default.ts"``` |  | Here, you can set your typescript fileNName. |
-|  | [networkName](../options/network__use.md) | ```"berkeley"``` |  | Here you can change the network your are using. |
-|  | [transactionExplorer](../options/network__berkeley__explorer__transaction.md) | ```"https://berkeley.minaexplorer.com/transaction/"``` |  | Here, you can change the default explorer for transactions. This is used to generate direct links, which will also be stored in the respective account files. |
-|  | [walletExplorer](../options/network__berkeley__explorer__wallet.md) | ```"https://berkeley.minaexplorer.com/wallet/"``` |  | Here, you can change the default explorer to show wallet accounts. This is used to generate direct links, which will also be stored in the respective account files. |
-|  | [berkeleyNode](../options/network__berkeley__node.md) | ```"https://berkeley.graphql.minaexplorer.com"``` |  | Here, the node provider can be set. |
-|  | [berkeleyNodeProxy](../options/network__berkeley__nodeProxy.md) | ```"https://proxy.berkeley.minaexplorer.com/graphql"``` |  | Here, you can change the node URL used to query account balances and similar information, for example. |
-|  | [berkeleyGraphQl](../options/network__berkeley__graphQl.md) | ```"https://berkeley.graphql.minaexplorer.com"``` |  | Here you can change the GraphQl URL. |
-|  | [transactionFee](../options/network__berkeley__transaction_fee.md) | ```100000000``` |  | Here, you can modify the standard fee. This fee is used to calculate how many interactions with an account are possible without creating new tokens. |
+| A.1 | [projectName](../options/meta__name.md) | ```"default"``` |  | Here, you can set the project name, which will be used as the file name for newly generated keys. |
+| A.2 | [accountMessage](../options/console__messages__accountComment.md) | ```"Do not share this file with someone."``` |  | Here, you can set the message that will be inserted as a comment in each account file. It is intended as a reminder to handle this sensitive data with care. |
+| A.3 | [consoleSpacesStandard](../options/print__spaces__standard.md) | ```24``` |  | This splitter can be used to divide the output of information in the terminal. |
+| A.4 | [consoleSpacesStandard](../options/print__spaces__extended.md) | ```40``` |  | This splitter can be used to divide the output of information in the terminal. |
+| A.5 | [consoleLanguage](../options/messages__use.md) | ```"en"``` |  | Here, you can set the language of the terminal output. |
+| B.4 | [deployerFileName](../options/environment__addresses__deployers__fileName.md) | ```"default--1691191118.json"``` |  | Here, you can set your deployer file name. |
+| C.3 | [smartContractFileName](../options/environment__workspace__contracts__typescript__fileName.md) | ```"default.ts"``` |  | Here, you can set your typescript fileNName. |
+| D.1 | [networkName](../options/network__use.md) | ```"berkeley"``` |  | Here you can change the network your are using. |
+| D.2 | [transactionExplorer](../options/network__berkeley__explorer__transaction.md) | ```"https://berkeley.minaexplorer.com/transaction/"``` |  | Here, you can change the default explorer for transactions. This is used to generate direct links, which will also be stored in the respective account files. |
+| D.3 | [walletExplorer](../options/network__berkeley__explorer__wallet.md) | ```"https://berkeley.minaexplorer.com/wallet/"``` |  | Here, you can change the default explorer to show wallet accounts. This is used to generate direct links, which will also be stored in the respective account files. |
+| D.4 | [berkeleyNode](../options/network__berkeley__node.md) | ```"https://berkeley.graphql.minaexplorer.com"``` |  | Here, the node provider can be set. |
+| D.5 | [berkeleyNodeProxy](../options/network__berkeley__nodeProxy.md) | ```"https://proxy.berkeley.minaexplorer.com/graphql"``` |  | Here, you can change the node URL used to query account balances and similar information, for example. |
+| D.6 | [berkeleyGraphQl](../options/network__berkeley__graphQl.md) | ```"https://berkeley.graphql.minaexplorer.com"``` |  | Here you can change the GraphQl URL. |
+| D.7 | [transactionFee](../options/network__berkeley__transaction_fee.md) | ```100000000``` |  | Here, you can modify the standard fee. This fee is used to calculate how many interactions with an account are possible without creating new tokens. |

@@ -1,6 +1,6 @@
 ---
 sort: 20
-title: . berkeleyNodeProxy
+title: 20. berkeleyNodeProxy
 ---
 
 # berkeleyNodeProxy

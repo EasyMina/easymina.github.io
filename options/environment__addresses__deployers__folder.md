@@ -1,6 +1,6 @@
 ---
 sort: 7
-title: . accountsFolderName
+title: 7. accountsFolderName
 ---
 
 # accountsFolderName
