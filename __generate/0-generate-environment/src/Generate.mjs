@@ -410,6 +410,8 @@ export class GenerateOptions {
 */
 
     overviewRenderTable( { indexes, type, key } ) {
+        console.log( 'type', type )
+
         const rows = indexes
             .reduce( ( acc, i, index, all ) => {
                 if( index === 0 ) {
@@ -420,7 +422,7 @@ export class GenerateOptions {
                 const a = this.#state['details'][ i ]
                 let value = a['data']['_default_value']
                 const row = [
-                    `${a['data']['numbering']}`,
+                    type === 'methods' ? `${a['data']['indexing']}` :`${a['data']['numbering']}`,
                     `[${a['data']['headline']}](../options/${a['fileName']})`,
                     `\`\`\`${this.#setQuotes( value )}\`\`\``,
                     ``,

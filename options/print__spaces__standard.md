@@ -1,6 +1,6 @@
 ---
 sort: 2
-title: 2. consoleSpacesStandard
+title: 3. consoleSpacesStandard
 ---
 
 # consoleSpacesStandard

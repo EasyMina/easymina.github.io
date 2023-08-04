@@ -1,6 +1,6 @@
 ---
 sort: 21
-title: 21. berkeleyGraphQl
+title: 22. berkeleyGraphQl
 ---
 
 # berkeleyGraphQl
