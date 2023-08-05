@@ -1,6 +1,6 @@
 ---
 sort: 2
-title: B. deployContract()
+title: 2. deployContract()
 ---
 
 # B. deployContract()
@@ -88,7 +88,7 @@ Helps you upload your first Smart Contract
 | 3 | [consoleSpacesStandard](../options/print__spaces__standard.md) | ```24``` |  | This splitter can be used to divide the output of information in the terminal. |
 | 4 | [consoleSpacesStandard](../options/print__spaces__extended.md) | ```40``` |  | This splitter can be used to divide the output of information in the terminal. |
 | 5 | [consoleLanguage](../options/messages__use.md) | ```"en"``` |  | Here, you can set the language of the terminal output. |
-| 6 | [deployerFileName](../options/environment__addresses__deployers__fileName.md) | ```"default--1691194362.json"``` |  | Here, you can set your deployer file name. |
+| 6 | [deployerFileName](../options/environment__addresses__deployers__fileName.md) | ```"default--1691195353.json"``` |  | Here, you can set your deployer file name. |
 | 7 | [smartContractFileName](../options/environment__workspace__contracts__typescript__fileName.md) | ```"default.ts"``` |  | Here, you can set your typescript fileNName. |
 | 8 | [networkName](../options/network__use.md) | ```"berkeley"``` |  | Here you can change the network your are using. |
 | 9 | [transactionExplorer](../options/network__berkeley__explorer__transaction.md) | ```"https://berkeley.minaexplorer.com/transaction/"``` |  | Here, you can change the default explorer for transactions. This is used to generate direct links, which will also be stored in the respective account files. |
