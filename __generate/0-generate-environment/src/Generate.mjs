@@ -415,14 +415,31 @@ export class GenerateOptions {
         const rows = indexes
             .reduce( ( acc, i, index, all ) => {
                 if( index === 0 ) {
-                    acc.push( `|   | **Option** | **Default** | **Examples** | **Description** |` )
-                    acc.push( `|:--|:--|:--|:--|:--|` )
+                    const s = [
+                        '',
+                        '**Options**',
+                        '**Default**',
+                        '**Examples**',
+                        '**Description**'
+                    ]
+                        .reduce( ( abb, a, rindex, _all ) => {
+                            abb[ 0 ] += a
+                            abb[ 0 ] += ( rindex !== _all.length-1 ) ? ' | ' : ' |'
+                            abb[ 1 ] += ':--'
+                            abb[ 1 ] += '|'
+                            return abb
+                        }, [ '| ', '|' ] )
+                        .forEach( row => acc.push( row ) )
+
+                    // acc.push( `|   | **Option** | **Default** | **Examples** | **Description** |` )
+                    // acc.push( `|:--|:--|:--|:--|:--|` )
                 }
 
                 const a = this.#state['details'][ i ]
                 let value = a['data']['_default_value']
                 const row = [
-                    type === 'methods' ? `${a['data']['indexing']}` :`${a['data']['numbering']}`,
+                    // type === 'methods' ? `${a['data']['indexing']}` :`${a['data']['numbering']}`,
+                    `${index+1}`,
                     `[${a['data']['headline']}](../options/${a['fileName']})`,
                     `\`\`\`${this.#setQuotes( value )}\`\`\``,
                     ``,

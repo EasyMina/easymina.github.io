@@ -230,7 +230,7 @@ For more information visit: [options](../options)
 
 Assists in creating your workspace.
 
-|   | **Option** | **Default** | **Examples** | **Description** |
+|  | **Options** | **Default** | **Examples** | **Description** |
 |:--|:--|:--|:--|:--|
 | 1 | [projectName](../options/meta__name.md) | ```"default"``` |  | Here, you can set the project name, which will be used as the file name for newly generated keys. |
 | 2 | [accountMessage](../options/console__messages__accountComment.md) | ```"Do not share this file with someone."``` |  | Here, you can set the message that will be inserted as a comment in each account file. It is intended as a reminder to handle this sensitive data with care. |
@@ -240,16 +240,16 @@ Assists in creating your workspace.
 | 6 | [fileNameSplitter](../options/environment__addresses__splitter.md) | ```"--"``` |  | Here you can switch between "__" and "--" as splitter in your fileName structure |
 | 7 | [credentialsRootFolderName](../options/environment__addresses__root.md) | ```".mina/"``` |  | Here, you can set the root folder for your credentials. |
 | 8 | [accountsFolderName](../options/environment__addresses__deployers__folder.md) | ```"deployers/"``` |  | Here, you can set the folder name for your account keys. |
-| 10 | [contractsFolderName](../options/environment__addresses__contracts__folder.md) | ```"contracts/"``` |  | Here, you can set the folder name for your contract keys. |
-| 11 | [workspaceRootFolderName](../options/environment__workspace__contracts__root.md) | ```"workdir/"``` |  | This root folder includes all your smart contracts, in both .ts versions and those compiled through TypeScript. |
-| 12 | [workspaceTypescriptFolderName](../options/environment__workspace__contracts__typescript__folder.md) | ```"typescript/"``` |  | Here, you can set your typescript folder. |
-| 14 | [workspaceBuildFolderName](../options/environment__workspace__contracts__build__folder.md) | ```"build/"``` |  | This folder sets a name for the location of all your automatically compiled TypeScript smart contracts. |
-| 15 | [smartContractContentDefault](../options/environment__template__source__content.md) | ```"..."``` |  | You can leave a reference to a smart contract here. Currently, GitHub Gist and direct HTTPS requests are supported. |
-| 16 | [smartContractNameDefault](../options/environment__template__source__name.md) | ```"{{name}}.ts"``` |  | Here, you can set the name of your smart contract. |
-| 17 | [networkName](../options/network__use.md) | ```"berkeley"``` |  | Here you can change the network your are using. |
-| 18 | [transactionExplorer](../options/network__berkeley__explorer__transaction.md) | ```"https://berkeley.minaexplorer.com/transaction/"``` |  | Here, you can change the default explorer for transactions. This is used to generate direct links, which will also be stored in the respective account files. |
-| 19 | [walletExplorer](../options/network__berkeley__explorer__wallet.md) | ```"https://berkeley.minaexplorer.com/wallet/"``` |  | Here, you can change the default explorer to show wallet accounts. This is used to generate direct links, which will also be stored in the respective account files. |
-| 20 | [berkeleyNode](../options/network__berkeley__node.md) | ```"https://berkeley.graphql.minaexplorer.com"``` |  | Here, the node provider can be set. |
-| 21 | [berkeleyNodeProxy](../options/network__berkeley__nodeProxy.md) | ```"https://proxy.berkeley.minaexplorer.com/graphql"``` |  | Here, you can change the node URL used to query account balances and similar information, for example. |
-| 22 | [berkeleyGraphQl](../options/network__berkeley__graphQl.md) | ```"https://berkeley.graphql.minaexplorer.com"``` |  | Here you can change the GraphQl URL. |
-| 23 | [transactionFee](../options/network__berkeley__transaction_fee.md) | ```100000000``` |  | Here, you can modify the standard fee. This fee is used to calculate how many interactions with an account are possible without creating new tokens. |
+| 9 | [contractsFolderName](../options/environment__addresses__contracts__folder.md) | ```"contracts/"``` |  | Here, you can set the folder name for your contract keys. |
+| 10 | [workspaceRootFolderName](../options/environment__workspace__contracts__root.md) | ```"workdir/"``` |  | This root folder includes all your smart contracts, in both .ts versions and those compiled through TypeScript. |
+| 11 | [workspaceTypescriptFolderName](../options/environment__workspace__contracts__typescript__folder.md) | ```"typescript/"``` |  | Here, you can set your typescript folder. |
+| 12 | [workspaceBuildFolderName](../options/environment__workspace__contracts__build__folder.md) | ```"build/"``` |  | This folder sets a name for the location of all your automatically compiled TypeScript smart contracts. |
+| 13 | [smartContractContentDefault](../options/environment__template__source__content.md) | ```"..."``` |  | You can leave a reference to a smart contract here. Currently, GitHub Gist and direct HTTPS requests are supported. |
+| 14 | [smartContractNameDefault](../options/environment__template__source__name.md) | ```"{{name}}.ts"``` |  | Here, you can set the name of your smart contract. |
+| 15 | [networkName](../options/network__use.md) | ```"berkeley"``` |  | Here you can change the network your are using. |
+| 16 | [transactionExplorer](../options/network__berkeley__explorer__transaction.md) | ```"https://berkeley.minaexplorer.com/transaction/"``` |  | Here, you can change the default explorer for transactions. This is used to generate direct links, which will also be stored in the respective account files. |
+| 17 | [walletExplorer](../options/network__berkeley__explorer__wallet.md) | ```"https://berkeley.minaexplorer.com/wallet/"``` |  | Here, you can change the default explorer to show wallet accounts. This is used to generate direct links, which will also be stored in the respective account files. |
+| 18 | [berkeleyNode](../options/network__berkeley__node.md) | ```"https://berkeley.graphql.minaexplorer.com"``` |  | Here, the node provider can be set. |
+| 19 | [berkeleyNodeProxy](../options/network__berkeley__nodeProxy.md) | ```"https://proxy.berkeley.minaexplorer.com/graphql"``` |  | Here, you can change the node URL used to query account balances and similar information, for example. |
+| 20 | [berkeleyGraphQl](../options/network__berkeley__graphQl.md) | ```"https://berkeley.graphql.minaexplorer.com"``` |  | Here you can change the GraphQl URL. |
+| 21 | [transactionFee](../options/network__berkeley__transaction_fee.md) | ```100000000``` |  | Here, you can modify the standard fee. This fee is used to calculate how many interactions with an account are possible without creating new tokens. |
