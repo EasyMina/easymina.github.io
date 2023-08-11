@@ -2,7 +2,7 @@
 
 Made for zk beginners 🦫
 
-**Easy Mina** is a Node.js module that offers a foundational environment for developing applications on Mina's testnets 🎉.
+**Easy Mina** is a Node.js module that offers a foundational environment for developing applications on Mina's berkeley testnets 🎉.
 
 Helps you set up:  
 :heavy_check_mark: Environment variables and folders  
