@@ -8,7 +8,7 @@ title: 4. requestContract()
 
 This method is the first step in creating and saving a smart contract. Also see `.saveContract()`.
 
-```javascript
+```
 .requestContract( { name, deployer, encrypt=true, sourcePath=null } )
 ```
 
@@ -20,7 +20,7 @@ This method is the first step in creating and saving a smart contract. Also see 
 
 Example:
 
-```javascript
+```
 import { Square } from '../contracts/build/Square.js'
 
 const deployer = await easyMina.getAccount( {

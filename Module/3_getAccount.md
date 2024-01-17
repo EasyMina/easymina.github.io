@@ -8,7 +8,7 @@ title: 3. getAccount()
 
 This method allows you to retrieve a saved account.
 
-```javascript
+```
 .getAccount( { name, groupName, checkStatus=false, strict=false } )
 ```
 
@@ -21,7 +21,7 @@ This method allows you to retrieve a saved account.
 
 Example:
 
-```javascript
+```
 const deployer = await easyMina.getAccount({
     'name': 'bob',
     'groupName': 'a',

@@ -4,7 +4,10 @@ title: 1. constructor
 ---
 
 
-```javascript
+# Constructor
+
+
+```
 new EasyMina( { encryption=true, networkName } )
 ```
 
@@ -15,13 +18,13 @@ new EasyMina( { encryption=true, networkName } )
 
 Example:
 
-```javascript
+```
 const easyMina = new EasyMina( { 'networkName': 'berkeley' })
 ```
 
 Upon initializing EasyMina, the network is set as "networkName." This name is used to store the name in Account and Contract Credential Files, select the correct explorer, and create URLs for accounts and transactions. The GraphQL interface is determined by the user by importing the 'o1js' Mina class.
 
-```javascript
+```
 import { Mina } from 'o1js'
 const Berkeley = Mina.Network( 
      'https://proxy.berkeley.minaexplorer.com/graphql' 

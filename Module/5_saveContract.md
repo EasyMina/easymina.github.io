@@ -8,7 +8,7 @@ title: 5. saveContract()
 
 This is the second part of creating and saving a smart contract. Also see `.requestContract()`.
 
-```javascript
+```
 .saveContract( { response, verificationKey } )
 ```
 
@@ -21,7 +21,7 @@ js Response> Object` | Passes the `response` from the sent transaction. | | `tru
 
 Example:
 
-```javascript
+```
 const { verificationKey } = await Square.compile()
 
 ...

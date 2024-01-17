@@ -8,7 +8,7 @@ title: 8. getDeployedContract()
 
 This method allows you to retrieve a saved contract.
 
-```javascript
+```
 getDeployedContract( { name, projectName } ) 
 ```
 
@@ -19,7 +19,7 @@ getDeployedContract( { name, projectName } )
 
 Example:
 
-```javascript
+```
 const contract = await easyMina.getDeployedContract({
     'name': 'square',
     'projectName': 'getting-started'

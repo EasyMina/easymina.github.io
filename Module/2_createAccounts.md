@@ -8,7 +8,7 @@ title: 2. createAccounts()
 
 This method allows you to create and save new accounts.
 
-```javascript
+```
 .createAccounts( { names, groupName, pattern=true } )
 ```
 
@@ -22,7 +22,7 @@ The method then defaults to encrypting the privateKey and stores other important
 
 Example:
 
-```javascript
+```
 easyMina.createAccounts({
     'names': ['alice', 'bob', 'charlie'],
     'groupName': 'a'
