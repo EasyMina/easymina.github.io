@@ -3,7 +3,7 @@ sort: 1
 title: Module
 ---
 
-# Methods
+# Module
 
 ```
      -- - - - - - --*-- - - - - - --
@@ -28,9 +28,7 @@ title: Module
 
 The goal is to offer developers a smooth entry into zk-snark development by creating a minimal workspace that focuses their attention on the structure. The simple setup indirectly explains fundamental rules. Additionally, best practices are built-in by default, such as key encryption and the inclusion of a `.gitignore` file with exclusions for the credential folder and its associated keys.
 
-# EasyMina Methods Overview
-
-# EasyMina Methods Overview
+## Overview
 
 | Method                  | Description                                           |
 | :-----------------------| :---------------------------------------------------- |
