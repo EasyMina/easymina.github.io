@@ -1,6 +1,6 @@
 ---
 sort: 0
-title: Tutorials
+title: CLI
 ---
 
 

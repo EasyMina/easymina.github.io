@@ -1,6 +1,6 @@
 ---
 sort: 1
-title: Methods
+title: Module
 ---
 
 # Methods
