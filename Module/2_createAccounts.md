@@ -3,6 +3,9 @@ sort: 3
 title: 2. createAccounts()
 ---
 
+
+# Create Accounts
+
 This method allows you to create and save new accounts.
 
 ```javascript

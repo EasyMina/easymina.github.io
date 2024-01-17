@@ -3,6 +3,9 @@ sort: 5
 title: 4. requestContract()
 ---
 
+
+# Request Contract
+
 This method is the first step in creating and saving a smart contract. Also see `.saveContract()`.
 
 ```javascript

@@ -3,6 +3,9 @@ sort: 8
 title: 9. loadModuleExperimental()
 ---
 
+
+# Load Module Experimental
+
 **This method is currently in the experimental phase**. A way to correctly import a smart contract.
 
 ```javascript

@@ -3,6 +3,9 @@ sort: 4
 title: 3. getAccount()
 ---
 
+
+# Create Account
+
 This method allows you to retrieve a saved account.
 
 ```javascript

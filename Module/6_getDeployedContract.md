@@ -3,6 +3,9 @@ sort: 7
 title: 8. getDeployedContract()
 ---
 
+
+# Get Deployed Contract
+
 This method allows you to retrieve a saved contract.
 
 ```javascript
