@@ -14,20 +14,10 @@ Helps you set up:
 ## Quickstart
 
 ```bash
-npm init -y
-npm i easymina
+npm i -g easymina
+easymina
 ```
 
-
-index.mjs
-```nodejs
-import { EasyMina } from 'easymina'
-
-const easyMina = new EasyMina()
-await easyMina.setEnvironment( {
-    'projectName': 'hello-world'
-} )
-```
 
 
 ## Links
