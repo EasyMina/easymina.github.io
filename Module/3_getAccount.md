@@ -1,6 +1,6 @@
 ---
-sort: 6
-title: 5. getAccount()
+sort: 4
+title: 3. getAccount()
 ---
 
 This method allows you to retrieve a saved account.
